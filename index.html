@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WSET Level 1 — Study Guide</title>
+<title>WSET Study Guide — Level 1 & 2</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -14,169 +15,232 @@
   --whi:#907010; --whi-l:#d4b040;
   --grn:#207040; --grn-l:#50c070;
   --blu:#204080; --blu-l:#5090d0;
+  --l2:#b05010; --l2-l:#e08040;
 }
+/* ── LEVEL 2 STYLES ── */
+.l2-section{margin-bottom:36px;}
+.l2-badge{display:inline-block;padding:2px 10px;border-radius:100px;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;background:rgba(176,80,16,.25);color:#e08040;border:1px solid rgba(176,80,16,.4);margin-left:8px;vertical-align:middle;}
+.l2-title{font-family:'Playfair Display',serif;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#e08040;font-weight:400;margin-bottom:20px;}
+.factor-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:32px;}
+.factor-card{background:#1c1208;border:1px solid #3a2010;border-radius:12px;overflow:hidden;transition:all .2s;}
+.factor-card:hover{border-color:#b05010;transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.4);}
+.fc-header{padding:16px 18px;display:flex;align-items:center;gap:12px;}
+.fc-icon{font-size:24px;flex-shrink:0;}
+.fc-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#f0e8e0;}
+.fc-sub{font-size:11px;color:#7a5030;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-top:2px;}
+.fc-body{padding:0 18px 16px;background:#1c1208;}
+.fc-row{display:flex;justify-content:space-between;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(58,32,16,.6);font-size:13px;gap:12px;}
+.fc-row:last-child{border-bottom:none;}
+.fc-lbl{color:#7a6050;font-weight:600;flex-shrink:0;}
+.fc-val{color:#c8a888;text-align:right;line-height:1.5;}
+.fc-note{margin-top:10px;padding:9px 12px;background:rgba(176,80,16,.08);border-left:2px solid #b05010;border-radius:0 6px 6px 0;font-size:12px;color:#c8a888;line-height:1.6;}
+.compare-l2{width:100%;border-collapse:collapse;margin-bottom:32px;}
+.compare-l2 thead tr{background:#1c1208;border-bottom:2px solid #3a2010;}
+.compare-l2 thead th{padding:12px 16px;text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#7a5030;font-weight:600;}
+.compare-l2 tbody tr{border-bottom:1px solid rgba(58,32,16,.5);transition:background .15s;}
+.compare-l2 tbody tr:hover{background:rgba(176,80,16,.06);}
+.compare-l2 td{padding:13px 16px;font-size:13px;color:#c8a888;vertical-align:top;}
+.compare-l2 td:first-child{font-family:'Playfair Display',serif;font-size:14px;color:#f0e8e0;font-weight:700;}
+.soil-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:32px;}
+.soil-card{background:#1c1208;border:1px solid #3a2010;border-radius:10px;padding:16px;transition:border-color .2s;}
+.soil-card:hover{border-color:#b05010;}
+.soil-icon{font-size:22px;margin-bottom:8px;}
+.soil-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#f0e8e0;margin-bottom:6px;}
+.soil-desc{font-size:12px;color:#c8a888;line-height:1.6;margin-bottom:8px;}
+.soil-example{font-size:11px;color:#7a5030;font-weight:600;}
+.vine-flow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;}
+.vine-step{background:#1c1208;border:1px solid #3a2010;border-radius:10px;padding:14px 16px;flex:1;min-width:180px;position:relative;}
+.vine-step::after{content:'→';position:absolute;right:-14px;top:50%;transform:translateY(-50%);color:#7a5030;font-size:18px;font-weight:600;}
+.vine-step:last-child::after{display:none;}
+.vs-month{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#b05010;font-weight:600;margin-bottom:4px;}
+.vs-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#f0e8e0;margin-bottom:4px;}
+.vs-desc{font-size:12px;color:#c8a888;line-height:1.5;}
+@media(max-width:600px){.vine-step::after{display:none;}.vine-flow{flex-direction:column;}}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--white);min-height:100vh;}
 
 /* ── HEADER ── */
 header{
-  background:linear-gradient(135deg,#080610 0%,#1c1040 50%,#080610 100%);
-  border-bottom:1px solid var(--border);
-  padding:32px 28px 24px; position:relative; overflow:hidden;
+background:linear-gradient(135deg,#080610 0%,#1c1040 50%,#080610 100%);
+border-bottom:1px solid var(–border);
+padding:24px 28px 20px; position:relative; overflow:hidden;
 }
-header::before{content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse at 65% 50%,rgba(112,64,192,.14) 0%,transparent 68%);
-  pointer-events:none;}
-.h-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;}
-.h-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px;}
-header h1{font-family:'Playfair Display',serif;font-size:clamp(26px,5vw,48px);font-weight:900;line-height:1.1;}
-header h1 span{color:var(--gold);}
-.h-sub{margin-top:8px;font-size:14px;color:var(--cream);opacity:.7;}
+header::before{content:’’;position:absolute;inset:0;
+background:radial-gradient(ellipse at 65% 50%,rgba(112,64,192,.14) 0%,transparent 68%);
+pointer-events:none;}
+.h-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
+.h-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(–gold);font-weight:600;margin-bottom:8px;}
+header h1{font-family:‘Playfair Display’,serif;font-size:clamp(24px,5vw,44px);font-weight:900;line-height:1.1;}
+header h1 span{color:var(–gold);}
 
-/* ── LANG TOGGLE ── */
+/* ── LANG TOGGLE — no flags, top right ── */
 .lang-btn{
-  display:flex;border:1px solid var(--border);border-radius:100px;
-  overflow:hidden;background:var(--bg2);flex-shrink:0;margin-top:4px;
+display:flex;border:1px solid var(–border);border-radius:6px;
+overflow:hidden;background:rgba(255,255,255,.04);flex-shrink:0;margin-top:2px;
 }
 .lang-opt{
-  padding:7px 16px;font-size:12px;font-weight:600;letter-spacing:1px;
-  cursor:pointer;transition:all .2s;color:var(--muted);border:none;background:transparent;
-  font-family:'Source Sans 3',sans-serif;
+padding:5px 12px;font-size:11px;font-weight:700;letter-spacing:1.5px;
+cursor:pointer;transition:all .2s;color:var(–muted);border:none;background:transparent;
+font-family:‘Source Sans 3’,sans-serif;text-transform:uppercase;
 }
-.lang-opt.active{background:var(--accent);color:#fff;}
+.lang-opt.active{background:var(–accent);color:#fff;}
+.lang-opt:hover:not(.active){color:var(–cream);}
 
-/* ── NAV TABS ── */
-.nav{
-  display:flex;background:var(--bg2);border-bottom:1px solid var(--border);
-  overflow-x:auto;padding:0 28px;
+/* ── LEVEL NAV (prominent) ── */
+.level-nav{
+display:flex;background:var(–bg2);
+border-bottom:1px solid var(–border);
+padding:0;
 }
-.nav-btn{
-  padding:13px 20px;border:none;background:transparent;color:var(--muted);
-  font-family:'Source Sans 3',sans-serif;font-size:13px;font-weight:600;cursor:pointer;
-  border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;
+.level-btn{
+flex:1;padding:14px 8px;border:none;background:transparent;
+color:var(–muted);font-family:‘Source Sans 3’,sans-serif;
+font-size:12px;font-weight:700;cursor:pointer;letter-spacing:1px;
+text-transform:uppercase;transition:all .2s;
+border-bottom:3px solid transparent;position:relative;
 }
-.nav-btn:hover{color:var(--cream);}
-.nav-btn.active{color:var(--gold);border-bottom-color:var(--gold);}
+.level-btn.active-l1{color:#c8a040;border-bottom-color:#c8a040;background:rgba(200,160,64,.06);}
+.level-btn.active-l2{color:#e08040;border-bottom-color:#e08040;background:rgba(224,128,64,.06);}
+.level-btn.active-ref{color:#80b0e0;border-bottom-color:#80b0e0;background:rgba(128,176,224,.06);}
+.level-btn:hover:not(.active-l1):not(.active-l2):not(.active-ref){color:var(–cream);background:rgba(255,255,255,.03);}
+.level-dot{display:block;font-size:9px;letter-spacing:0;text-transform:none;font-weight:400;opacity:.6;margin-top:2px;}
+
+/* ── SUB NAV ── */
+.sub-nav{
+display:none;background:#0e0b18;
+border-bottom:1px solid var(–border);
+padding:0 20px;overflow-x:auto;
+}
+.sub-nav.visible{display:flex;}
+.sub-btn{
+padding:10px 16px;border:none;background:transparent;color:var(–muted);
+font-family:‘Source Sans 3’,sans-serif;font-size:12px;font-weight:600;
+cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;
+}
+.sub-btn:hover{color:var(–cream);}
+.sub-btn.active{color:var(–gold);border-bottom-color:var(–gold);}
+.sub-btn.active-l2{color:#e08040;border-bottom-color:#e08040;}
+.sub-btn.active-ref{color:#80b0e0;border-bottom-color:#80b0e0;}
 
 /* ── LAYOUT ── */
 .content{padding:28px;max-width:1140px;}
 .panel{display:none;} .panel.active{display:block;}
 .sec-title{font-size:10px;letter-spacing:3px;text-transform:uppercase;
-  color:var(--gold);font-weight:600;margin-bottom:20px;}
+color:var(–gold);font-weight:600;margin-bottom:20px;}
 
 /* ── TOOLBAR ── */
 .toolbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:20px;}
 .filter-row{display:flex;gap:6px;flex-wrap:wrap;}
 .f-btn{
-  padding:6px 16px;border-radius:100px;border:1px solid var(--border);
-  background:transparent;color:var(--cream);font-size:12px;font-weight:600;
-  cursor:pointer;transition:all .2s;font-family:'Source Sans 3',sans-serif;
+padding:6px 16px;border-radius:100px;border:1px solid var(–border);
+background:transparent;color:var(–cream);font-size:12px;font-weight:600;
+cursor:pointer;transition:all .2s;font-family:‘Source Sans 3’,sans-serif;
 }
-.f-btn:hover{border-color:var(--gold);color:var(--gold);}
-.f-btn.fa{background:var(--accent);border-color:var(--accent);color:#fff;}
-.f-btn.fr{background:var(--red);border-color:var(--red);color:#fff;}
-.f-btn.fw{background:var(--whi);border-color:var(--whi);color:#fff;}
+.f-btn:hover{border-color:var(–gold);color:var(–gold);}
+.f-btn.fa{background:var(–accent);border-color:var(–accent);color:#fff;}
+.f-btn.fr{background:var(–red);border-color:var(–red);color:#fff;}
+.f-btn.fw{background:var(–whi);border-color:var(–whi);color:#fff;}
 .view-tog{display:flex;gap:5px;}
 .v-btn{
-  padding:6px 12px;border-radius:7px;border:1px solid var(--border);
-  background:transparent;color:var(--muted);cursor:pointer;font-size:12px;
-  transition:all .2s;font-family:'Source Sans 3',sans-serif;
+padding:6px 12px;border-radius:7px;border:1px solid var(–border);
+background:transparent;color:var(–muted);cursor:pointer;font-size:12px;
+transition:all .2s;font-family:‘Source Sans 3’,sans-serif;
 }
-.v-btn.active{background:var(--card);border-color:var(--accent);color:var(--white);}
-.v-btn:hover{border-color:var(--accent);color:var(--white);}
+.v-btn.active{background:var(–card);border-color:var(–accent);color:var(–white);}
+.v-btn:hover{border-color:var(–accent);color:var(–white);}
 
 /* ── TABLE ── */
 .tbl{width:100%;border-collapse:collapse;margin-bottom:40px;}
-.tbl thead tr{background:var(--bg2);border-bottom:2px solid var(--border);}
-.tbl thead th{padding:12px 16px;text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:600;}
+.tbl thead tr{background:var(–bg2);border-bottom:2px solid var(–border);}
+.tbl thead th{padding:12px 16px;text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(–muted);font-weight:600;}
 .tbl tbody tr{border-bottom:1px solid rgba(46,34,68,.5);transition:background .15s;cursor:default;}
 .tbl tbody tr:hover{background:rgba(112,64,192,.07);}
 .tbl tbody tr.hidden{display:none;}
 .tbl td{padding:14px 16px;font-size:13px;vertical-align:top;}
-.vname{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);}
-.valt{font-size:11px;color:var(--muted);margin-top:2px;}
+.vname{font-family:‘Playfair Display’,serif;font-size:16px;font-weight:700;color:var(–white);}
+.valt{font-size:11px;color:var(–muted);margin-top:2px;}
 .badge{display:inline-block;padding:2px 9px;border-radius:100px;font-size:10px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;}
-.br{background:rgba(160,32,48,.3);color:var(--red-l);border:1px solid rgba(160,32,48,.4);}
-.bw{background:rgba(144,112,16,.25);color:var(--whi-l);border:1px solid rgba(144,112,16,.4);}
-.atag{display:inline-block;margin:2px 2px 2px 0;padding:2px 7px;border-radius:4px;font-size:11px;background:rgba(255,255,255,.05);color:var(--cream);border:1px solid rgba(255,255,255,.1);}
-.tbadge{display:inline-block;padding:4px 9px;border-radius:6px;font-size:12px;font-weight:600;background:rgba(200,160,64,.12);color:var(--gold);border:1px solid rgba(200,160,64,.25);}
-.regions{font-size:12px;color:var(--cream);line-height:1.8;}
+.br{background:rgba(160,32,48,.3);color:var(–red-l);border:1px solid rgba(160,32,48,.4);}
+.bw{background:rgba(144,112,16,.25);color:var(–whi-l);border:1px solid rgba(144,112,16,.4);}
+.atag{display:inline-block;margin:2px 2px 2px 0;padding:2px 7px;border-radius:4px;font-size:11px;background:rgba(255,255,255,.05);color:var(–cream);border:1px solid rgba(255,255,255,.1);}
+.tbadge{display:inline-block;padding:4px 9px;border-radius:6px;font-size:12px;font-weight:600;background:rgba(200,160,64,.12);color:var(–gold);border:1px solid rgba(200,160,64,.25);}
+.regions{font-size:12px;color:var(–cream);line-height:1.8;}
 
 /* ── CARDS ── */
 .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-bottom:40px;}
-.grape-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;transition:all .2s;}
-.grape-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.3);}
+.grape-card{background:var(–card);border:1px solid var(–border);border-radius:12px;padding:18px;transition:all .2s;}
+.grape-card:hover{border-color:var(–accent);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.3);}
 .grape-card.hidden{display:none;}
 .card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;}
-.cname{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;}
-.calt{font-size:11px;color:var(--muted);margin-top:2px;}
-.clabel{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;font-weight:600;}
+.cname{font-family:‘Playfair Display’,serif;font-size:18px;font-weight:700;}
+.calt{font-size:11px;color:var(–muted);margin-top:2px;}
+.clabel{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(–muted);margin-bottom:5px;font-weight:600;}
 .ctags{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:10px;}
-.ctag{padding:2px 8px;border-radius:4px;font-size:11px;background:rgba(255,255,255,.05);color:var(--cream);border:1px solid rgba(255,255,255,.1);}
+.ctag{padding:2px 8px;border-radius:4px;font-size:11px;background:rgba(255,255,255,.05);color:var(–cream);border:1px solid rgba(255,255,255,.1);}
 .ctag-r{background:rgba(160,32,48,.18);border-color:rgba(224,96,112,.25);color:#e08090;}
 .ctag-w{background:rgba(144,112,16,.18);border-color:rgba(212,176,64,.25);color:#d4c070;}
-.cregs{font-size:12px;color:var(--cream);line-height:1.7;}
+.cregs{font-size:12px;color:var(–cream);line-height:1.7;}
 
 /* ── FOOD PAIRING ── */
 .pair-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin-bottom:40px;}
-.pair-card{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:14px;}
-.pair-wine{font-family:'Playfair Display',serif;font-size:14px;color:var(--white);margin-bottom:6px;}
-.pair-foods{font-size:12px;color:var(--cream);line-height:1.7;}
+.pair-card{background:var(–card);border:1px solid var(–border);border-radius:9px;padding:14px;}
+.pair-wine{font-family:‘Playfair Display’,serif;font-size:14px;color:var(–white);margin-bottom:6px;}
+.pair-foods{font-size:12px;color:var(–cream);line-height:1.7;}
 
 /* ── FLOW (winemaking) ── */
-.tab-bar2{display:flex;gap:0;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:24px;flex-wrap:wrap;}
-.tb2{padding:10px 20px;border:none;background:transparent;color:var(--muted);font-family:'Source Sans 3',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap;}
-.tb2.active{background:var(--accent);color:#fff;}
-.tb2:hover:not(.active){color:var(--cream);}
+.tab-bar2{display:flex;gap:0;background:rgba(255,255,255,.03);border:1px solid var(–border);border-radius:10px;overflow:hidden;margin-bottom:24px;flex-wrap:wrap;}
+.tb2{padding:10px 20px;border:none;background:transparent;color:var(–muted);font-family:‘Source Sans 3’,sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap;}
+.tb2.active{background:var(–accent);color:#fff;}
+.tb2:hover:not(.active){color:var(–cream);}
 .sub-panel{display:none;} .sub-panel.active{display:block;}
 .flow{display:flex;flex-direction:column;gap:0;}
 .fstep{display:flex;align-items:stretch;gap:0;}
 .fline{display:flex;flex-direction:column;align-items:center;width:44px;flex-shrink:0;}
-.fdot{width:18px;height:18px;border-radius:50%;border:2px solid var(--gold);background:var(--bg);flex-shrink:0;margin-top:18px;z-index:1;transition:all .2s;}
-.fstep:hover .fdot{background:var(--gold);transform:scale(1.2);}
-.fconn{width:2px;flex:1;background:var(--border);}
+.fdot{width:18px;height:18px;border-radius:50%;border:2px solid var(–gold);background:var(–bg);flex-shrink:0;margin-top:18px;z-index:1;transition:all .2s;}
+.fstep:hover .fdot{background:var(–gold);transform:scale(1.2);}
+.fconn{width:2px;flex:1;background:var(–border);}
 .fstep:last-child .fconn{display:none;}
 .fbody{flex:1;padding:14px 0 20px 14px;}
-.fcard{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:16px 18px;transition:all .2s;}
-.fstep:hover .fcard{border-color:var(--accent);box-shadow:0 4px 20px rgba(112,64,192,.1);}
+.fcard{background:var(–card);border:1px solid var(–border);border-radius:9px;padding:16px 18px;transition:all .2s;}
+.fstep:hover .fcard{border-color:var(–accent);box-shadow:0 4px 20px rgba(112,64,192,.1);}
 .fhead{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:6px;margin-bottom:8px;}
-.fnum{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:600;}
-.fname{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);}
+.fnum{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(–muted);font-weight:600;}
+.fname{font-family:‘Playfair Display’,serif;font-size:17px;font-weight:700;color:var(–white);}
 .fbadge{font-size:10px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;padding:2px 8px;border-radius:100px;}
-.fb-r{background:rgba(160,32,48,.3);color:var(--red-l);border:1px solid rgba(160,32,48,.4);}
-.fb-w{background:rgba(144,112,16,.25);color:var(--whi-l);border:1px solid rgba(144,112,16,.35);}
-.fb-b{background:rgba(32,112,64,.25);color:var(--grn-l);border:1px solid rgba(32,112,64,.4);}
-.fb-s{background:rgba(32,64,128,.3);color:var(--blu-l);border:1px solid rgba(32,64,128,.4);}
-.fdesc{font-size:13px;color:var(--cream);line-height:1.7;}
-.fnote{margin-top:9px;padding:9px 12px;background:rgba(200,160,64,.06);border-left:2px solid var(--gold);border-radius:0 6px 6px 0;font-size:12px;color:var(--cream);opacity:.85;}
+.fb-r{background:rgba(160,32,48,.3);color:var(–red-l);border:1px solid rgba(160,32,48,.4);}
+.fb-w{background:rgba(144,112,16,.25);color:var(–whi-l);border:1px solid rgba(144,112,16,.35);}
+.fb-b{background:rgba(32,112,64,.25);color:var(–grn-l);border:1px solid rgba(32,112,64,.4);}
+.fb-s{background:rgba(32,64,128,.3);color:var(–blu-l);border:1px solid rgba(32,64,128,.4);}
+.fdesc{font-size:13px;color:var(–cream);line-height:1.7;}
+.fnote{margin-top:9px;padding:9px 12px;background:rgba(200,160,64,.06);border-left:2px solid var(–gold);border-radius:0 6px 6px 0;font-size:12px;color:var(–cream);opacity:.85;}
 
 /* ── COMPARE TABLE ── */
 .ctbl{width:100%;border-collapse:collapse;}
-.ctbl thead tr{background:var(--bg2);border-bottom:2px solid var(--border);}
-.ctbl thead th{padding:12px 16px;text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:600;}
+.ctbl thead tr{background:var(–bg2);border-bottom:2px solid var(–border);}
+.ctbl thead th{padding:12px 16px;text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(–muted);font-weight:600;}
 .ctbl tbody tr{border-bottom:1px solid rgba(46,34,68,.5);transition:background .15s;}
 .ctbl tbody tr:hover{background:rgba(112,64,192,.06);}
-.ctbl td{padding:13px 16px;font-size:13px;color:var(--cream);vertical-align:top;}
-.ctbl td:first-child{font-family:'Playfair Display',serif;font-size:14px;color:var(--white);font-weight:700;}
+.ctbl td{padding:13px 16px;font-size:13px;color:var(–cream);vertical-align:top;}
+.ctbl td:first-child{font-family:‘Playfair Display’,serif;font-size:14px;color:var(–white);font-weight:700;}
 
 /* ── SAT GRID ── */
 .sat-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:40px;}
 @media(max-width:680px){.sat-grid{grid-template-columns:1fr;}}
-.sat-phase{border-radius:12px;overflow:hidden;border:1px solid var(--border);transition:transform .2s,box-shadow .2s;}
+.sat-phase{border-radius:12px;overflow:hidden;border:1px solid var(–border);transition:transform .2s,box-shadow .2s;}
 .sat-phase:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,.4);}
 .ph-header{padding:16px 20px;display:flex;align-items:center;gap:12px;}
-.ph-num{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:17px;font-weight:900;color:#fff;flex-shrink:0;}
+.ph-num{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:‘Playfair Display’,serif;font-size:17px;font-weight:900;color:#fff;flex-shrink:0;}
 .ph-lbl{font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:.7;font-weight:600;}
-.ph-ttl{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;line-height:1.2;}
-.ph-body{padding:0 20px 18px;background:var(--card);}
+.ph-ttl{font-family:‘Playfair Display’,serif;font-size:20px;font-weight:700;line-height:1.2;}
+.ph-body{padding:0 20px 18px;background:var(–card);}
 .crit-list{list-style:none;}
 .crit{padding:11px 0;border-bottom:1px solid rgba(46,34,68,.7);display:flex;gap:10px;align-items:flex-start;}
 .crit:last-child{border-bottom:none;}
 .ci{font-size:17px;flex-shrink:0;margin-top:1px;}
-.cn{font-size:12px;font-weight:600;color:var(--white);margin-bottom:3px;}
-.cd{font-size:11px;color:var(--cream);opacity:.8;line-height:1.5;}
+.cn{font-size:12px;font-weight:600;color:var(–white);margin-bottom:3px;}
+.cd{font-size:11px;color:var(–cream);opacity:.8;line-height:1.5;}
 .copts{display:flex;flex-wrap:wrap;gap:3px;margin-top:5px;}
-.copt{font-size:10px;padding:2px 6px;border-radius:3px;background:rgba(255,255,255,.06);color:var(--cream);border:1px solid rgba(255,255,255,.1);}
+.copt{font-size:10px;padding:2px 6px;border-radius:3px;background:rgba(255,255,255,.06);color:var(–cream);border:1px solid rgba(255,255,255,.1);}
 .p1 .ph-header{background:linear-gradient(135deg,rgba(192,40,64,.25),rgba(192,40,64,.08));}
 .p1 .ph-num{background:#a02040;}
 .p1 .ph-ttl{color:#e07888;}
@@ -191,72 +255,103 @@ header h1 span{color:var(--gold);}
 .p4 .ph-ttl{color:#d4a840;}
 
 /* ── SAT QUICK REF ── */
-.qr-box{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:22px;margin-bottom:40px;}
-.qr-box h3{font-family:'Playfair Display',serif;font-size:15px;color:var(--gold);margin-bottom:14px;}
+.qr-box{background:var(–bg2);border:1px solid var(–border);border-radius:12px;padding:22px;margin-bottom:40px;}
+.qr-box h3{font-family:‘Playfair Display’,serif;font-size:15px;color:var(–gold);margin-bottom:14px;}
 .qr-row{display:flex;gap:8px;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(46,34,68,.5);flex-wrap:wrap;}
 .qr-row:last-child{border-bottom:none;}
 .qr-ph{width:80px;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;flex-shrink:0;padding-top:4px;}
 .qr-items{display:flex;flex-wrap:wrap;gap:5px;}
-.qi{font-size:11px;padding:3px 8px;border-radius:4px;background:rgba(255,255,255,.05);color:var(--cream);border:1px solid rgba(255,255,255,.1);}
+.qi{font-size:11px;padding:3px 8px;border-radius:4px;background:rgba(255,255,255,.05);color:var(–cream);border:1px solid rgba(255,255,255,.1);}
 .c1{color:#e07888;} .c2{color:#70a8e0;} .c3{color:#60c880;} .c4{color:#d4a840;}
 
 /* ── STORAGE ── */
 .stor-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-bottom:36px;}
-.stor-card{background:var(--card);border:1px solid var(--border);border-radius:11px;padding:18px;}
-.stor-card:hover{border-color:var(--accent);}
+.stor-card{background:var(–card);border:1px solid var(–border);border-radius:11px;padding:18px;}
+.stor-card:hover{border-color:var(–accent);}
 .stor-icon{font-size:28px;margin-bottom:10px;}
-.stor-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.stor-title{font-family:‘Playfair Display’,serif;font-size:17px;font-weight:700;color:var(–white);margin-bottom:8px;}
 .stor-row{display:flex;justify-content:space-between;align-items:flex-start;padding:7px 0;border-bottom:1px solid rgba(46,34,68,.5);font-size:12px;}
 .stor-row:last-child{border-bottom:none;}
-.stor-row .lbl{color:var(--muted);font-weight:600;}
-.stor-row .val{color:var(--cream);text-align:right;max-width:60%;}
+.stor-row .lbl{color:var(–muted);font-weight:600;}
+.stor-row .val{color:var(–cream);text-align:right;max-width:60%;}
 .temp-tbl{width:100%;border-collapse:collapse;margin-bottom:40px;}
-.temp-tbl thead tr{background:var(--bg2);border-bottom:2px solid var(--border);}
-.temp-tbl thead th{padding:11px 15px;text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:600;}
+.temp-tbl thead tr{background:var(–bg2);border-bottom:2px solid var(–border);}
+.temp-tbl thead th{padding:11px 15px;text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(–muted);font-weight:600;}
 .temp-tbl tbody tr{border-bottom:1px solid rgba(46,34,68,.4);transition:background .15s;}
 .temp-tbl tbody tr:hover{background:rgba(112,64,192,.06);}
-.temp-tbl td{padding:12px 15px;font-size:13px;color:var(--cream);vertical-align:middle;}
-.temp-tbl td:first-child{font-family:'Playfair Display',serif;font-size:14px;color:var(--white);font-weight:700;}
+.temp-tbl td{padding:12px 15px;font-size:13px;color:var(–cream);vertical-align:middle;}
+.temp-tbl td:first-child{font-family:‘Playfair Display’,serif;font-size:14px;color:var(–white);font-weight:700;}
 .temp-bar-wrap{display:flex;align-items:center;gap:10px;}
-.temp-bar{height:8px;border-radius:100px;background:var(--border);flex:1;overflow:hidden;}
-.temp-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--blu-l),var(--gold),var(--red-l));}
+.temp-bar{height:8px;border-radius:100px;background:var(–border);flex:1;overflow:hidden;}
+.temp-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(–blu-l),var(–gold),var(–red-l));}
 
 /* ── DIVIDER ── */
-hr.div{border:none;border-top:1px solid var(--border);margin:32px 0;}
+hr.div{border:none;border-top:1px solid var(–border);margin:32px 0;}
 
 /* ── FOOTER ── */
-footer{padding:22px 28px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:12px;background:var(--bg2);}
-footer span{color:var(--gold);}
+footer{padding:22px 28px;border-top:1px solid var(–border);text-align:center;color:var(–muted);font-size:12px;background:var(–bg2);}
+footer span{color:var(–gold);}
 
 @media(max-width:600px){
-  .content{padding:16px;}
-  .tbl thead{display:none;}
-  .tbl td{display:block;padding:5px 12px;}
-  .tbl tr{display:block;border:1px solid var(--border);border-radius:8px;margin-bottom:10px;}
+.content{padding:16px;}
+.tbl thead{display:none;}
+.tbl td{display:block;padding:5px 12px;}
+.tbl tr{display:block;border:1px solid var(–border);border-radius:8px;margin-bottom:10px;}
 }
 </style>
+
 </head>
 <body>
 
 <header>
   <div class="h-top">
     <div>
-      <div class="h-tag" data-ru="WSET Level 1 · Полный справочник" data-en="WSET Level 1 · Complete Study Guide">WSET Level 1 · Полный справочник</div>
+      <div class="h-tag" data-ru="WSET · Полный справочник" data-en="WSET · Complete Study Guide">WSET · Полный справочник</div>
       <h1 data-ru="Справочник <span>виноделия</span>" data-en="Wine <span>Study Guide</span>">Справочник <span>виноделия</span></h1>
-      <div class="h-sub" data-ru="4 темы · Сорта · Виноделие · Дегустация SAT · Хранение и подача" data-en="4 topics · Grapes · Winemaking · SAT Tasting · Storage & Serving">4 темы · Сорта · Виноделие · Дегустация SAT · Хранение и подача</div>
     </div>
     <div class="lang-btn">
-      <button class="lang-opt active" onclick="setLang('ru',this)">🇷🇺 RU</button>
-      <button class="lang-opt" onclick="setLang('en',this)">🇬🇧 EN</button>
+      <button class="lang-opt" onclick="setLang('ru',this)">RU</button>
+      <button class="lang-opt active" onclick="setLang('en',this)">EN</button>
     </div>
   </div>
 </header>
 
-<div class="nav">
-  <button class="nav-btn active" onclick="openPanel('grapes',this)"><span data-ru="🍇 Сорта" data-en="🍇 Grapes">🍇 Сорта</span></button>
-  <button class="nav-btn" onclick="openPanel('winemaking',this)"><span data-ru="🏭 Виноделие" data-en="🏭 Winemaking">🏭 Виноделие</span></button>
-  <button class="nav-btn" onclick="openPanel('sat',this)"><span data-ru="👃 Дегустация SAT" data-en="👃 SAT Tasting">👃 Дегустация SAT</span></button>
-  <button class="nav-btn" onclick="openPanel('storage',this)"><span data-ru="🌡️ Хранение и подача" data-en="🌡️ Storage & Serving">🌡️ Хранение и подача</span></button>
+<!-- LEVEL NAV -->
+
+<div class="level-nav">
+  <button class="level-btn active-l1" onclick="setLevel('l1',this)">
+    Level 1
+    <span class="level-dot" data-ru="Основы" data-en="Basics">Основы</span>
+  </button>
+  <button class="level-btn" onclick="setLevel('l2',this)">
+    Level 2
+    <span class="level-dot" data-ru="Терруар и регионы" data-en="Terroir & Regions">Терруар и регионы</span>
+  </button>
+  <button class="level-btn" onclick="setLevel('ref',this)">
+    <span data-ru="Справочник" data-en="Reference">Справочник</span>
+    <span class="level-dot" data-ru="Общий" data-en="General">Общий</span>
+  </button>
+</div>
+
+<!-- SUB NAV L1 -->
+
+<div class="sub-nav visible" id="subnav-l1">
+  <button class="sub-btn active" onclick="openPanel('grapes',this,'l1')"><span data-ru="🍇 Сорта" data-en="🍇 Grapes">🍇 Сорта</span></button>
+  <button class="sub-btn" onclick="openPanel('winemaking',this,'l1')"><span data-ru="🏭 Виноделие" data-en="🏭 Winemaking">🏭 Виноделие</span></button>
+  <button class="sub-btn" onclick="openPanel('sat',this,'l1')"><span data-ru="👃 Дегустация SAT" data-en="👃 SAT Tasting">👃 Дегустация SAT</span></button>
+  <button class="sub-btn" onclick="openPanel('storage',this,'l1')"><span data-ru="🌡️ Хранение и подача" data-en="🌡️ Storage & Serving">🌡️ Хранение и подача</span></button>
+</div>
+
+<!-- SUB NAV L2 -->
+
+<div class="sub-nav" id="subnav-l2">
+  <button class="sub-btn active-l2" onclick="openPanel('l2terroir',this,'l2')"><span data-ru="🌍 Терруар и климат" data-en="🌍 Terroir & Climate">🌍 Терруар и климат</span></button>
+</div>
+
+<!-- SUB NAV REF (placeholder) -->
+
+<div class="sub-nav" id="subnav-ref">
+  <button class="sub-btn active-ref" onclick="openPanel('ref',this,'ref')"><span data-ru="📖 Глоссарий" data-en="📖 Glossary">📖 Глоссарий</span></button>
 </div>
 
 <div class="content">
@@ -264,6 +359,7 @@ footer span{color:var(--gold);}
 <!-- ═══════════════════════════════════════════════
      PANEL 1: GRAPES
 ═══════════════════════════════════════════════ -->
+
 <div class="panel active" id="panel-grapes">
 
   <div class="toolbar">
@@ -282,6 +378,7 @@ footer span{color:var(--gold);}
   </div>
 
   <!-- TABLE VIEW -->
+
   <div id="grapeTable">
   <table class="tbl">
     <thead><tr>
@@ -362,6 +459,7 @@ footer span{color:var(--gold);}
   </div>
 
   <!-- CARDS VIEW -->
+
   <div id="grapeCards" style="display:none">
   <div class="cards-grid">
     <div class="grape-card" data-type="white"><div class="card-top"><div><div class="cname">Chardonnay</div><div class="calt" data-ru="Шардоне" data-en="Chardonnay">Шардоне</div></div><span class="badge bw" data-ru="Белое" data-en="White">Белое</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">АРОМАТЫ</div><div class="ctags"><span class="ctag ctag-w">🍋 <span data-ru="лимон" data-en="lemon">лимон</span></span><span class="ctag ctag-w">🍎 <span data-ru="яблоко" data-en="apple">яблоко</span></span><span class="ctag ctag-w">🧈 <span data-ru="масло" data-en="butter">масло</span></span><span class="ctag ctag-w">🍞 <span data-ru="тост" data-en="toast">тост</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">РЕГИОНЫ</div><div class="cregs">🇫🇷 <span data-ru="Бургундия" data-en="Burgundy">Бургундия</span> · 🇦🇺 <span data-ru="Австралия" data-en="Australia">Австралия</span> · 🇺🇸 <span data-ru="Калифорния" data-en="California">Калифорния</span></div><div style="margin-top:10px"><span class="tbadge">8–10°C</span></div></div>
@@ -392,6 +490,7 @@ footer span{color:var(--gold);}
 <!-- ═══════════════════════════════════════════════
      PANEL 2: WINEMAKING
 ═══════════════════════════════════════════════ -->
+
 <div class="panel" id="panel-winemaking">
   <div class="sec-title" data-ru="ПРОЦЕСС ВИНОДЕЛИЯ" data-en="WINEMAKING PROCESS">ПРОЦЕСС ВИНОДЕЛИЯ</div>
   <div class="tab-bar2">
@@ -457,6 +556,7 @@ footer span{color:var(--gold);}
 <!-- ═══════════════════════════════════════════════
      PANEL 3: SAT
 ═══════════════════════════════════════════════ -->
+
 <div class="panel" id="panel-sat">
   <div class="sec-title" data-ru="СИСТЕМАТИЧЕСКИЙ ПОДХОД К ДЕГУСТАЦИИ (SAT)" data-en="SYSTEMATIC APPROACH TO TASTING (SAT)">СИСТЕМАТИЧЕСКИЙ ПОДХОД К ДЕГУСТАЦИИ (SAT)</div>
 
@@ -509,6 +609,7 @@ footer span{color:var(--gold);}
 <!-- ═══════════════════════════════════════════════
      PANEL 4: STORAGE & SERVING
 ═══════════════════════════════════════════════ -->
+
 <div class="panel" id="panel-storage">
   <div class="sec-title" data-ru="ХРАНЕНИЕ И ПОДАЧА" data-en="STORAGE & SERVING">ХРАНЕНИЕ И ПОДАЧА</div>
 
@@ -583,12 +684,216 @@ footer span{color:var(--gold);}
   </div>
 </div>
 
+<!-- ═══════════════════════════════════════════════
+     PANEL 5: LEVEL 2 — TERROIR & CLIMATE
+═══════════════════════════════════════════════ -->
+
+<div class="panel" id="panel-l2terroir">
+  <div style="display:flex;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:8px;">
+    <div class="l2-title" style="margin-bottom:0">LEVEL 2 · МОДУЛЬ 1</div>
+    <span class="l2-badge" data-ru="Факторы качества" data-en="Quality Factors">Факторы качества</span>
+  </div>
+
+  <!-- CLIMATE TYPES -->
+
+  <div class="l2-title" data-ru="🌤️ ТИПЫ КЛИМАТА" data-en="🌤️ CLIMATE TYPES">🌤️ ТИПЫ КЛИМАТА</div>
+  <div class="factor-grid">
+    <div class="factor-card">
+      <div class="fc-header" style="background:linear-gradient(135deg,rgba(32,64,160,.25),rgba(32,64,160,.08))">
+        <div class="fc-icon">❄️</div>
+        <div><div class="fc-title" data-ru="Прохладный климат" data-en="Cool Climate">Прохладный климат</div><div class="fc-sub" data-ru="Cool Climate" data-en="Cool Climate">Cool Climate</div></div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Примеры</span><span class="fc-val" data-ru="Германия, Шампань, Новая Зеландия" data-en="Germany, Champagne, New Zealand">Германия, Шампань, Новая Зеландия</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Кислотность" data-en="Acidity">Кислотность</span><span class="fc-val" data-ru="⬆️ Высокая" data-en="⬆️ High">⬆️ Высокая</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Алкоголь" data-en="Alcohol">Алкоголь</span><span class="fc-val" data-ru="⬇️ Низкий" data-en="⬇️ Low">⬇️ Низкий</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Сахар" data-en="Sugar">Сахар</span><span class="fc-val" data-ru="⬇️ Меньше" data-en="⬇️ Less">⬇️ Меньше</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Ароматы" data-en="Aromas">Ароматы</span><span class="fc-val" data-ru="Цветочные, зелёные фрукты, цитрус" data-en="Floral, green fruit, citrus">Цветочные, зелёные фрукты, цитрус</span></div>
+        <div class="fc-note" data-ru="💡 Длинный вегетационный сезон → виноград медленно зреет → больше ароматической сложности" data-en="💡 Long growing season → grapes ripen slowly → more aromatic complexity">💡 Длинный вегетационный сезон → виноград медленно зреет → больше ароматической сложности</div>
+      </div>
+    </div>
+    <div class="factor-card">
+      <div class="fc-header" style="background:linear-gradient(135deg,rgba(176,80,16,.25),rgba(176,80,16,.08))">
+        <div class="fc-icon">☀️</div>
+        <div><div class="fc-title" data-ru="Тёплый климат" data-en="Warm Climate">Тёплый климат</div><div class="fc-sub" data-ru="Warm Climate" data-en="Warm Climate">Warm Climate</div></div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Примеры</span><span class="fc-val" data-ru="Австралия, Калифорния, Южная Испания" data-en="Australia, California, S. Spain">Австралия, Калифорния, Южная Испания</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Кислотность" data-en="Acidity">Кислотность</span><span class="fc-val" data-ru="⬇️ Низкая" data-en="⬇️ Low">⬇️ Низкая</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Алкоголь" data-en="Alcohol">Алкоголь</span><span class="fc-val" data-ru="⬆️ Высокий" data-en="⬆️ High">⬆️ Высокий</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Сахар" data-en="Sugar">Сахар</span><span class="fc-val" data-ru="⬆️ Больше" data-en="⬆️ More">⬆️ Больше</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Ароматы" data-en="Aromas">Ароматы</span><span class="fc-val" data-ru="Тропические фрукты, варенье, джем" data-en="Tropical fruit, jam, ripe berry">Тропические фрукты, варенье, джем</span></div>
+        <div class="fc-note" data-ru="💡 Короткий вегетационный сезон → виноград быстро набирает сахар → жирные, насыщенные вина" data-en="💡 Short growing season → grapes ripen fast → rich, full-bodied wines">💡 Короткий вегетационный сезон → виноград быстро набирает сахар → жирные, насыщенные вина</div>
+      </div>
+    </div>
+    <div class="factor-card">
+      <div class="fc-header" style="background:linear-gradient(135deg,rgba(32,120,80,.25),rgba(32,120,80,.08))">
+        <div class="fc-icon">🌊</div>
+        <div><div class="fc-title" data-ru="Морской климат" data-en="Maritime Climate">Морской климат</div><div class="fc-sub" data-ru="Maritime" data-en="Maritime">Maritime</div></div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Примеры</span><span class="fc-val" data-ru="Бордо, Бургундия, Новая Зеландия" data-en="Bordeaux, Burgundy, New Zealand">Бордо, Бургундия, Новая Зеландия</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Характеристика" data-en="Feature">Характеристика</span><span class="fc-val" data-ru="Влажное, мягкие зимы, прохладное лето" data-en="Wet, mild winters, cool summers">Влажное, мягкие зимы, прохладное лето</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Риск" data-en="Risk">Риск</span><span class="fc-val" data-ru="Дожди во время сбора урожая" data-en="Rain during harvest">Дожди во время сбора урожая</span></div>
+        <div class="fc-note" data-ru="🌧️ Близость океана смягчает температуры — нет экстремальных жары и морозов" data-en="🌧️ Ocean proximity moderates temperatures — no extreme heat or frost">🌧️ Близость океана смягчает температуры — нет экстремальных жары и морозов</div>
+      </div>
+    </div>
+    <div class="factor-card">
+      <div class="fc-header" style="background:linear-gradient(135deg,rgba(120,32,120,.25),rgba(120,32,120,.08))">
+        <div class="fc-icon">🏔️</div>
+        <div><div class="fc-title" data-ru="Континентальный климат" data-en="Continental Climate">Континентальный климат</div><div class="fc-sub" data-ru="Continental" data-en="Continental">Continental</div></div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Примеры</span><span class="fc-val" data-ru="Германия (Мозель), Бургундия" data-en="Germany (Mosel), Burgundy">Германия (Мозель), Бургундия</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Характеристика" data-en="Feature">Характеристика</span><span class="fc-val" data-ru="Холодные зимы, жаркое лето" data-en="Cold winters, hot summers">Холодные зимы, жаркое лето</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Суточный перепад" data-en="Diurnal range">Суточный перепад</span><span class="fc-val" data-ru="Большой → сохраняет кислотность" data-en="Large → preserves acidity">Большой → сохраняет кислотность</span></div>
+        <div class="fc-note" data-ru="🌡️ Большой перепад температур день/ночь сохраняет кислотность и ароматы" data-en="🌡️ Large day/night temperature difference preserves acidity and aromas">🌡️ Большой перепад температур день/ночь сохраняет кислотность и ароматы</div>
+      </div>
+    </div>
+    <div class="factor-card">
+      <div class="fc-header" style="background:linear-gradient(135deg,rgba(160,128,32,.25),rgba(160,128,32,.08))">
+        <div class="fc-icon">🫒</div>
+        <div><div class="fc-title" data-ru="Средиземноморский климат" data-en="Mediterranean Climate">Средиземноморский климат</div><div class="fc-sub" data-ru="Mediterranean" data-en="Mediterranean">Mediterranean</div></div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Примеры</span><span class="fc-val" data-ru="Тоскана, Риоха, Калифорния" data-en="Tuscany, Rioja, California">Тоскана, Риоха, Калифорния</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Характеристика" data-en="Feature">Характеристика</span><span class="fc-val" data-ru="Сухое жаркое лето, мягкая зима" data-en="Dry hot summer, mild winter">Сухое жаркое лето, мягкая зима</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Вина" data-en="Wines">Вина</span><span class="fc-val" data-ru="Зрелые, насыщенные, низкая кислотность" data-en="Ripe, full-bodied, lower acidity">Зрелые, насыщенные, низкая кислотность</span></div>
+        <div class="fc-note" data-ru="☀️ Минимальный риск дождей = стабильный урожай каждый год" data-en="☀️ Minimal rain risk = consistent harvest every year">☀️ Минимальный риск дождей = стабильный урожай каждый год</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLIMATE COMPARISON TABLE -->
+
+  <div class="l2-title" data-ru="📊 СРАВНЕНИЕ: ПРОХЛАДНЫЙ vs ТЁПЛЫЙ КЛИМАТ" data-en="📊 COOL vs WARM CLIMATE COMPARISON">📊 СРАВНЕНИЕ: ПРОХЛАДНЫЙ vs ТЁПЛЫЙ КЛИМАТ</div>
+  <table class="compare-l2">
+    <thead><tr>
+      <th data-ru="Параметр" data-en="Parameter">Параметр</th>
+      <th data-ru="❄️ Прохладный" data-en="❄️ Cool">❄️ Прохладный</th>
+      <th data-ru="☀️ Тёплый" data-en="☀️ Warm">☀️ Тёплый</th>
+    </tr></thead>
+    <tbody>
+      <tr><td data-ru="Кислотность" data-en="Acidity">Кислотность</td><td data-ru="⬆️ Высокая" data-en="⬆️ High">⬆️ Высокая</td><td data-ru="⬇️ Низкая" data-en="⬇️ Low">⬇️ Низкая</td></tr>
+      <tr><td data-ru="Сахар / Алкоголь" data-en="Sugar / Alcohol">Сахар / Алкоголь</td><td data-ru="⬇️ Низкий" data-en="⬇️ Low">⬇️ Низкий</td><td data-ru="⬆️ Высокий" data-en="⬆️ High">⬆️ Высокий</td></tr>
+      <tr><td data-ru="Ароматы" data-en="Aromas">Ароматы</td><td data-ru="Цитрус, зелёные фрукты, цветы" data-en="Citrus, green fruit, floral">Цитрус, зелёные фрукты, цветы</td><td data-ru="Тропические фрукты, джем, варенье" data-en="Tropical fruit, jam, preserves">Тропические фрукты, джем, варенье</td></tr>
+      <tr><td data-ru="Тело вина" data-en="Body">Тело вина</td><td data-ru="Лёгкое / среднее" data-en="Light / medium">Лёгкое / среднее</td><td data-ru="Среднее / полное" data-en="Medium / full">Среднее / полное</td></tr>
+      <tr><td data-ru="Риск" data-en="Risk">Риск</td><td data-ru="Недозрелость, морозы, дожди" data-en="Under-ripeness, frost, rain">Недозрелость, морозы, дожди</td><td data-ru="Перезрелость, высокий алкоголь" data-en="Over-ripeness, high alcohol">Перезрелость, высокий алкоголь</td></tr>
+      <tr><td data-ru="Примеры" data-en="Examples">Примеры</td><td data-ru="Германия, Шампань, Луара" data-en="Germany, Champagne, Loire">Германия, Шампань, Луара</td><td data-ru="Австралия, Юж. Испания, Аргентина" data-en="Australia, S. Spain, Argentina">Австралия, Юж. Испания, Аргентина</td></tr>
+    </tbody>
+  </table>
+
+  <!-- TERROIR FACTORS -->
+
+  <div class="l2-title" data-ru="🌱 ТЕРРУАР — ФАКТОРЫ ВИНОГРАДНИКА" data-en="🌱 TERROIR — VINEYARD FACTORS">🌱 ТЕРРУАР — ФАКТОРЫ ВИНОГРАДНИКА</div>
+  <div class="factor-grid">
+    <div class="factor-card">
+      <div class="fc-header" style="background:linear-gradient(135deg,rgba(96,64,32,.4),rgba(96,64,32,.1))">
+        <div class="fc-icon">🪨</div>
+        <div><div class="fc-title" data-ru="Почва" data-en="Soil">Почва</div><div class="fc-sub" data-ru="Soil Type" data-en="Soil Type">Soil Type</div></div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-row"><span class="fc-lbl" data-ru="Дренаж" data-en="Drainage">Дренаж</span><span class="fc-val" data-ru="Хороший дренаж = контролируемый стресс для лозы" data-en="Good drainage = controlled vine stress">Хороший дренаж = контролируемый стресс для лозы</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Тепло" data-en="Heat">Тепло</span><span class="fc-val" data-ru="Камни и сланец накапливают тепло днём, отдают ночью" data-en="Stones retain heat during day, release at night">Камни и сланец накапливают тепло днём, отдают ночью</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Питательные вещества" data-en="Nutrients">Питательные вещества</span><span class="fc-val" data-ru="Бедная почва → лоза углубляет корни → сложность" data-en="Poor soil → deep roots → complexity">Бедная почва → лоза углубляет корни → сложность</span></div>
+        <div class="fc-note" data-ru="💡 Стресс для лозы — это хорошо! Лоза борется за выживание → концентрирует ароматы в ягодах" data-en="💡 Vine stress is good! The vine fights to survive → concentrates aromas in berries">💡 Стресс для лозы — это хорошо! Лоза борется за выживание → концентрирует ароматы в ягодах</div>
+      </div>
+    </div>
+    <div class="factor-card">
+      <div class="fc-header" style="background:linear-gradient(135deg,rgba(32,80,160,.3),rgba(32,80,160,.08))">
+        <div class="fc-icon">🧭</div>
+        <div><div class="fc-title" data-ru="Экспозиция склона" data-en="Aspect">Экспозиция склона</div><div class="fc-sub" data-ru="Aspect & Slope" data-en="Aspect & Slope">Aspect & Slope</div></div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-row"><span class="fc-lbl" data-ru="Южный склон (сев. полушарие)" data-en="South-facing (N. hemisphere)">Южный склон (сев. полушарие)</span><span class="fc-val" data-ru="Максимум солнца → лучшее созревание" data-en="Maximum sun → better ripening">Максимум солнца → лучшее созревание</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Угол склона" data-en="Slope angle">Угол склона</span><span class="fc-val" data-ru="Крутой склон = лучший дренаж и прогрев" data-en="Steep slope = better drainage & warmth">Крутой склон = лучший дренаж и прогрев</span></div>
+        <div class="fc-note" data-ru="🍷 Мозель (Германия): крутые сланцевые склоны вдоль реки — идеальны для Riesling в холодном климате" data-en="🍷 Mosel (Germany): steep slate slopes along river — perfect for Riesling in cool climate">🍷 Мозель (Германия): крутые сланцевые склоны вдоль реки — идеальны для Riesling в холодном климате</div>
+      </div>
+    </div>
+    <div class="factor-card">
+      <div class="fc-header" style="background:linear-gradient(135deg,rgba(32,120,120,.25),rgba(32,120,120,.08))">
+        <div class="fc-icon">⛰️</div>
+        <div><div class="fc-title" data-ru="Высота над уровнем моря" data-en="Altitude">Высота над уровнем моря</div><div class="fc-sub" data-ru="Altitude" data-en="Altitude">Altitude</div></div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-row"><span class="fc-lbl" data-ru="Эффект" data-en="Effect">Эффект</span><span class="fc-val" data-ru="Каждые 100м ↑ = ~0,6°C холоднее" data-en="Every 100m ↑ = ~0.6°C cooler">Каждые 100м ↑ = ~0,6°C холоднее</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Применение" data-en="Use">Применение</span><span class="fc-val" data-ru="В тёплых регионах высота компенсирует жару" data-en="In warm regions altitude compensates heat">В тёплых регионах высота компенсирует жару</span></div>
+        <div class="fc-note" data-ru="🇦🇷 Мальбек Мендосы (Аргентина) растёт на высоте 800–1500м — благодаря этому сохраняет свежесть" data-en="🇦🇷 Mendoza Malbec (Argentina) grows at 800–1500m — this preserves freshness">🇦🷷 Мальбек Мендосы (Аргентина) растёт на высоте 800–1500м — благодаря этому сохраняет свежесть</div>
+      </div>
+    </div>
+    <div class="factor-card">
+      <div class="fc-header" style="background:linear-gradient(135deg,rgba(32,60,120,.3),rgba(32,60,120,.08))">
+        <div class="fc-icon">💧</div>
+        <div><div class="fc-title" data-ru="Вода и ирригация" data-en="Water & Irrigation">Вода и ирригация</div><div class="fc-sub" data-ru="Water Management" data-en="Water Management">Water Management</div></div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-row"><span class="fc-lbl" data-ru="Дефицит воды" data-en="Water deficit">Дефицит воды</span><span class="fc-val" data-ru="Концентрирует ягоды, усиливает вкус" data-en="Concentrates berries, intensifies flavour">Концентрирует ягоды, усиливает вкус</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Избыток воды" data-en="Excess water">Избыток воды</span><span class="fc-val" data-ru="Разбавляет ягоды → менее насыщенное вино" data-en="Dilutes berries → less concentrated wine">Разбавляет ягоды → менее насыщенное вино</span></div>
+        <div class="fc-note" data-ru="🇪🇺 В Европе ирригация во многих регионах запрещена. В Новом Свете — распространена." data-en="🇪🇺 Irrigation banned in many European regions. Common in New World.">🇪🇺 В Европе ирригация во многих регионах запрещена. В Новом Свете — распространена.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOIL TYPES -->
+
+  <div class="l2-title" data-ru="🪨 ТИПЫ ПОЧВЫ И ИХ ВЛИЯНИЕ" data-en="🪨 SOIL TYPES AND THEIR INFLUENCE">🪨 ТИПЫ ПОЧВЫ И ИХ ВЛИЯНИЕ</div>
+  <div class="soil-grid">
+    <div class="soil-card"><div class="soil-icon">🪨</div><div class="soil-name" data-ru="Сланец / Шифер" data-en="Slate / Schist">Сланец / Шифер</div><div class="soil-desc" data-ru="Накапливает тепло, отличный дренаж. Бедный питательными веществами." data-en="Retains heat, excellent drainage. Poor in nutrients.">Накапливает тепло, отличный дренаж. Бедный питательными веществами.</div><div class="soil-example">→ Мозель (Riesling), Дору (Порту)</div></div>
+    <div class="soil-card"><div class="soil-icon">🧱</div><div class="soil-name" data-ru="Известняк / Мел" data-en="Limestone / Chalk">Известняк / Мел</div><div class="soil-desc" data-ru="Хороший дренаж, удерживает влагу. Даёт высокую кислотность." data-en="Good drainage, retains moisture. Promotes high acidity.">Хороший дренаж, удерживает влагу. Даёт высокую кислотность.</div><div class="soil-example">→ Шампань, Шабли (Chardonnay), Бургундия</div></div>
+    <div class="soil-card"><div class="soil-icon">🪵</div><div class="soil-name" data-ru="Гравий" data-en="Gravel">Гравий</div><div class="soil-desc" data-ru="Отличный дренаж, хорошо прогревается. Лоза уходит вглубь за водой." data-en="Excellent drainage, warms well. Vine roots deep for water.">Отличный дренаж, хорошо прогревается. Лоза уходит вглубь за водой.</div><div class="soil-example">→ Медок (Cab Sauv), Грав (Бордо)</div></div>
+    <div class="soil-card"><div class="soil-icon">🌑</div><div class="soil-name" data-ru="Вулканическая почва" data-en="Volcanic Soil">Вулканическая почва</div><div class="soil-desc" data-ru="Пористая, богатая минералами. Даёт минеральность и дымность вину." data-en="Porous, mineral-rich. Gives minerality and smokiness.">Пористая, богатая минералами. Даёт минеральность и дымность вину.</div><div class="soil-example">→ Этна (Сицилия), Санторини (Греция)</div></div>
+    <div class="soil-card"><div class="soil-icon">🟤</div><div class="soil-name" data-ru="Глина" data-en="Clay">Глина</div><div class="soil-desc" data-ru="Удерживает воду и тепло. Подходит для красных сортов." data-en="Retains water and heat. Suits red varieties.">Удерживает воду и тепло. Подходит для красных сортов.</div><div class="soil-example">→ Помроль (Merlot), Кьянти</div></div>
+    <div class="soil-card"><div class="soil-icon">⚪</div><div class="soil-name" data-ru="Песок" data-en="Sand">Песок</div><div class="soil-desc" data-ru="Плохо удерживает воду и питательные вещества. Защищает от филлоксеры." data-en="Poor water/nutrient retention. Protects from phylloxera.">Плохо удерживает воду и питательные вещества. Защищает от филлоксеры.</div><div class="soil-example">→ Колáрес (Португалия), части Бордо</div></div>
+  </div>
+
+  <!-- VINEYARD CYCLE -->
+
+  <div class="l2-title" data-ru="🌿 ГОДОВОЙ ЦИКЛ ВИНОГРАДНИКА" data-en="🌿 ANNUAL VINEYARD CYCLE">🌿 ГОДОВОЙ ЦИКЛ ВИНОГРАДНИКА</div>
+  <div class="vine-flow">
+    <div class="vine-step"><div class="vs-month" data-ru="Зима · Дек–Фев" data-en="Winter · Dec–Feb">Зима · Дек–Фев</div><div class="vs-name">✂️ <span data-ru="Обрезка" data-en="Pruning">Обрезка</span></div><div class="vs-desc" data-ru="Удаление побегов прошлого года. Определяет количество гроздей — влияет на урожай." data-en="Remove last year's shoots. Determines grape cluster number — affects yield.">Удаление побегов прошлого года. Определяет количество гроздей — влияет на урожай.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Весна · Март–Май" data-en="Spring · Mar–May">Весна · Март–Май</div><div class="vs-name">🌱 <span data-ru="Распускание почек" data-en="Budburst">Распускание почек</span></div><div class="vs-desc" data-ru="Появляются новые побеги. Угроза заморозков — может уничтожить весь урожай." data-en="New shoots emerge. Frost risk — can destroy entire harvest.">Появляются новые побеги. Угроза заморозков — может уничтожить весь урожай.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Лето · Июнь–Авг" data-en="Summer · Jun–Aug">Лето · Июнь–Авг</div><div class="vs-name">🌸 <span data-ru="Цветение → Завязь" data-en="Flowering → Set">Цветение → Завязь</span></div><div class="vs-desc" data-ru="Цветение → опыление → формирование ягод. Дождь во время цветения = меньше урожая." data-en="Flowering → pollination → berry formation. Rain during flowering = smaller yield.">Цветение → опыление → формирование ягод. Дождь во время цветения = меньше урожая.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Авг–Сент" data-en="Aug–Sept">Авг–Сент</div><div class="vs-name">🍇 <span data-ru="Véraison — смена цвета" data-en="Véraison — colour change">Véraison</span></div><div class="vs-desc" data-ru="Ягоды меняют цвет (красные) или становятся прозрачными (белые). Начинается накопление сахара." data-en="Berries change colour (red) or become translucent (white). Sugar accumulation begins.">Ягоды меняют цвет (красные) или становятся прозрачными (белые). Начинается накопление сахара.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Сентябрь–Октябрь" data-en="September–October">Сентябрь–Октябрь</div><div class="vs-name">🌾 <span data-ru="Сбор урожая" data-en="Harvest">Сбор урожая</span></div><div class="vs-desc" data-ru="Оптимальный момент: баланс сахара и кислотности. Ручной или машинный сбор." data-en="Optimal moment: balance of sugar and acidity. Hand or machine harvest.">Оптимальный момент: баланс сахара и кислотности. Ручной или машинный сбор.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Осень · После сбора" data-en="Autumn · Post-harvest">Осень · После сбора</div><div class="vs-name">🍂 <span data-ru="Листопад → Покой" data-en="Leaf fall → Dormancy">Листопад → Покой</span></div><div class="vs-desc" data-ru="Лоза накапливает питательные вещества в корнях и древесине. Подготовка к зиме." data-en="Vine stores nutrients in roots and wood. Preparing for winter.">Лоза накапливает питательные вещества в корнях и древесине. Подготовка к зиме.</div></div>
+  </div>
+
+  <!-- WINEMAKING QUALITY FACTORS -->
+
+  <div class="l2-title" data-ru="🏭 ФАКТОРЫ КАЧЕСТВА В ВИНОДЕЛИИ" data-en="🏭 WINEMAKING QUALITY FACTORS">🏭 ФАКТОРЫ КАЧЕСТВА В ВИНОДЕЛИИ</div>
+  <table class="compare-l2">
+    <thead><tr>
+      <th data-ru="Фактор" data-en="Factor">Фактор</th>
+      <th data-ru="Влияние на вино" data-en="Effect on wine">Влияние на вино</th>
+      <th data-ru="Пример" data-en="Example">Пример</th>
+    </tr></thead>
+    <tbody>
+      <tr><td data-ru="🌡️ Температура ферментации" data-en="🌡️ Fermentation temp">🌡️ Температура ферментации</td><td data-ru="Низкая → свежесть и аромат. Высокая → экстракция цвета и танинов" data-en="Low → freshness & aroma. High → colour & tannin extraction">Низкая → свежесть и аромат. Высокая → экстракция цвета и танинов</td><td data-ru="Белое: 12–18°C. Красное: 20–32°C" data-en="White: 12–18°C. Red: 20–32°C">Белое: 12–18°C. Красное: 20–32°C</td></tr>
+      <tr><td data-ru="🛢️ Дубовые бочки" data-en="🛢️ Oak barrels">🛢️ Дубовые бочки</td><td data-ru="Добавляют ваниль, специи, тост. Новые бочки = больше влияния" data-en="Add vanilla, spice, toast. New barrels = more influence">Добавляют ваниль, специи, тост. Новые бочки = больше влияния</td><td data-ru="Chardonnay, Cab Sauv, Rioja Reserva" data-en="Chardonnay, Cab Sauv, Rioja Reserva">Chardonnay, Cab Sauv, Rioja Reserva</td></tr>
+      <tr><td data-ru="⏱️ Время выдержки" data-en="⏱️ Ageing time">⏱️ Время выдержки</td><td data-ru="Дольше = сложность, третичные ароматы. Танины смягчаются" data-en="Longer = complexity, tertiary aromas. Tannins soften">Дольше = сложность, третичные ароматы. Танины смягчаются</td><td data-ru="Rioja Gran Reserva — мин. 5 лет" data-en="Rioja Gran Reserva — min. 5 years">Rioja Gran Reserva — мин. 5 лет</td></tr>
+      <tr><td data-ru="🧫 Тип дрожжей" data-en="🧫 Yeast type">🧫 Тип дрожжей</td><td data-ru="Культурные дрожжи — предсказуемый результат. Дикие — уникальность, риск" data-en="Cultured yeast — predictable. Wild yeast — unique, risky">Культурные дрожжи — предсказуемый результат. Дикие — уникальность, риск</td><td data-ru="Натуральные вина = дикие дрожжи" data-en="Natural wines = wild yeast">Натуральные вина = дикие дрожжи</td></tr>
+      <tr><td data-ru="✂️ Урожайность (yield)" data-en="✂️ Yield">✂️ Урожайность (yield)</td><td data-ru="Меньше гроздей = концентрированнее вкус. Больше = разбавленность" data-en="Fewer clusters = more concentrated. More = diluted">Меньше гроздей = концентрированнее вкус. Больше = разбавленность</td><td data-ru="Премиальные вина = низкий yield" data-en="Premium wines = low yield">Премиальные вина = низкий yield</td></tr>
+    </tbody>
+  </table>
+
+</div><!-- ═══════════════════════════════════════════════
+     PANEL REF: GLOSSARY (placeholder)
+═══════════════════════════════════════════════ -->
+<div class="panel" id="panel-ref">
+  <div class="l2-title" data-ru="📖 ГЛОССАРИЙ — СКОРО" data-en="📖 GLOSSARY — COMING SOON">📖 ГЛОССАРИЙ — СКОРО</div>
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:40px;text-align:center;color:var(--muted);">
+    <div style="font-size:40px;margin-bottom:16px;">📖</div>
+    <div style="font-family:'Playfair Display',serif;font-size:20px;color:var(--cream);margin-bottom:8px;" data-ru="Общий справочник в разработке" data-en="General reference coming soon">Общий справочник в разработке</div>
+    <div style="font-size:13px;" data-ru="Здесь будет глоссарий терминов, шпаргалка по экзамену и другие полезные материалы" data-en="Wine glossary, exam cheat sheet and other useful materials will be here">Здесь будет глоссарий терминов, шпаргалка по экзамену и другие полезные материалы</div>
+  </div>
+</div>
+
 </div><!-- /content -->
 
-<footer><span data-ru="WSET Level 1" data-en="WSET Level 1">WSET Level 1</span> · <span data-ru="Полный справочник · 4 темы" data-en="Complete Study Guide · 4 topics">Полный справочник · 4 темы</span></footer>
+<footer><span data-ru="WSET Level 1 & 2" data-en="WSET Level 1 & 2">WSET Level 1 & 2</span> · <span data-ru="Полный справочник · 5 разделов" data-en="Complete Study Guide · 5 sections">Полный справочник · 5 разделов</span></footer>
 
 <script>
-let currentLang = 'ru';
+let currentLang = 'en';
 
 function setLang(lang, btn) {
   currentLang = lang;
@@ -600,11 +905,49 @@ function setLang(lang, btn) {
   });
 }
 
-function openPanel(id, btn) {
+// Apply English on page load
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-ru]').forEach(el => {
+    const txt = el.getAttribute('data-en');
+    if (txt) el.innerHTML = txt;
+  });
+});
+
+function setLevel(level, btn) {
+  // Update level buttons
+  document.querySelectorAll('.level-btn').forEach(b => {
+    b.className = 'level-btn';
+  });
+  if (level === 'l1') btn.classList.add('active-l1');
+  else if (level === 'l2') btn.classList.add('active-l2');
+  else btn.classList.add('active-ref');
+
+  // Show correct sub-nav
+  document.querySelectorAll('.sub-nav').forEach(n => n.classList.remove('visible'));
+  document.getElementById('subnav-' + level).classList.add('visible');
+
+  // Activate first panel of that level
+  if (level === 'l1') openPanel('grapes', document.querySelector('#subnav-l1 .sub-btn'), 'l1');
+  else if (level === 'l2') openPanel('l2terroir', document.querySelector('#subnav-l2 .sub-btn'), 'l2');
+  else openPanel('ref', document.querySelector('#subnav-ref .sub-btn'), 'ref');
+}
+
+function openPanel(id, btn, level) {
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('panel-' + id).classList.add('active');
-  btn.classList.add('active');
+
+  // Update sub-btn active state
+  if (btn) {
+    const parentNav = btn.closest('.sub-nav');
+    if (parentNav) {
+      parentNav.querySelectorAll('.sub-btn').forEach(b => {
+        b.className = 'sub-btn';
+      });
+      if (level === 'l2') btn.classList.add('active-l2');
+      else if (level === 'ref') btn.classList.add('active-ref');
+      else btn.classList.add('active');
+    }
+  }
 }
 
 function openSub(id, btn) {
@@ -633,5 +976,6 @@ function setView(view, btn) {
   document.getElementById('grapeCards').style.display = view === 'cards' ? 'block' : 'none';
 }
 </script>
+
 </body>
 </html>
