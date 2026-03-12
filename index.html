@@ -347,6 +347,7 @@ footer span{color:var(–gold);}
 <div class="sub-nav" id="subnav-l2">
   <button class="sub-btn active-l2" onclick="openPanel('l2terroir',this,'l2')"><span data-ru="🌍 Терруар и климат" data-en="🌍 Terroir & Climate">🌍 Terroir & Climate</span></button>
   <button class="sub-btn" onclick="openPanel('l2grapes',this,'l2')"><span data-ru="🍇 Сорта L2" data-en="🍇 Grapes L2">🍇 Grapes L2</span></button>
+  <button class="sub-btn" onclick="openPanel('l2regions',this,'l2')"><span data-ru="🗺️ Регионы мира" data-en="🗺️ Wine Regions">🗺️ Wine Regions</span></button>
 </div>
 
 <!-- SUB NAV REF (placeholder) -->
@@ -1130,6 +1131,401 @@ footer span{color:var(–gold);}
 </div><!-- end l2grapes panel -->
 
 <!-- ═══════════════════════════════════════════════
+     PANEL: L2 REGIONS
+═══════════════════════════════════════════════ -->
+
+<div class="panel" id="panel-l2regions">
+  <div style="display:flex;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:8px;">
+    <div class="l2-title" style="margin-bottom:0" data-ru="LEVEL 2 · МОДУЛЬ 3" data-en="LEVEL 2 · MODULE 3">LEVEL 2 · MODULE 3</div>
+    <span class="l2-badge" data-ru="Регионы мира" data-en="Wine Regions of the World">Wine Regions of the World</span>
+  </div>
+
+  <!-- Country tabs -->
+
+  <div class="tab-bar2" style="border-color:#3a2010;">
+    <button class="tb2 active" onclick="openSub('france',this)">🇫🇷 <span data-ru="Франция" data-en="France">France</span></button>
+    <button class="tb2" onclick="openSub('italy',this)">🇮🇹 <span data-ru="Италия" data-en="Italy">Italy</span></button>
+    <button class="tb2" onclick="openSub('spain',this)">🇪🇸 <span data-ru="Испания" data-en="Spain">Spain</span></button>
+    <button class="tb2" onclick="openSub('germany',this)">🇩🇪 <span data-ru="Германия" data-en="Germany">Germany</span></button>
+    <button class="tb2" onclick="openSub('newworld',this)">🌏 <span data-ru="Новый Свет" data-en="New World">New World</span></button>
+  </div>
+
+  <!-- ── FRANCE ── -->
+
+  <div class="sub-panel active" id="sub-france">
+    <div class="l2-title" data-ru="🇫🇷 РЕГИОНЫ ФРАНЦИИ" data-en="🇫🇷 REGIONS OF FRANCE">🇫🇷 REGIONS OF FRANCE</div>
+    <div class="factor-grid">
+
+```
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(160,20,40,.22),rgba(160,20,40,.05))">
+      <div class="fc-icon">🏰</div>
+      <div><div class="fc-title">Bordeaux</div><div class="fc-sub" data-ru="Юго-Запад · Атлантический климат" data-en="SW France · Atlantic coast">SW France · Atlantic coast</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl" data-ru="Красные" data-en="Reds">Reds</span><span class="fc-val" data-ru="Cab Sauv + Merlot купаж" data-en="Cab Sauv + Merlot blend">Cab Sauv + Merlot blend</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Белые" data-en="Whites">Whites</span><span class="fc-val">Sauv Blanc + Sémillon</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Левый берег" data-en="Left Bank">Left Bank</span><span class="fc-val" data-ru="Médoc · гравий · Cab Sauv главный" data-en="Médoc · gravel · Cab Sauv dominant">Médoc · gravel · Cab Sauv dominant</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Правый берег" data-en="Right Bank">Right Bank</span><span class="fc-val" data-ru="Pomerol · St-Émilion · Merlot главный" data-en="Pomerol · St-Émilion · Merlot dominant">Pomerol · St-Émilion · Merlot dominant</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Сладкое" data-en="Sweet">Sweet</span><span class="fc-val" data-ru="Sauternes · Sémillon botrytis" data-en="Sauternes · Sémillon botrytis">Sauternes · Sémillon botrytis</span></div>
+      <div class="fc-note" data-ru="💡 Château system — крупные поместья с собственным брендом. Левый берег = Cab Sauv + гравий. Правый = Merlot + глина." data-en="💡 Château system — large estates with own brand. Left Bank = Cab Sauv + gravel. Right Bank = Merlot + clay.">💡 Left Bank = Cab Sauv + gravel. Right Bank = Merlot + clay. Always a blend — never single variety.</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(100,50,160,.22),rgba(100,50,160,.05))">
+      <div class="fc-icon">👑</div>
+      <div><div class="fc-title">Burgundy</div><div class="fc-sub" data-ru="Бургундия · Côte d'Or" data-en="E. France · Côte d'Or">E. France · Côte d'Or</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl" data-ru="Красные" data-en="Reds">Reds</span><span class="fc-val" data-ru="100% Pinot Noir · всегда моносорт" data-en="100% Pinot Noir · always single variety">100% Pinot Noir · single variety</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Белые" data-en="Whites">Whites</span><span class="fc-val" data-ru="100% Chardonnay · всегда моносорт" data-en="100% Chardonnay · always single variety">100% Chardonnay · single variety</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Иерархия" data-en="Hierarchy">Hierarchy</span><span class="fc-val">Regional → Village → 1er Cru → Grand Cru</span></div>
+      <div class="fc-row"><span class="fc-lbl">Chablis</span><span class="fc-val" data-ru="Chardonnay · сухое · минеральное · без дуба" data-en="Chardonnay · dry · mineral · no oak">Chardonnay · dry · mineral · no oak</span></div>
+      <div class="fc-row"><span class="fc-lbl">Côte de Nuits</span><span class="fc-val" data-ru="Лучший Pinot Noir мира · Gevrey-Chambertin" data-en="World's best Pinot Noir · Gevrey-Chambertin">World's best Pinot Noir · Gevrey-Chambertin</span></div>
+      <div class="fc-note" data-ru="💡 Climat = конкретный виноградник с уникальным терруаром. Тысячи climat — отсюда сложность и высокие цены." data-en="💡 Climat = individual vineyard plot with unique terroir. Thousands of climat — hence the complexity and high prices.">💡 Climat = individual vineyard with unique terroir. Thousands of plots — hence the complexity and prices.</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(200,160,20,.2),rgba(200,160,20,.05))">
+      <div class="fc-icon">🍾</div>
+      <div><div class="fc-title">Champagne</div><div class="fc-sub" data-ru="Север Франции · единственное игристое AOC" data-en="N. France · sparkling only">N. France · sparkling only</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl" data-ru="Сорта" data-en="Grapes">Grapes</span><span class="fc-val">Chardonnay · Pinot Noir · Pinot Meunier</span></div>
+      <div class="fc-row"><span class="fc-lbl">Blanc de Blancs</span><span class="fc-val" data-ru="100% Chardonnay · свежее · элегантное" data-en="100% Chardonnay · fresh · elegant">100% Chardonnay · fresh · elegant</span></div>
+      <div class="fc-row"><span class="fc-lbl">Blanc de Noirs</span><span class="fc-val" data-ru="Из красных сортов · насыщенное" data-en="From red grapes · rich · structured">From red grapes · rich · structured</span></div>
+      <div class="fc-row"><span class="fc-lbl">NV vs Vintage</span><span class="fc-val" data-ru="NV = купаж нескольких годов. Vintage = лучший год, 3+ лет" data-en="NV = blend of years. Vintage = best year, 3+ yrs">NV = blend of years. Vintage = 3+ yrs</span></div>
+      <div class="fc-note" data-ru="💡 Только игристое из региона Champagne = Champagne. Всё остальное — Crémant, Cava, Prosecco, Sekt." data-en="💡 Only sparkling wine from Champagne region = Champagne. Everything else: Crémant, Cava, Prosecco, Sekt.">💡 Only sparkling wine from the Champagne region can be called Champagne.</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(30,120,60,.2),rgba(30,120,60,.05))">
+      <div class="fc-icon">🌿</div>
+      <div><div class="fc-title">Loire Valley</div><div class="fc-sub" data-ru="Центральная Франция · река Луара" data-en="Central France · Loire river">Central France · Loire river</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl">Sancerre / Pouilly-Fumé</span><span class="fc-val" data-ru="100% Sauv Blanc · трава · кремень · минерал" data-en="100% Sauv Blanc · grass · flint · mineral">100% Sauv Blanc · grass · flint</span></div>
+      <div class="fc-row"><span class="fc-lbl">Vouvray</span><span class="fc-val" data-ru="Chenin Blanc · от сухого до сладкого" data-en="Chenin Blanc · dry to sweet">Chenin Blanc · dry to sweet</span></div>
+      <div class="fc-row"><span class="fc-lbl">Muscadet</span><span class="fc-val" data-ru="Melon de Bourgogne · лёгкое · морепродукты" data-en="Melon de Bourgogne · light · seafood">Melon de Bourgogne · seafood</span></div>
+      <div class="fc-note" data-ru="💡 Sur lie = выдержка на дрожжевом осадке. Добавляет кремовость и сложность — типично для Muscadet." data-en="💡 Sur lie = aged on yeast lees. Adds creaminess and complexity — typical for Muscadet.">💡 Sur lie = aged on yeast lees. Adds creaminess — typical for Muscadet.</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(160,80,20,.2),rgba(160,80,20,.05))">
+      <div class="fc-icon">🌶️</div>
+      <div><div class="fc-title">Rhône Valley</div><div class="fc-sub" data-ru="Долина Роны · Север и Юг" data-en="N & S Rhône · two styles">N & S Rhône · two styles</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl" data-ru="Север (N. Rhône)" data-en="N. Rhône">N. Rhône</span><span class="fc-val" data-ru="Гранитные склоны · 100% Syrah · пряный" data-en="Granite slopes · 100% Syrah · peppery">Granite slopes · 100% Syrah · peppery</span></div>
+      <div class="fc-row"><span class="fc-lbl">Hermitage</span><span class="fc-val" data-ru="Самый великий Syrah · долгоживущий" data-en="Greatest Syrah · age-worthy">Greatest Syrah · age-worthy</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Юг (S. Rhône)" data-en="S. Rhône">S. Rhône</span><span class="fc-val" data-ru="Средиземноморский · GSM купажи" data-en="Mediterranean · GSM blends">Mediterranean · GSM blends</span></div>
+      <div class="fc-row"><span class="fc-lbl">Châteauneuf-du-Pape</span><span class="fc-val" data-ru="До 13 сортов · Grenache основа · galets" data-en="Up to 13 varieties · Grenache base · galets">Up to 13 varieties · galets stones</span></div>
+      <div class="fc-note" data-ru="💡 Galets roulés — крупные камни накапливают тепло днём и отдают ночью. Ускоряют созревание в Châteauneuf." data-en="💡 Galets roulés — large stones absorb heat during the day and radiate it at night, accelerating ripening.">💡 Galets roulés — large stones absorb heat by day, radiate at night, accelerating grape ripening.</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(50,90,160,.2),rgba(50,90,160,.05))">
+      <div class="fc-icon">🌹</div>
+      <div><div class="fc-title">Alsace</div><div class="fc-sub" data-ru="Восток Франции · граница с Германией" data-en="E. France · German border">E. France · German border</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl" data-ru="Сорта" data-en="Grapes">Grapes</span><span class="fc-val">Riesling · Gewürztraminer · Pinot Gris · Pinot Blanc</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Стиль" data-en="Style">Style</span><span class="fc-val" data-ru="Преимущественно сухие · ароматные · полнотелые" data-en="Mostly dry · aromatic · full-bodied">Mostly dry · aromatic · full-bodied</span></div>
+      <div class="fc-row"><span class="fc-lbl">Grand Cru</span><span class="fc-val" data-ru="51 виноградник · только 4 «благородных» сорта" data-en="51 vineyards · only 4 noble varieties">51 vineyards · only 4 noble varieties</span></div>
+      <div class="fc-note" data-ru="💡 Единственный французский регион, где на этикетке пишут сорт — немецкое влияние. Бутылка flûte d'Alsace — узкая и высокая." data-en="💡 Only French region to label wines by grape variety — German influence. Bottle is tall and slender (flûte d'Alsace).">💡 Only French region to label by grape variety — German influence. Tall slender bottle (flûte d'Alsace).</div>
+    </div>
+  </div>
+</div>
+
+<div class="l2-title" data-ru="📋 КЛАССИФИКАЦИЯ АОС ФРАНЦИИ" data-en="📋 FRENCH AOC CLASSIFICATION">📋 FRENCH AOC CLASSIFICATION</div>
+<table class="compare-l2">
+  <thead><tr><th data-ru="Уровень" data-en="Level">Level</th><th data-ru="Название" data-en="Name">Name</th><th data-ru="Значение" data-en="Meaning">Meaning</th><th data-ru="Пример" data-en="Example">Example</th></tr></thead>
+  <tbody>
+    <tr><td>1 ⭐⭐⭐</td><td>AOC / AOP</td><td data-ru="Высший уровень · строгий контроль происхождения" data-en="Highest level · strict origin control">Highest · strict origin control</td><td>Chablis · Bordeaux · Champagne</td></tr>
+    <tr><td>2 ⭐⭐</td><td>IGP</td><td data-ru="Защищённое географическое указание · больше гибкости" data-en="Protected Geographic Indication · more flexibility">More flexibility on grapes/methods</td><td>Vin de Pays d'Oc</td></tr>
+    <tr><td>3 ⭐</td><td>Vin de France</td><td data-ru="Базовый уровень · может указывать сорт на этикетке" data-en="Basic table wine · may show grape variety">Basic table wine</td><td data-ru="Купажи без региона" data-en="Blends without region">Blends without region</td></tr>
+  </tbody>
+</table>
+```
+
+  </div>
+
+  <!-- ── ITALY ── -->
+
+  <div class="sub-panel" id="sub-italy">
+    <div class="l2-title" data-ru="🇮🇹 РЕГИОНЫ ИТАЛИИ" data-en="🇮🇹 REGIONS OF ITALY">🇮🇹 REGIONS OF ITALY</div>
+    <div class="factor-grid">
+
+```
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(0,100,60,.22),rgba(0,100,60,.05))">
+      <div class="fc-icon">🏔️</div>
+      <div><div class="fc-title">Piedmont</div><div class="fc-sub" data-ru="Пьемонт · Северо-Запад" data-en="NW Italy · foggy hills">NW Italy · foggy hills</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl">Barolo</span><span class="fc-val" data-ru="100% Nebbiolo · «Король итальянских вин»" data-en="100% Nebbiolo · 'King of Italian wines'">100% Nebbiolo · 'King of Italian wines'</span></div>
+      <div class="fc-row"><span class="fc-lbl">Barbaresco</span><span class="fc-val" data-ru="100% Nebbiolo · элегантнее Barolo" data-en="100% Nebbiolo · more elegant than Barolo">100% Nebbiolo · more elegant than Barolo</span></div>
+      <div class="fc-row"><span class="fc-lbl">Barbera d'Asti</span><span class="fc-val" data-ru="Высокая кислотность · доступное · повседневное" data-en="High acidity · accessible · everyday wine">High acidity · accessible · everyday</span></div>
+      <div class="fc-row"><span class="fc-lbl">Moscato d'Asti</span><span class="fc-val" data-ru="Muscat · сладкое игристое · низкий алкоголь ~5%" data-en="Muscat · sweet sparkling · low alcohol ~5%">Muscat · sweet sparkling · ~5% ABV</span></div>
+      <div class="fc-note" data-ru="💡 Barolo: мин. 3 года выдержки (2 в дубе). Riserva — 5 лет. Бледный цвет, но огромные танины!" data-en="💡 Barolo: min. 3 years (2 in oak). Riserva — 5 years. Pale colour but powerful tannins — needs time!">💡 Barolo: min. 3 years (2 in oak). Pale colour but powerful tannins — needs time to open.</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(160,30,30,.22),rgba(160,30,30,.05))">
+      <div class="fc-icon">🌻</div>
+      <div><div class="fc-title">Tuscany</div><div class="fc-sub" data-ru="Тоскана · Центральная Италия" data-en="Central Italy · rolling hills">Central Italy · rolling hills</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl">Chianti Classico</span><span class="fc-val" data-ru="≥80% Sangiovese · вишня · кожа · томат" data-en="≥80% Sangiovese · cherry · leather · tomato">≥80% Sangiovese · cherry · leather</span></div>
+      <div class="fc-row"><span class="fc-lbl">Brunello di Montalcino</span><span class="fc-val" data-ru="100% Sangiovese · 5+ лет · самое престижное" data-en="100% Sangiovese · 5+ yrs ageing · prestigious">100% Sangiovese · 5+ yrs · prestigious</span></div>
+      <div class="fc-row"><span class="fc-lbl">Super Tuscan</span><span class="fc-val" data-ru="Cab Sauv + Merlot · вне DOC · премиум" data-en="Cab Sauv + Merlot · outside DOC · premium">Cab Sauv + Merlot · outside DOC</span></div>
+      <div class="fc-note" data-ru="💡 Super Tuscans не вписывались в DOC-правила и продавались как простое Vino da Tavola — но стали иконами." data-en="💡 Super Tuscans (Sassicaia, Tignanello) didn't fit DOC rules so were sold as basic table wine — yet became icons.">💡 Super Tuscans broke DOC rules but became iconic. Now have their own DOC (Bolgheri).</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(20,80,160,.2),rgba(20,80,160,.05))">
+      <div class="fc-icon">🫧</div>
+      <div><div class="fc-title">Veneto</div><div class="fc-sub" data-ru="Северо-Восток · Prosecco" data-en="NE Italy · Prosecco country">NE Italy · Prosecco country</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl">Prosecco</span><span class="fc-val" data-ru="Glera · Tank method · свежее · доступное" data-en="Glera · Tank method · fresh · affordable">Glera · Tank method · fresh</span></div>
+      <div class="fc-row"><span class="fc-lbl">Soave</span><span class="fc-val" data-ru="Garganega · белое · миндаль · лимон" data-en="Garganega · white · almond · lemon">Garganega · white · almond · lemon</span></div>
+      <div class="fc-row"><span class="fc-lbl">Amarone</span><span class="fc-val" data-ru="Сушёный виноград (appassimento) · 15–17% · изюм" data-en="Dried grapes (appassimento) · 15–17% · raisin">Dried grapes · 15–17% · raisin + chocolate</span></div>
+      <div class="fc-note" data-ru="💡 Appassimento — метод сушки винограда. Amarone = из высушенных ягод. Концентрация + мощь 15–17%." data-en="💡 Appassimento = grape drying method. Amarone uses dried grapes → huge concentration + 15–17% ABV.">💡 Appassimento = grape drying. Amarone from dried grapes → concentration + 15–17% ABV.</div>
+    </div>
+  </div>
+</div>
+
+<div class="l2-title" data-ru="📋 КЛАССИФИКАЦИЯ ВИН ИТАЛИИ" data-en="📋 ITALIAN WINE CLASSIFICATION">📋 ITALIAN WINE CLASSIFICATION</div>
+<table class="compare-l2">
+  <thead><tr><th data-ru="Уровень" data-en="Level">Level</th><th>Name</th><th data-ru="Значение" data-en="Meaning">Meaning</th><th data-ru="Пример" data-en="Example">Example</th></tr></thead>
+  <tbody>
+    <tr><td>1 ⭐⭐⭐⭐</td><td>DOCG</td><td data-ru="Наивысший · гарантия происхождения и качества" data-en="Highest · guaranteed origin and quality">Highest · guaranteed origin + quality</td><td>Barolo · Brunello · Chianti Classico</td></tr>
+    <tr><td>2 ⭐⭐⭐</td><td>DOC</td><td data-ru="Контролируемое происхождение · основной уровень" data-en="Controlled origin · main quality level">Controlled origin · main quality</td><td>Soave · Valpolicella · Prosecco</td></tr>
+    <tr><td>3 ⭐⭐</td><td>IGT</td><td data-ru="Географическое указание · больше свободы" data-en="Geographic Indication · more freedom">Geographic Indication · flexible</td><td>Super Tuscans (Sassicaia)</td></tr>
+    <tr><td>4 ⭐</td><td>Vino da Tavola</td><td data-ru="Столовое вино" data-en="Basic table wine">Basic table wine</td><td data-ru="Базовые купажи" data-en="Basic blends">Basic blends</td></tr>
+  </tbody>
+</table>
+```
+
+  </div>
+
+  <!-- ── SPAIN ── -->
+
+  <div class="sub-panel" id="sub-spain">
+    <div class="l2-title" data-ru="🇪🇸 РЕГИОНЫ ИСПАНИИ" data-en="🇪🇸 REGIONS OF SPAIN">🇪🇸 REGIONS OF SPAIN</div>
+    <div class="factor-grid">
+
+```
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(180,20,20,.22),rgba(180,20,20,.05))">
+      <div class="fc-icon">🍷</div>
+      <div><div class="fc-title">Rioja</div><div class="fc-sub" data-ru="Северная Испания · самый известный регион" data-en="N. Spain · most famous region">N. Spain · most famous region</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl" data-ru="Сорта" data-en="Grapes">Grapes</span><span class="fc-val" data-ru="Tempranillo · Garnacha · Graciano" data-en="Tempranillo dominant · Garnacha · Graciano">Tempranillo dominant · Garnacha</span></div>
+      <div class="fc-row"><span class="fc-lbl">Joven</span><span class="fc-val" data-ru="Молодое · без выдержки в дубе" data-en="Young · no oak ageing">Young · no oak ageing</span></div>
+      <div class="fc-row"><span class="fc-lbl">Crianza</span><span class="fc-val" data-ru="2 года (1 в дубе + 1 в бутылке)" data-en="2 years (1 oak + 1 bottle)">2 years (1 oak + 1 bottle)</span></div>
+      <div class="fc-row"><span class="fc-lbl">Reserva</span><span class="fc-val" data-ru="3 года (1 в дубе + 6 мес. в бутылке)" data-en="3 years (1 oak + 6 months bottle)">3 years (1 oak + 6 months)</span></div>
+      <div class="fc-row"><span class="fc-lbl">Gran Reserva</span><span class="fc-val" data-ru="5 лет (2 в дубе + 2 в бутылке)" data-en="5 years (2 oak + 2 bottle)">5 years (2 oak + 2 bottle)</span></div>
+      <div class="fc-note" data-ru="💡 Rioja Alta/Alavesa — прохладнее и элегантнее. Rioja Oriental — теплее, насыщеннее. Три зоны в одном DOCa." data-en="💡 Rioja Alta/Alavesa = cooler, more elegant. Rioja Oriental = warmer, richer. Three zones within one DOCa.">💡 Three zones: Alta/Alavesa (cooler, elegant) vs Oriental (warmer, richer).</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(100,30,140,.2),rgba(100,30,140,.05))">
+      <div class="fc-icon">🏔️</div>
+      <div><div class="fc-title">Ribera del Duero</div><div class="fc-sub" data-ru="Северная Испания · высокогорье" data-en="N. Spain · high plateau">N. Spain · high plateau 800–900m</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl" data-ru="Сорт" data-en="Grape">Grape</span><span class="fc-val" data-ru="Tempranillo (Tinto Fino) · 100%" data-en="Tempranillo (local: Tinto Fino)">Tempranillo (local: Tinto Fino)</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Высота" data-en="Altitude">Altitude</span><span class="fc-val" data-ru="800–900м · большой суточный перепад" data-en="800–900m · large diurnal range">800–900m · large diurnal range</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Стиль" data-en="Style">Style</span><span class="fc-val" data-ru="Мощнее Rioja · тёмные фрукты · крепкие танины" data-en="More powerful than Rioja · dark fruit · firm tannins">More powerful than Rioja · dark fruit</span></div>
+      <div class="fc-note" data-ru="💡 Vega Sicilia — один из самых престижных испанских вин, производится здесь с 1864 года." data-en="💡 Vega Sicilia — one of Spain's most prestigious wines, produced here since 1864.">💡 Vega Sicilia — one of Spain's most prestigious wines, produced here since 1864.</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(200,170,10,.2),rgba(200,170,10,.05))">
+      <div class="fc-icon">🥂</div>
+      <div><div class="fc-title">Cava & Sherry</div><div class="fc-sub" data-ru="Игристое и крепленое вино Испании" data-en="Spanish sparkling & fortified">Spanish sparkling & fortified</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl">Cava</span><span class="fc-val" data-ru="Традиционный метод · Xarel-lo + Macabeo · Каталония" data-en="Traditional method · Xarel-lo + Macabeo · Catalonia">Traditional method · local grapes · Catalonia</span></div>
+      <div class="fc-row"><span class="fc-lbl">Sherry Fino</span><span class="fc-val" data-ru="Palomino · под flor (плёнкой дрожжей) · сухое · солёное" data-en="Palomino · under flor (yeast film) · dry · salty">Palomino · under flor · dry · salty</span></div>
+      <div class="fc-row"><span class="fc-lbl">Sherry Oloroso</span><span class="fc-val" data-ru="Окисленное · орехи · сухофрукты · без flor" data-en="Oxidative · nuts · dried fruit · no flor">Oxidative · nuts · dried fruit · no flor</span></div>
+      <div class="fc-row"><span class="fc-lbl">Pedro Ximénez</span><span class="fc-val" data-ru="Изюмообразные ягоды · очень сладкое · шоколад" data-en="Raisin-like grapes · very sweet · chocolate">Raisin grapes · very sweet · chocolate</span></div>
+      <div class="fc-note" data-ru="💡 Solera — система смешения разных годов. Старое вино в нижней бочке, новое доливается сверху. Стабильный стиль каждый год." data-en="💡 Solera system — oldest wine at bottom barrel, new wine added from top. Guarantees consistent style every vintage.">💡 Solera system: oldest at bottom, new wine added from top — consistent style every year.</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(20,120,80,.2),rgba(20,120,80,.05))">
+      <div class="fc-icon">🌊</div>
+      <div><div class="fc-title">Other Key Regions</div><div class="fc-sub" data-ru="Галисия · Приорат · Руэда" data-en="Galicia · Priorat · Rueda">Galicia · Priorat · Rueda</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl">Rías Baixas</span><span class="fc-val" data-ru="Albariño · свежее · цитрус · отлично к морепродуктам" data-en="Albariño · fresh · citrus · perfect with seafood">Albariño · fresh · citrus · seafood</span></div>
+      <div class="fc-row"><span class="fc-lbl">Priorat</span><span class="fc-val" data-ru="Garnacha + Cariñena · сланцевые почвы llicorella · мощное" data-en="Garnacha + Cariñena · llicorella slate · powerful">Garnacha · slate soils · powerful</span></div>
+      <div class="fc-row"><span class="fc-lbl">Rueda</span><span class="fc-val" data-ru="Verdejo · травяное · хрустящее · ароматное" data-en="Verdejo · herbal · crisp · aromatic">Verdejo · herbal · crisp · aromatic</span></div>
+      <div class="fc-note" data-ru="💡 Priorat — один из двух испанских DOCa (высший уровень, как DOCG в Италии). Второй — Rioja." data-en="💡 Priorat — one of only two Spanish DOCa (highest level, like DOCG in Italy). The other is Rioja.">💡 Priorat — one of only two Spanish DOCa (highest level). The other is Rioja.</div>
+    </div>
+  </div>
+</div>
+
+<div class="l2-title" data-ru="📋 ВЫДЕРЖКА РИОХА" data-en="📋 RIOJA AGEING REQUIREMENTS">📋 RIOJA AGEING REQUIREMENTS</div>
+<table class="compare-l2">
+  <thead><tr><th data-ru="Категория" data-en="Category">Category</th><th data-ru="Всего выдержки" data-en="Total ageing">Total ageing</th><th data-ru="В дубе (мин.)" data-en="In oak (min.)">In oak (min.)</th><th data-ru="В бутылке (мин.)" data-en="In bottle (min.)">In bottle (min.)</th></tr></thead>
+  <tbody>
+    <tr><td>Joven</td><td data-ru="Нет требований" data-en="No requirement">No requirement</td><td>—</td><td>—</td></tr>
+    <tr><td>Crianza</td><td data-ru="2 года" data-en="2 years">2 years</td><td data-ru="1 год" data-en="1 year">1 year</td><td data-ru="1 год" data-en="1 year">1 year</td></tr>
+    <tr><td>Reserva</td><td data-ru="3 года" data-en="3 years">3 years</td><td data-ru="1 год" data-en="1 year">1 year</td><td data-ru="6 мес." data-en="6 months">6 months</td></tr>
+    <tr><td>Gran Reserva</td><td data-ru="5 лет" data-en="5 years">5 years</td><td data-ru="2 года" data-en="2 years">2 years</td><td data-ru="2 года" data-en="2 years">2 years</td></tr>
+  </tbody>
+</table>
+```
+
+  </div>
+
+  <!-- ── GERMANY ── -->
+
+  <div class="sub-panel" id="sub-germany">
+    <div class="l2-title" data-ru="🇩🇪 РЕГИОНЫ ГЕРМАНИИ" data-en="🇩🇪 REGIONS OF GERMANY">🇩🇪 REGIONS OF GERMANY</div>
+    <div class="factor-grid">
+
+```
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(40,80,180,.2),rgba(40,80,180,.05))">
+      <div class="fc-icon">🌊</div>
+      <div><div class="fc-title">Mosel</div><div class="fc-sub" data-ru="Крутые сланцевые склоны · Рислинг" data-en="Steep slate slopes · Riesling">Steep slate slopes · Riesling</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl" data-ru="Сорт" data-en="Grape">Grape</span><span class="fc-val" data-ru="Riesling · 60% всех виноградников" data-en="Riesling · 60% of all vineyards">Riesling · 60% of vineyards</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Стиль" data-en="Style">Style</span><span class="fc-val" data-ru="Лёгкое · 7.5–11% · деликатное · цветочное" data-en="Light · 7.5–11% ABV · delicate · floral">Light · 7.5–11% ABV · delicate · floral</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Почва" data-en="Soil">Soil</span><span class="fc-val" data-ru="Голубой сланец · накапливает тепло" data-en="Blue slate · retains heat">Blue slate · retains heat</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Крутизна" data-en="Slope">Slope</span><span class="fc-val" data-ru="До 70° · только ручной сбор" data-en="Up to 70° · hand harvest only">Up to 70° · hand harvest only</span></div>
+      <div class="fc-note" data-ru="💡 Зелёная/синяя бутылка: зелёная = сухое, синяя = более сладкое (традиционно). Самый низкий алкоголь среди качественных вин." data-en="💡 Green bottle = dry/off-dry, blue = sweeter (tradition). Mosel Riesling has some of the world's lowest alcohol levels.">💡 Green bottle = dry, blue = sweeter (tradition). Among world's lowest alcohol quality wines.</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(140,60,160,.2),rgba(140,60,160,.05))">
+      <div class="fc-icon">🍇</div>
+      <div><div class="fc-title">Rhine Regions</div><div class="fc-sub" data-ru="Рейнгау · Рейнхессен · Пфальц" data-en="Rheingau · Rheinhessen · Pfalz">Rheingau · Rheinhessen · Pfalz</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl">Rheingau</span><span class="fc-val" data-ru="Riesling · насыщеннее Мозеля · сухие и полусладкие" data-en="Riesling · richer than Mosel · dry & off-dry">Riesling · richer than Mosel</span></div>
+      <div class="fc-row"><span class="fc-lbl">Rheinhessen</span><span class="fc-val" data-ru="Крупнейший регион · Riesling + Müller-Thurgau" data-en="Largest region · Riesling + Müller-Thurgau">Largest region · diverse varieties</span></div>
+      <div class="fc-row"><span class="fc-lbl">Pfalz</span><span class="fc-val" data-ru="Теплее · Riesling + Pinot Noir · полнотелый стиль" data-en="Warmer · Riesling + Pinot Noir · fuller style">Warmer · Riesling + Spätburgunder</span></div>
+      <div class="fc-note" data-ru="💡 Rheingau — историческая родина великого Riesling. Schloss Johannisberg производит его с VIII века." data-en="💡 Rheingau — historical home of great Riesling. Schloss Johannisberg has produced it since the 8th century.">💡 Rheingau is historically the home of great Riesling — Schloss Johannisberg since the 8th century.</div>
+    </div>
+  </div>
+</div>
+
+<div class="l2-title" data-ru="📋 НЕМЕЦКАЯ КЛАССИФИКАЦИЯ ПО ЗРЕЛОСТИ (PRÄDIKATSWEIN)" data-en="📋 GERMAN RIPENESS CLASSIFICATION (PRÄDIKATSWEIN)">📋 GERMAN RIPENESS CLASSIFICATION (PRÄDIKATSWEIN)</div>
+<table class="compare-l2">
+  <thead><tr><th data-ru="Категория" data-en="Category">Category</th><th data-ru="Сбор" data-en="Harvest">Harvest</th><th data-ru="Стиль" data-en="Style">Style</th><th data-ru="Сладость" data-en="Sweetness">Sweetness</th></tr></thead>
+  <tbody>
+    <tr><td>Kabinett</td><td data-ru="Обычный сбор" data-en="Normal harvest">Normal harvest</td><td data-ru="Лёгкое · полусухое" data-en="Light · off-dry">Light · off-dry</td><td>⬇️</td></tr>
+    <tr><td>Spätlese</td><td data-ru="Поздний сбор" data-en="Late harvest">Late harvest</td><td data-ru="Полное тело · сухое или полусладкое" data-en="Fuller · dry to medium-sweet">Fuller · dry to medium-sweet</td><td>⬆️</td></tr>
+    <tr><td>Auslese</td><td data-ru="Отборные поздние ягоды" data-en="Selected late harvest">Selected late harvest</td><td data-ru="Сладкое (иногда сухое)" data-en="Sweet (or dry)">Sweet (or dry)</td><td>⬆️⬆️</td></tr>
+    <tr><td>Beerenauslese (BA)</td><td data-ru="Ягоды с botrytis" data-en="Botrytis-affected berries">Botrytis berries</td><td data-ru="Очень сладкое · концентрированное" data-en="Very sweet · concentrated">Very sweet · concentrated</td><td>⬆️⬆️⬆️</td></tr>
+    <tr><td>Trockenbeerenauslese</td><td data-ru="Изюмообразные ягоды" data-en="Raisin-like botrytis berries">Raisin-like botrytis</td><td data-ru="Исключительно сладкое · редкое" data-en="Exceptionally sweet · rare">Exceptionally sweet · rare</td><td>⬆️⬆️⬆️⬆️</td></tr>
+    <tr><td>Eiswein</td><td data-ru="Замёрзшие ягоды на лозе" data-en="Frozen grapes on vine">Frozen grapes on vine</td><td data-ru="Концентрированное · высокая кислотность" data-en="Concentrated · high acidity">Concentrated · high acidity</td><td>⬆️⬆️⬆️</td></tr>
+  </tbody>
+</table>
+```
+
+  </div>
+
+  <!-- ── NEW WORLD ── -->
+
+  <div class="sub-panel" id="sub-newworld">
+    <div class="l2-title" data-ru="🌏 КЛЮЧЕВЫЕ РЕГИОНЫ НОВОГО СВЕТА" data-en="🌏 KEY NEW WORLD REGIONS">🌏 KEY NEW WORLD REGIONS</div>
+    <div class="factor-grid">
+
+```
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(20,120,60,.2),rgba(20,120,60,.05))">
+      <div class="fc-icon">🦘</div>
+      <div><div class="fc-title">Australia</div><div class="fc-sub" data-ru="Разнообразие климатов · Южное полушарие" data-en="Diverse climates · S. hemisphere">Diverse climates · S. hemisphere</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl">Barossa Valley</span><span class="fc-val" data-ru="Old Vine Shiraz · мощное · джемовое · шоколад" data-en="Old Vine Shiraz · powerful · jammy · chocolate">Old Vine Shiraz · powerful · jammy</span></div>
+      <div class="fc-row"><span class="fc-lbl">Clare Valley</span><span class="fc-val" data-ru="Riesling · сухое · известняк · бензиновые нотки" data-en="Riesling · dry · limestone · petrol notes">Riesling · dry · limestone · petrol</span></div>
+      <div class="fc-row"><span class="fc-lbl">Margaret River</span><span class="fc-val" data-ru="Cab Sauv + Chardonnay · морской климат" data-en="Cab Sauv + Chardonnay · maritime">Cab Sauv + Chardonnay · maritime</span></div>
+      <div class="fc-row"><span class="fc-lbl">Yarra Valley</span><span class="fc-val" data-ru="Прохладный · Pinot Noir + Chardonnay" data-en="Cool climate · Pinot Noir + Chardonnay">Cool · Pinot Noir + Chardonnay</span></div>
+      <div class="fc-note" data-ru="💡 GI (Geographical Indication) — австралийская система апелласьонов. Менее строгая — виноделы свободнее выбирают сорта." data-en="💡 GI (Geographical Indication) — Australia's appellation system. Less strict than Europe — winemakers choose freely.">💡 GI system — less strict than Europe, giving winemakers more freedom over varieties and methods.</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(0,80,160,.2),rgba(0,80,160,.05))">
+      <div class="fc-icon">🥝</div>
+      <div><div class="fc-title">New Zealand</div><div class="fc-sub" data-ru="Прохладный климат · два острова" data-en="Cool climate · two islands">Cool climate · two islands</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl">Marlborough</span><span class="fc-val" data-ru="Sauvignon Blanc · тропические фрукты · трава" data-en="Sauvignon Blanc · tropical · herbaceous">Sauv Blanc · tropical · herbaceous</span></div>
+      <div class="fc-row"><span class="fc-lbl">Central Otago</span><span class="fc-val" data-ru="Pinot Noir · самый южный регион мира · элегантное" data-en="Pinot Noir · world's southernmost · elegant">Pinot Noir · world's southernmost</span></div>
+      <div class="fc-row"><span class="fc-lbl">Hawke's Bay</span><span class="fc-val" data-ru="Cab Sauv · Merlot · теплее остальных" data-en="Cab Sauv · Merlot · warmer microclimate">Cab Sauv · Merlot · warmest zone</span></div>
+      <div class="fc-note" data-ru="💡 Marlborough Sauvignon Blanc стал мировым эталоном. До 1970-х Новая Зеландия почти не производила вина!" data-en="💡 Marlborough Sauv Blanc set a global standard. NZ barely produced wine before the 1970s!">💡 Marlborough Sauv Blanc set a global standard. NZ barely produced wine before the 1970s!</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(160,120,20,.2),rgba(160,120,20,.05))">
+      <div class="fc-icon">🌵</div>
+      <div><div class="fc-title">Argentina & Chile</div><div class="fc-sub" data-ru="Южная Америка · влияние Анд" data-en="S. America · Andes influence">S. America · Andes influence</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl" data-ru="Мендоса (Аргентина)" data-en="Mendoza (Argentina)">Mendoza (Argentina)</span><span class="fc-val" data-ru="Malbec · 800–1500м · бархатное · фиалка" data-en="Malbec · 800–1500m · velvety · violet">Malbec · 800–1500m · velvety</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Центральная долина (Чили)" data-en="Central Valley (Chile)">Central Valley (Chile)</span><span class="fc-val" data-ru="Carménère · Cab Sauv · сухой климат" data-en="Carménère · Cab Sauv · dry climate">Carménère · Cab Sauv · dry</span></div>
+      <div class="fc-row"><span class="fc-lbl">Carménère</span><span class="fc-val" data-ru="Утерянный сорт Бордо · перец · тёмные фрукты" data-en="Lost Bordeaux variety · pepper · dark fruit">Lost Bordeaux variety · pepper · dark</span></div>
+      <div class="fc-note" data-ru="💡 Чили и Аргентина — единственные крупные регионы без филлоксеры. Лозы растут на собственных корнях!" data-en="💡 Chile & Argentina are the only major wine regions free from phylloxera — vines grow on their own roots!">💡 Chile & Argentina are the only major regions free from phylloxera — vines on own roots!</div>
+    </div>
+  </div>
+
+  <div class="factor-card">
+    <div class="fc-header" style="background:linear-gradient(135deg,rgba(180,40,20,.2),rgba(180,40,20,.05))">
+      <div class="fc-icon">🦁</div>
+      <div><div class="fc-title">South Africa & USA</div><div class="fc-sub" data-ru="ЮАР · Калифорния · Орегон" data-en="South Africa · California · Oregon">S. Africa · California · Oregon</div></div>
+    </div>
+    <div class="fc-body">
+      <div class="fc-row"><span class="fc-lbl" data-ru="Стелленбош (ЮАР)" data-en="Stellenbosch (S. Africa)">Stellenbosch (S. Africa)</span><span class="fc-val" data-ru="Chenin Blanc (Steen) · Pinotage · умеренный климат" data-en="Chenin Blanc (Steen) · Pinotage · moderate">Chenin Blanc · Pinotage · moderate</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Напа (Калифорния)" data-en="Napa (California)">Napa (California)</span><span class="fc-val" data-ru="Cab Sauv · насыщенное · дубовое · высокий алкоголь" data-en="Cab Sauv · rich · oaky · high alcohol">Cab Sauv · rich · oaky · high ABV</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Сонома (Калифорния)" data-en="Sonoma (California)">Sonoma (California)</span><span class="fc-val" data-ru="Pinot Noir + Chardonnay · прохладнее Напы" data-en="Pinot Noir + Chardonnay · cooler than Napa">Pinot Noir + Chardonnay · cooler</span></div>
+      <div class="fc-row"><span class="fc-lbl" data-ru="Уилламетт (Орегон)" data-en="Willamette (Oregon)">Willamette (Oregon)</span><span class="fc-val" data-ru="Pinot Noir · прохладный · элегантный · бургундский стиль" data-en="Pinot Noir · cool · elegant · Burgundian style">Pinot Noir · cool · Burgundian style</span></div>
+      <div class="fc-note" data-ru="💡 Судный день Парижа 1976: калифорнийские Chardonnay и Cab Sauv победили французские на слепой дегустации. Шок!" data-en="💡 Judgment of Paris 1976: California Chardonnay and Cab Sauv beat French wines blind — a global shock!">💡 Judgment of Paris 1976: California beat France blind — changed the wine world forever.</div>
+    </div>
+  </div>
+</div>
+
+<div class="l2-title" data-ru="📊 ЭКСПРЕСС-СПРАВОЧНИК: РЕГИОНЫ НОВОГО СВЕТА" data-en="📊 NEW WORLD REGIONS QUICK REFERENCE">📊 NEW WORLD REGIONS QUICK REFERENCE</div>
+<table class="compare-l2">
+  <thead><tr><th data-ru="Регион" data-en="Region">Region</th><th data-ru="Страна" data-en="Country">Country</th><th data-ru="Ключевой сорт" data-en="Key grape">Key grape</th><th data-ru="Запомнить" data-en="Remember">Remember</th></tr></thead>
+  <tbody>
+    <tr><td>Marlborough</td><td>🇳🇿 NZ</td><td>Sauvignon Blanc</td><td data-ru="Тропические фрукты + трава" data-en="Tropical + herbaceous">Tropical + herbaceous</td></tr>
+    <tr><td>Barossa Valley</td><td>🇦🇺 AUS</td><td>Shiraz</td><td data-ru="Мощное · джемовое · старые лозы" data-en="Powerful · jammy · old vines">Powerful · jammy · old vines</td></tr>
+    <tr><td>Mendoza</td><td>🇦🇷 ARG</td><td>Malbec</td><td data-ru="Высота 800–1500м · фиалка" data-en="800–1500m altitude · violet">800–1500m altitude · violet</td></tr>
+    <tr><td>Central Valley</td><td>🇨🇱 CHL</td><td>Carménère</td><td data-ru="Утерянный сорт Бордо · перец" data-en="Lost Bordeaux variety · pepper">Lost Bordeaux variety · pepper</td></tr>
+    <tr><td>Napa Valley</td><td>🇺🇸 USA</td><td>Cabernet Sauvignon</td><td data-ru="Насыщенное · дуб · высокий алкоголь" data-en="Rich · oaky · high alcohol">Rich · oaky · high alcohol</td></tr>
+    <tr><td>Stellenbosch</td><td>🇿🇦 SA</td><td>Chenin Blanc · Pinotage</td><td data-ru="Уникальный сорт Pinotage (Pinot Noir × Cinsault)" data-en="Unique Pinotage (Pinot Noir × Cinsault)">Unique Pinotage (Pinot × Cinsault)</td></tr>
+  </tbody>
+</table>
+```
+
+  </div>
+
+</div><!-- end l2regions panel -->
+
+<!-- ═══════════════════════════════════════════════
      PANEL REF: GLOSSARY (placeholder)
 ═══════════════════════════════════════════════ -->
 
@@ -1144,7 +1540,7 @@ footer span{color:var(–gold);}
 
 </div><!-- /content -->
 
-<footer><span data-ru="WSET Level 1 & 2" data-en="WSET Level 1 & 2">WSET Level 1 & 2</span> · <span data-ru="Полный справочник · 6 разделов" data-en="Complete Study Guide · 6 sections">Complete Study Guide · 6 sections</span></footer>
+<footer><span data-ru="WSET Level 1 & 2" data-en="WSET Level 1 & 2">WSET Level 1 & 2</span> · <span data-ru="Полный справочник · 7 разделов" data-en="Complete Study Guide · 7 sections">Complete Study Guide · 7 sections</span></footer>
 
 <script>
 let currentLang = 'en';
