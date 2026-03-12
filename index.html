@@ -306,12 +306,12 @@ footer span{color:var(–gold);}
 <header>
   <div class="h-top">
     <div>
-      <div class="h-tag" data-ru="WSET · Полный справочник" data-en="WSET · Complete Study Guide">WSET · Полный справочник</div>
-      <h1 data-ru="Справочник <span>виноделия</span>" data-en="Wine <span>Study Guide</span>">Справочник <span>виноделия</span></h1>
+      <div class="h-tag" data-ru="WSET · Полный справочник" data-en="WSET · Complete Study Guide">WSET · Complete Study Guide</div>
+      <h1 data-ru="Справочник <span>виноделия</span>" data-en="Wine <span>Study Guide</span>">Wine <span>Study Guide</span></h1>
     </div>
     <div class="lang-btn">
-      <button class="lang-opt" onclick="setLang('ru',this)">RU</button>
       <button class="lang-opt active" onclick="setLang('en',this)">EN</button>
+      <button class="lang-opt" onclick="setLang('ru',this)">RU</button>
     </div>
   </div>
 </header>
@@ -321,37 +321,37 @@ footer span{color:var(–gold);}
 <div class="level-nav">
   <button class="level-btn active-l1" onclick="setLevel('l1',this)">
     Level 1
-    <span class="level-dot" data-ru="Основы" data-en="Basics">Основы</span>
+    <span class="level-dot" data-ru="Основы" data-en="Basics">Basics</span>
   </button>
   <button class="level-btn" onclick="setLevel('l2',this)">
     Level 2
-    <span class="level-dot" data-ru="Терруар и регионы" data-en="Terroir & Regions">Терруар и регионы</span>
+    <span class="level-dot" data-ru="Терруар и регионы" data-en="Terroir & Regions">Terroir & Regions</span>
   </button>
   <button class="level-btn" onclick="setLevel('ref',this)">
-    <span data-ru="Справочник" data-en="Reference">Справочник</span>
-    <span class="level-dot" data-ru="Общий" data-en="General">Общий</span>
+    <span data-ru="Справочник" data-en="Reference">Reference</span>
+    <span class="level-dot" data-ru="Общий" data-en="General">General</span>
   </button>
 </div>
 
 <!-- SUB NAV L1 -->
 
 <div class="sub-nav visible" id="subnav-l1">
-  <button class="sub-btn active" onclick="openPanel('grapes',this,'l1')"><span data-ru="🍇 Сорта" data-en="🍇 Grapes">🍇 Сорта</span></button>
-  <button class="sub-btn" onclick="openPanel('winemaking',this,'l1')"><span data-ru="🏭 Виноделие" data-en="🏭 Winemaking">🏭 Виноделие</span></button>
-  <button class="sub-btn" onclick="openPanel('sat',this,'l1')"><span data-ru="👃 Дегустация SAT" data-en="👃 SAT Tasting">👃 Дегустация SAT</span></button>
-  <button class="sub-btn" onclick="openPanel('storage',this,'l1')"><span data-ru="🌡️ Хранение и подача" data-en="🌡️ Storage & Serving">🌡️ Хранение и подача</span></button>
+  <button class="sub-btn active" onclick="openPanel('grapes',this,'l1')"><span data-ru="🍇 Сорта" data-en="🍇 Grapes">🍇 Grapes</span></button>
+  <button class="sub-btn" onclick="openPanel('winemaking',this,'l1')"><span data-ru="🏭 Виноделие" data-en="🏭 Winemaking">🏭 Winemaking</span></button>
+  <button class="sub-btn" onclick="openPanel('sat',this,'l1')"><span data-ru="👃 Дегустация SAT" data-en="👃 SAT Tasting">👃 SAT Tasting</span></button>
+  <button class="sub-btn" onclick="openPanel('storage',this,'l1')"><span data-ru="🌡️ Хранение и подача" data-en="🌡️ Storage & Serving">🌡️ Storage & Serving</span></button>
 </div>
 
 <!-- SUB NAV L2 -->
 
 <div class="sub-nav" id="subnav-l2">
-  <button class="sub-btn active-l2" onclick="openPanel('l2terroir',this,'l2')"><span data-ru="🌍 Терруар и климат" data-en="🌍 Terroir & Climate">🌍 Терруар и климат</span></button>
+  <button class="sub-btn active-l2" onclick="openPanel('l2terroir',this,'l2')"><span data-ru="🌍 Терруар и климат" data-en="🌍 Terroir & Climate">🌍 Terroir & Climate</span></button>
 </div>
 
 <!-- SUB NAV REF (placeholder) -->
 
 <div class="sub-nav" id="subnav-ref">
-  <button class="sub-btn active-ref" onclick="openPanel('ref',this,'ref')"><span data-ru="📖 Глоссарий" data-en="📖 Glossary">📖 Глоссарий</span></button>
+  <button class="sub-btn active-ref" onclick="openPanel('ref',this,'ref')"><span data-ru="📖 Глоссарий" data-en="📖 Glossary">📖 Glossary</span></button>
 </div>
 
 <div class="content">
@@ -364,16 +364,16 @@ footer span{color:var(–gold);}
 
   <div class="toolbar">
     <div>
-      <div class="sec-title" data-ru="СОРТА ВИНОГРАДА" data-en="GRAPE VARIETIES">СОРТА ВИНОГРАДА</div>
+      <div class="sec-title" data-ru="СОРТА ВИНОГРАДА" data-en="GRAPE VARIETIES">GRAPE VARIETIES</div>
       <div class="filter-row">
-        <button class="f-btn fa" onclick="filterGrapes('all',this)" data-ru="🍇 Все" data-en="🍇 All">🍇 Все</button>
-        <button class="f-btn" onclick="filterGrapes('red',this)" data-ru="🔴 Красные" data-en="🔴 Red">🔴 Красные</button>
-        <button class="f-btn" onclick="filterGrapes('white',this)" data-ru="🟡 Белые" data-en="🟡 White">🟡 Белые</button>
+        <button class="f-btn fa" onclick="filterGrapes('all',this)" data-ru="🍇 Все" data-en="🍇 All">🍇 All</button>
+        <button class="f-btn" onclick="filterGrapes('red',this)" data-ru="🔴 Красные" data-en="🔴 Red">🔴 Red</button>
+        <button class="f-btn" onclick="filterGrapes('white',this)" data-ru="🟡 Белые" data-en="🟡 White">🟡 White</button>
       </div>
     </div>
     <div class="view-tog">
-      <button class="v-btn active" onclick="setView('table',this)" data-ru="📋 Таблица" data-en="📋 Table">📋 Таблица</button>
-      <button class="v-btn" onclick="setView('cards',this)" data-ru="🃏 Карточки" data-en="🃏 Cards">🃏 Карточки</button>
+      <button class="v-btn active" onclick="setView('table',this)" data-ru="📋 Таблица" data-en="📋 Table">📋 Table</button>
+      <button class="v-btn" onclick="setView('cards',this)" data-ru="🃏 Карточки" data-en="🃏 Cards">🃏 Cards</button>
     </div>
   </div>
 
@@ -382,76 +382,76 @@ footer span{color:var(–gold);}
   <div id="grapeTable">
   <table class="tbl">
     <thead><tr>
-      <th data-ru="Сорт" data-en="Variety">Сорт</th>
-      <th data-ru="Тип" data-en="Type">Тип</th>
-      <th data-ru="Ароматы" data-en="Aromas">Ароматы</th>
-      <th data-ru="Регионы" data-en="Regions">Регионы</th>
-      <th data-ru="Стиль" data-en="Style">Стиль</th>
-      <th data-ru="t° подачи" data-en="Serving t°">t° подачи</th>
+      <th data-ru="Сорт" data-en="Variety">Variety</th>
+      <th data-ru="Тип" data-en="Type">Type</th>
+      <th data-ru="Ароматы" data-en="Aromas">Aromas</th>
+      <th data-ru="Регионы" data-en="Regions">Regions</th>
+      <th data-ru="Стиль" data-en="Style">Style</th>
+      <th data-ru="t° подачи" data-en="Serving t°">Serving t°</th>
     </tr></thead>
     <tbody>
       <tr data-type="white">
-        <td><div class="vname">Chardonnay</div><div class="valt" data-ru="Шардоне" data-en="Chardonnay">Шардоне</div></td>
-        <td><span class="badge bw" data-ru="Белое" data-en="White">Белое</span></td>
-        <td><span class="atag">🍋 <span data-ru="лимон" data-en="lemon">лимон</span></span><span class="atag">🍎 <span data-ru="яблоко" data-en="apple">яблоко</span></span><span class="atag">🍍 <span data-ru="ананас" data-en="pineapple">ананас</span></span><span class="atag">🧈 <span data-ru="масло" data-en="butter">масло</span></span><span class="atag">🍞 <span data-ru="тост" data-en="toast">тост</span></span></td>
-        <td class="regions">🇫🇷 <span data-ru="Бургундия, Шампань" data-en="Burgundy, Champagne">Бургундия, Шампань</span><br>🇦🇺 <span data-ru="Австралия" data-en="Australia">Австралия</span><br>🇺🇸 <span data-ru="Калифорния" data-en="California">Калифорния</span></td>
-        <td><span data-ru="Сухое, полнотелое. В дубе — сливочное" data-en="Dry, full-bodied. Oaked — creamy, buttery">Сухое, полнотелое. В дубе — сливочное</span></td>
+        <td><div class="vname">Chardonnay</div><div class="valt" data-ru="Шардоне" data-en="Chardonnay">Chardonnay</div></td>
+        <td><span class="badge bw" data-ru="Белое" data-en="White">White</span></td>
+        <td><span class="atag">🍋 <span data-ru="лимон" data-en="lemon">lemon</span></span><span class="atag">🍎 <span data-ru="яблоко" data-en="apple">apple</span></span><span class="atag">🍍 <span data-ru="ананас" data-en="pineapple">pineapple</span></span><span class="atag">🧈 <span data-ru="масло" data-en="butter">butter</span></span><span class="atag">🍞 <span data-ru="тост" data-en="toast">toast</span></span></td>
+        <td class="regions">🇫🇷 <span data-ru="Бургундия, Шампань" data-en="Burgundy, Champagne">Burgundy, Champagne</span><br>🇦🇺 <span data-ru="Австралия" data-en="Australia">Australia</span><br>🇺🇸 <span data-ru="Калифорния" data-en="California">California</span></td>
+        <td><span data-ru="Сухое, полнотелое. В дубе — сливочное" data-en="Dry, full-bodied. Oaked — creamy, buttery">Dry, full-bodied. Oaked — creamy, buttery</span></td>
         <td><span class="tbadge">8–10°C</span></td>
       </tr>
       <tr data-type="white">
-        <td><div class="vname">Sauvignon Blanc</div><div class="valt" data-ru="Совиньон Блан" data-en="Sauvignon Blanc">Совиньон Блан</div></td>
-        <td><span class="badge bw" data-ru="Белое" data-en="White">Белое</span></td>
-        <td><span class="atag">🌿 <span data-ru="трава" data-en="grass">трава</span></span><span class="atag">🍈 <span data-ru="крыжовник" data-en="gooseberry">крыжовник</span></span><span class="atag">🌶 <span data-ru="перец" data-en="pepper">перец</span></span><span class="atag">🍋 <span data-ru="грейпфрут" data-en="grapefruit">грейпфрут</span></span></td>
-        <td class="regions">🇫🇷 <span data-ru="Луара, Бордо" data-en="Loire, Bordeaux">Луара, Бордо</span><br>🇳🇿 <span data-ru="Новая Зеландия" data-en="New Zealand">Новая Зеландия</span><br>🇿🇦 <span data-ru="ЮАР" data-en="South Africa">ЮАР</span></td>
-        <td><span data-ru="Сухое, высокая кислотность, ароматное" data-en="Dry, high acidity, very aromatic">Сухое, высокая кислотность, ароматное</span></td>
+        <td><div class="vname">Sauvignon Blanc</div><div class="valt" data-ru="Совиньон Блан" data-en="Sauvignon Blanc">Sauvignon Blanc</div></td>
+        <td><span class="badge bw" data-ru="Белое" data-en="White">White</span></td>
+        <td><span class="atag">🌿 <span data-ru="трава" data-en="grass">grass</span></span><span class="atag">🍈 <span data-ru="крыжовник" data-en="gooseberry">gooseberry</span></span><span class="atag">🌶 <span data-ru="перец" data-en="pepper">pepper</span></span><span class="atag">🍋 <span data-ru="грейпфрут" data-en="grapefruit">grapefruit</span></span></td>
+        <td class="regions">🇫🇷 <span data-ru="Луара, Бордо" data-en="Loire, Bordeaux">Loire, Bordeaux</span><br>🇳🇿 <span data-ru="Новая Зеландия" data-en="New Zealand">New Zealand</span><br>🇿🇦 <span data-ru="ЮАР" data-en="South Africa">South Africa</span></td>
+        <td><span data-ru="Сухое, высокая кислотность, ароматное" data-en="Dry, high acidity, very aromatic">Dry, high acidity, very aromatic</span></td>
         <td><span class="tbadge">7–10°C</span></td>
       </tr>
       <tr data-type="white">
-        <td><div class="vname">Pinot Grigio</div><div class="valt" data-ru="Пино Гриджо" data-en="Pinot Grigio / Pinot Gris">Пино Гриджо</div></td>
-        <td><span class="badge bw" data-ru="Белое" data-en="White">Белое</span></td>
-        <td><span class="atag">🍋 <span data-ru="лимон" data-en="lemon">лимон</span></span><span class="atag">🍐 <span data-ru="груша" data-en="pear">груша</span></span><span class="atag">🌸 <span data-ru="цветы" data-en="blossom">цветы</span></span><span class="atag">🍑 <span data-ru="персик" data-en="peach">персик</span></span></td>
-        <td class="regions">🇮🇹 <span data-ru="Сев. Италия" data-en="N. Italy">Сев. Италия</span><br>🇫🇷 <span data-ru="Эльзас (богаче)" data-en="Alsace (richer)">Эльзас (богаче)</span></td>
-        <td><span data-ru="Сухое, лёгкое тело. Нейтральный аромат" data-en="Dry, light body. Neutral aroma (Italy)">Сухое, лёгкое тело. Нейтральный аромат</span></td>
+        <td><div class="vname">Pinot Grigio</div><div class="valt" data-ru="Пино Гриджо" data-en="Pinot Grigio / Pinot Gris">Pinot Grigio / Pinot Gris</div></td>
+        <td><span class="badge bw" data-ru="Белое" data-en="White">White</span></td>
+        <td><span class="atag">🍋 <span data-ru="лимон" data-en="lemon">lemon</span></span><span class="atag">🍐 <span data-ru="груша" data-en="pear">pear</span></span><span class="atag">🌸 <span data-ru="цветы" data-en="blossom">blossom</span></span><span class="atag">🍑 <span data-ru="персик" data-en="peach">peach</span></span></td>
+        <td class="regions">🇮🇹 <span data-ru="Сев. Италия" data-en="N. Italy">N. Italy</span><br>🇫🇷 <span data-ru="Эльзас (богаче)" data-en="Alsace (richer)">Alsace (richer)</span></td>
+        <td><span data-ru="Сухое, лёгкое тело. Нейтральный аромат" data-en="Dry, light body. Neutral aroma (Italy)">Dry, light body. Neutral aroma (Italy)</span></td>
         <td><span class="tbadge">8–10°C</span></td>
       </tr>
       <tr data-type="white">
-        <td><div class="vname">Riesling</div><div class="valt" data-ru="Рислинг" data-en="Riesling">Рислинг</div></td>
-        <td><span class="badge bw" data-ru="Белое" data-en="White">Белое</span></td>
-        <td><span class="atag">🍋 <span data-ru="лайм" data-en="lime">лайм</span></span><span class="atag">🍑 <span data-ru="персик" data-en="peach">персик</span></span><span class="atag">⛽ <span data-ru="бензин" data-en="petrol">бензин</span></span><span class="atag">🌼 <span data-ru="жасмин" data-en="jasmine">жасмин</span></span><span class="atag">🍯 <span data-ru="мёд" data-en="honey">мёд</span></span></td>
-        <td class="regions">🇩🇪 <span data-ru="Мозель" data-en="Mosel">Мозель</span><br>🇫🇷 <span data-ru="Эльзас" data-en="Alsace">Эльзас</span><br>🇦🇺 <span data-ru="Clare Valley" data-en="Clare Valley">Clare Valley</span></td>
-        <td><span data-ru="От сухого до сладкого. Высокая кислотность" data-en="Dry to sweet. High acidity, ages well">От сухого до сладкого. Высокая кислотность</span></td>
+        <td><div class="vname">Riesling</div><div class="valt" data-ru="Рислинг" data-en="Riesling">Riesling</div></td>
+        <td><span class="badge bw" data-ru="Белое" data-en="White">White</span></td>
+        <td><span class="atag">🍋 <span data-ru="лайм" data-en="lime">lime</span></span><span class="atag">🍑 <span data-ru="персик" data-en="peach">peach</span></span><span class="atag">⛽ <span data-ru="бензин" data-en="petrol">petrol</span></span><span class="atag">🌼 <span data-ru="жасмин" data-en="jasmine">jasmine</span></span><span class="atag">🍯 <span data-ru="мёд" data-en="honey">honey</span></span></td>
+        <td class="regions">🇩🇪 <span data-ru="Мозель" data-en="Mosel">Mosel</span><br>🇫🇷 <span data-ru="Эльзас" data-en="Alsace">Alsace</span><br>🇦🇺 <span data-ru="Clare Valley" data-en="Clare Valley">Clare Valley</span></td>
+        <td><span data-ru="От сухого до сладкого. Высокая кислотность" data-en="Dry to sweet. High acidity, ages well">Dry to sweet. High acidity, ages well</span></td>
         <td><span class="tbadge">7–9°C</span></td>
       </tr>
       <tr data-type="red">
-        <td><div class="vname">Cabernet Sauvignon</div><div class="valt" data-ru="Каберне Совиньон" data-en="Cabernet Sauvignon">Каберне Совиньон</div></td>
-        <td><span class="badge br" data-ru="Красное" data-en="Red">Красное</span></td>
-        <td><span class="atag">🫐 <span data-ru="смородина" data-en="blackcurrant">смородина</span></span><span class="atag">🌶 <span data-ru="перец" data-en="pepper">перец</span></span><span class="atag">🍫 <span data-ru="шоколад" data-en="chocolate">шоколад</span></span><span class="atag">🪵 <span data-ru="кедр" data-en="cedar">кедр</span></span></td>
-        <td class="regions">🇫🇷 <span data-ru="Бордо (Медок)" data-en="Bordeaux (Médoc)">Бордо (Медок)</span><br>🇺🇸 <span data-ru="Напа Вэлли" data-en="Napa Valley">Напа Вэлли</span><br>🇨🇱 <span data-ru="Чили" data-en="Chile">Чили</span></td>
-        <td><span data-ru="Полнотелое, высокие танины, хорошо стареет" data-en="Full-bodied, high tannins, ages well">Полнотелое, высокие танины, хорошо стареет</span></td>
+        <td><div class="vname">Cabernet Sauvignon</div><div class="valt" data-ru="Каберне Совиньон" data-en="Cabernet Sauvignon">Cabernet Sauvignon</div></td>
+        <td><span class="badge br" data-ru="Красное" data-en="Red">Red</span></td>
+        <td><span class="atag">🫐 <span data-ru="смородина" data-en="blackcurrant">blackcurrant</span></span><span class="atag">🌶 <span data-ru="перец" data-en="pepper">pepper</span></span><span class="atag">🍫 <span data-ru="шоколад" data-en="chocolate">chocolate</span></span><span class="atag">🪵 <span data-ru="кедр" data-en="cedar">cedar</span></span></td>
+        <td class="regions">🇫🇷 <span data-ru="Бордо (Медок)" data-en="Bordeaux (Médoc)">Bordeaux (Médoc)</span><br>🇺🇸 <span data-ru="Напа Вэлли" data-en="Napa Valley">Napa Valley</span><br>🇨🇱 <span data-ru="Чили" data-en="Chile">Chile</span></td>
+        <td><span data-ru="Полнотелое, высокие танины, хорошо стареет" data-en="Full-bodied, high tannins, ages well">Full-bodied, high tannins, ages well</span></td>
         <td><span class="tbadge">16–18°C</span></td>
       </tr>
       <tr data-type="red">
-        <td><div class="vname">Merlot</div><div class="valt" data-ru="Мерло" data-en="Merlot">Мерло</div></td>
-        <td><span class="badge br" data-ru="Красное" data-en="Red">Красное</span></td>
-        <td><span class="atag">🍒 <span data-ru="слива" data-en="plum">слива</span></span><span class="atag">🫐 <span data-ru="черника" data-en="blueberry">черника</span></span><span class="atag">🍫 <span data-ru="шоколад" data-en="chocolate">шоколад</span></span><span class="atag">☕ <span data-ru="кофе" data-en="coffee">кофе</span></span></td>
-        <td class="regions">🇫🇷 <span data-ru="Бордо (Помроль)" data-en="Bordeaux (Pomerol)">Бордо (Помроль)</span><br>🇮🇹 <span data-ru="Сев. Италия" data-en="N. Italy">Сев. Италия</span><br>🇺🇸 <span data-ru="Вашингтон" data-en="Washington">Вашингтон</span></td>
-        <td><span data-ru="Мягкие танины, среднее/полное тело" data-en="Soft tannins, medium/full body">Мягкие танины, среднее/полное тело</span></td>
+        <td><div class="vname">Merlot</div><div class="valt" data-ru="Мерло" data-en="Merlot">Merlot</div></td>
+        <td><span class="badge br" data-ru="Красное" data-en="Red">Red</span></td>
+        <td><span class="atag">🍒 <span data-ru="слива" data-en="plum">plum</span></span><span class="atag">🫐 <span data-ru="черника" data-en="blueberry">blueberry</span></span><span class="atag">🍫 <span data-ru="шоколад" data-en="chocolate">chocolate</span></span><span class="atag">☕ <span data-ru="кофе" data-en="coffee">coffee</span></span></td>
+        <td class="regions">🇫🇷 <span data-ru="Бордо (Помроль)" data-en="Bordeaux (Pomerol)">Bordeaux (Pomerol)</span><br>🇮🇹 <span data-ru="Сев. Италия" data-en="N. Italy">N. Italy</span><br>🇺🇸 <span data-ru="Вашингтон" data-en="Washington">Washington</span></td>
+        <td><span data-ru="Мягкие танины, среднее/полное тело" data-en="Soft tannins, medium/full body">Soft tannins, medium/full body</span></td>
         <td><span class="tbadge">16–18°C</span></td>
       </tr>
       <tr data-type="red">
-        <td><div class="vname">Pinot Noir</div><div class="valt" data-ru="Пино Нуар" data-en="Pinot Noir">Пино Нуар</div></td>
-        <td><span class="badge br" data-ru="Красное" data-en="Red">Красное</span></td>
-        <td><span class="atag">🍓 <span data-ru="клубника" data-en="strawberry">клубника</span></span><span class="atag">🍒 <span data-ru="вишня" data-en="cherry">вишня</span></span><span class="atag">🌹 <span data-ru="роза" data-en="rose">роза</span></span><span class="atag">🍄 <span data-ru="грибы" data-en="mushroom">грибы</span></span></td>
-        <td class="regions">🇫🇷 <span data-ru="Бургундия" data-en="Burgundy">Бургундия</span><br>🇩🇪 <span data-ru="Германия" data-en="Germany">Германия</span><br>🇳🇿 <span data-ru="Новая Зеландия" data-en="New Zealand">Новая Зеландия</span></td>
-        <td><span data-ru="Лёгкое тело, низкие танины, ароматное" data-en="Light body, low tannins, fragrant">Лёгкое тело, низкие танины, ароматное</span></td>
+        <td><div class="vname">Pinot Noir</div><div class="valt" data-ru="Пино Нуар" data-en="Pinot Noir">Pinot Noir</div></td>
+        <td><span class="badge br" data-ru="Красное" data-en="Red">Red</span></td>
+        <td><span class="atag">🍓 <span data-ru="клубника" data-en="strawberry">strawberry</span></span><span class="atag">🍒 <span data-ru="вишня" data-en="cherry">cherry</span></span><span class="atag">🌹 <span data-ru="роза" data-en="rose">rose</span></span><span class="atag">🍄 <span data-ru="грибы" data-en="mushroom">mushroom</span></span></td>
+        <td class="regions">🇫🇷 <span data-ru="Бургундия" data-en="Burgundy">Burgundy</span><br>🇩🇪 <span data-ru="Германия" data-en="Germany">Germany</span><br>🇳🇿 <span data-ru="Новая Зеландия" data-en="New Zealand">New Zealand</span></td>
+        <td><span data-ru="Лёгкое тело, низкие танины, ароматное" data-en="Light body, low tannins, fragrant">Light body, low tannins, fragrant</span></td>
         <td><span class="tbadge">14–16°C</span></td>
       </tr>
       <tr data-type="red">
-        <td><div class="vname">Syrah / Shiraz</div><div class="valt" data-ru="Сира / Шираз" data-en="Syrah / Shiraz">Сира / Шираз</div></td>
-        <td><span class="badge br" data-ru="Красное" data-en="Red">Красное</span></td>
-        <td><span class="atag">🫐 <span data-ru="ежевика" data-en="blackberry">ежевика</span></span><span class="atag">🌶 <span data-ru="чёрный перец" data-en="black pepper">чёрный перец</span></span><span class="atag">🌸 <span data-ru="фиалка" data-en="violet">фиалка</span></span><span class="atag">🍫 <span data-ru="шоколад" data-en="chocolate">шоколад</span></span></td>
-        <td class="regions">🇫🇷 <span data-ru="Рона" data-en="Rhône">Рона</span><br>🇦🇺 <span data-ru="Австралия" data-en="Australia">Австралия</span><br>🇿🇦 <span data-ru="ЮАР" data-en="South Africa">ЮАР</span></td>
-        <td><span data-ru="Полнотелое, тёмные ягоды, пряности" data-en="Full-bodied, dark fruits, spice">Полнотелое, тёмные ягоды, пряности</span></td>
+        <td><div class="vname">Syrah / Shiraz</div><div class="valt" data-ru="Сира / Шираз" data-en="Syrah / Shiraz">Syrah / Shiraz</div></td>
+        <td><span class="badge br" data-ru="Красное" data-en="Red">Red</span></td>
+        <td><span class="atag">🫐 <span data-ru="ежевика" data-en="blackberry">blackberry</span></span><span class="atag">🌶 <span data-ru="чёрный перец" data-en="black pepper">black pepper</span></span><span class="atag">🌸 <span data-ru="фиалка" data-en="violet">violet</span></span><span class="atag">🍫 <span data-ru="шоколад" data-en="chocolate">chocolate</span></span></td>
+        <td class="regions">🇫🇷 <span data-ru="Рона" data-en="Rhône">Rhône</span><br>🇦🇺 <span data-ru="Австралия" data-en="Australia">Australia</span><br>🇿🇦 <span data-ru="ЮАР" data-en="South Africa">South Africa</span></td>
+        <td><span data-ru="Полнотелое, тёмные ягоды, пряности" data-en="Full-bodied, dark fruits, spice">Full-bodied, dark fruits, spice</span></td>
         <td><span class="tbadge">16–18°C</span></td>
       </tr>
     </tbody>
@@ -462,28 +462,28 @@ footer span{color:var(–gold);}
 
   <div id="grapeCards" style="display:none">
   <div class="cards-grid">
-    <div class="grape-card" data-type="white"><div class="card-top"><div><div class="cname">Chardonnay</div><div class="calt" data-ru="Шардоне" data-en="Chardonnay">Шардоне</div></div><span class="badge bw" data-ru="Белое" data-en="White">Белое</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">АРОМАТЫ</div><div class="ctags"><span class="ctag ctag-w">🍋 <span data-ru="лимон" data-en="lemon">лимон</span></span><span class="ctag ctag-w">🍎 <span data-ru="яблоко" data-en="apple">яблоко</span></span><span class="ctag ctag-w">🧈 <span data-ru="масло" data-en="butter">масло</span></span><span class="ctag ctag-w">🍞 <span data-ru="тост" data-en="toast">тост</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">РЕГИОНЫ</div><div class="cregs">🇫🇷 <span data-ru="Бургундия" data-en="Burgundy">Бургундия</span> · 🇦🇺 <span data-ru="Австралия" data-en="Australia">Австралия</span> · 🇺🇸 <span data-ru="Калифорния" data-en="California">Калифорния</span></div><div style="margin-top:10px"><span class="tbadge">8–10°C</span></div></div>
-    <div class="grape-card" data-type="white"><div class="card-top"><div><div class="cname">Sauvignon Blanc</div><div class="calt" data-ru="Совиньон Блан" data-en="Sauvignon Blanc">Совиньон Блан</div></div><span class="badge bw" data-ru="Белое" data-en="White">Белое</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">АРОМАТЫ</div><div class="ctags"><span class="ctag ctag-w">🌿 <span data-ru="трава" data-en="grass">трава</span></span><span class="ctag ctag-w">🍈 <span data-ru="крыжовник" data-en="gooseberry">крыжовник</span></span><span class="ctag ctag-w">🍋 <span data-ru="грейпфрут" data-en="grapefruit">грейпфрут</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">РЕГИОНЫ</div><div class="cregs">🇫🇷 <span data-ru="Луара" data-en="Loire">Луара</span> · 🇳🇿 <span data-ru="Новая Зеландия" data-en="New Zealand">Новая Зеландия</span></div><div style="margin-top:10px"><span class="tbadge">7–10°C</span></div></div>
-    <div class="grape-card" data-type="white"><div class="card-top"><div><div class="cname">Pinot Grigio</div><div class="calt" data-ru="Пино Гриджо" data-en="Pinot Grigio">Пино Гриджо</div></div><span class="badge bw" data-ru="Белое" data-en="White">Белое</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">АРОМАТЫ</div><div class="ctags"><span class="ctag ctag-w">🍋 <span data-ru="лимон" data-en="lemon">лимон</span></span><span class="ctag ctag-w">🍐 <span data-ru="груша" data-en="pear">груша</span></span><span class="ctag ctag-w">🌸 <span data-ru="цветы" data-en="blossom">цветы</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">РЕГИОНЫ</div><div class="cregs">🇮🇹 <span data-ru="Сев. Италия" data-en="N. Italy">Сев. Италия</span> · 🇫🇷 <span data-ru="Эльзас" data-en="Alsace">Эльзас</span></div><div style="margin-top:10px"><span class="tbadge">8–10°C</span></div></div>
-    <div class="grape-card" data-type="white"><div class="card-top"><div><div class="cname">Riesling</div><div class="calt" data-ru="Рислинг" data-en="Riesling">Рислинг</div></div><span class="badge bw" data-ru="Белое" data-en="White">Белое</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">АРОМАТЫ</div><div class="ctags"><span class="ctag ctag-w">🍋 <span data-ru="лайм" data-en="lime">лайм</span></span><span class="ctag ctag-w">⛽ <span data-ru="бензин" data-en="petrol">бензин</span></span><span class="ctag ctag-w">🍯 <span data-ru="мёд" data-en="honey">мёд</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">РЕГИОНЫ</div><div class="cregs">🇩🇪 <span data-ru="Мозель" data-en="Mosel">Мозель</span> · 🇫🇷 <span data-ru="Эльзас" data-en="Alsace">Эльзас</span></div><div style="margin-top:10px"><span class="tbadge">7–9°C</span></div></div>
-    <div class="grape-card" data-type="red"><div class="card-top"><div><div class="cname">Cabernet Sauvignon</div><div class="calt" data-ru="Каберне Совиньон" data-en="Cabernet Sauvignon">Каберне Совиньон</div></div><span class="badge br" data-ru="Красное" data-en="Red">Красное</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">АРОМАТЫ</div><div class="ctags"><span class="ctag ctag-r">🫐 <span data-ru="смородина" data-en="blackcurrant">смородина</span></span><span class="ctag ctag-r">🌶 <span data-ru="перец" data-en="pepper">перец</span></span><span class="ctag ctag-r">🪵 <span data-ru="кедр" data-en="cedar">кедр</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">РЕГИОНЫ</div><div class="cregs">🇫🇷 <span data-ru="Бордо" data-en="Bordeaux">Бордо</span> · 🇺🇸 <span data-ru="Напа" data-en="Napa">Напа</span> · 🇨🇱 <span data-ru="Чили" data-en="Chile">Чили</span></div><div style="margin-top:10px"><span class="tbadge">16–18°C</span></div></div>
-    <div class="grape-card" data-type="red"><div class="card-top"><div><div class="cname">Merlot</div><div class="calt" data-ru="Мерло" data-en="Merlot">Мерло</div></div><span class="badge br" data-ru="Красное" data-en="Red">Красное</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">АРОМАТЫ</div><div class="ctags"><span class="ctag ctag-r">🍒 <span data-ru="слива" data-en="plum">слива</span></span><span class="ctag ctag-r">🫐 <span data-ru="черника" data-en="blueberry">черника</span></span><span class="ctag ctag-r">☕ <span data-ru="кофе" data-en="coffee">кофе</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">РЕГИОНЫ</div><div class="cregs">🇫🇷 <span data-ru="Бордо" data-en="Bordeaux">Бордо</span> · 🇮🇹 <span data-ru="Италия" data-en="Italy">Италия</span></div><div style="margin-top:10px"><span class="tbadge">16–18°C</span></div></div>
-    <div class="grape-card" data-type="red"><div class="card-top"><div><div class="cname">Pinot Noir</div><div class="calt" data-ru="Пино Нуар" data-en="Pinot Noir">Пино Нуар</div></div><span class="badge br" data-ru="Красное" data-en="Red">Красное</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">АРОМАТЫ</div><div class="ctags"><span class="ctag ctag-r">🍓 <span data-ru="клубника" data-en="strawberry">клубника</span></span><span class="ctag ctag-r">🍒 <span data-ru="вишня" data-en="cherry">вишня</span></span><span class="ctag ctag-r">🌹 <span data-ru="роза" data-en="rose">роза</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">РЕГИОНЫ</div><div class="cregs">🇫🇷 <span data-ru="Бургундия" data-en="Burgundy">Бургундия</span> · 🇳🇿 <span data-ru="Новая Зеландия" data-en="New Zealand">Новая Зеландия</span></div><div style="margin-top:10px"><span class="tbadge">14–16°C</span></div></div>
-    <div class="grape-card" data-type="red"><div class="card-top"><div><div class="cname">Syrah / Shiraz</div><div class="calt" data-ru="Сира / Шираз" data-en="Syrah / Shiraz">Сира / Шираз</div></div><span class="badge br" data-ru="Красное" data-en="Red">Красное</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">АРОМАТЫ</div><div class="ctags"><span class="ctag ctag-r">🫐 <span data-ru="ежевика" data-en="blackberry">ежевика</span></span><span class="ctag ctag-r">🌶 <span data-ru="перец" data-en="black pepper">перец</span></span><span class="ctag ctag-r">🌸 <span data-ru="фиалка" data-en="violet">фиалка</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">РЕГИОНЫ</div><div class="cregs">🇫🇷 <span data-ru="Рона" data-en="Rhône">Рона</span> · 🇦🇺 <span data-ru="Австралия" data-en="Australia">Австралия</span></div><div style="margin-top:10px"><span class="tbadge">16–18°C</span></div></div>
+    <div class="grape-card" data-type="white"><div class="card-top"><div><div class="cname">Chardonnay</div><div class="calt" data-ru="Шардоне" data-en="Chardonnay">Chardonnay</div></div><span class="badge bw" data-ru="Белое" data-en="White">White</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">AROMAS</div><div class="ctags"><span class="ctag ctag-w">🍋 <span data-ru="лимон" data-en="lemon">lemon</span></span><span class="ctag ctag-w">🍎 <span data-ru="яблоко" data-en="apple">apple</span></span><span class="ctag ctag-w">🧈 <span data-ru="масло" data-en="butter">butter</span></span><span class="ctag ctag-w">🍞 <span data-ru="тост" data-en="toast">toast</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">REGIONS</div><div class="cregs">🇫🇷 <span data-ru="Бургундия" data-en="Burgundy">Burgundy</span> · 🇦🇺 <span data-ru="Австралия" data-en="Australia">Australia</span> · 🇺🇸 <span data-ru="Калифорния" data-en="California">California</span></div><div style="margin-top:10px"><span class="tbadge">8–10°C</span></div></div>
+    <div class="grape-card" data-type="white"><div class="card-top"><div><div class="cname">Sauvignon Blanc</div><div class="calt" data-ru="Совиньон Блан" data-en="Sauvignon Blanc">Sauvignon Blanc</div></div><span class="badge bw" data-ru="Белое" data-en="White">White</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">AROMAS</div><div class="ctags"><span class="ctag ctag-w">🌿 <span data-ru="трава" data-en="grass">grass</span></span><span class="ctag ctag-w">🍈 <span data-ru="крыжовник" data-en="gooseberry">gooseberry</span></span><span class="ctag ctag-w">🍋 <span data-ru="грейпфрут" data-en="grapefruit">grapefruit</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">REGIONS</div><div class="cregs">🇫🇷 <span data-ru="Луара" data-en="Loire">Loire</span> · 🇳🇿 <span data-ru="Новая Зеландия" data-en="New Zealand">New Zealand</span></div><div style="margin-top:10px"><span class="tbadge">7–10°C</span></div></div>
+    <div class="grape-card" data-type="white"><div class="card-top"><div><div class="cname">Pinot Grigio</div><div class="calt" data-ru="Пино Гриджо" data-en="Pinot Grigio">Pinot Grigio</div></div><span class="badge bw" data-ru="Белое" data-en="White">White</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">AROMAS</div><div class="ctags"><span class="ctag ctag-w">🍋 <span data-ru="лимон" data-en="lemon">lemon</span></span><span class="ctag ctag-w">🍐 <span data-ru="груша" data-en="pear">pear</span></span><span class="ctag ctag-w">🌸 <span data-ru="цветы" data-en="blossom">blossom</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">REGIONS</div><div class="cregs">🇮🇹 <span data-ru="Сев. Италия" data-en="N. Italy">N. Italy</span> · 🇫🇷 <span data-ru="Эльзас" data-en="Alsace">Alsace</span></div><div style="margin-top:10px"><span class="tbadge">8–10°C</span></div></div>
+    <div class="grape-card" data-type="white"><div class="card-top"><div><div class="cname">Riesling</div><div class="calt" data-ru="Рислинг" data-en="Riesling">Riesling</div></div><span class="badge bw" data-ru="Белое" data-en="White">White</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">AROMAS</div><div class="ctags"><span class="ctag ctag-w">🍋 <span data-ru="лайм" data-en="lime">lime</span></span><span class="ctag ctag-w">⛽ <span data-ru="бензин" data-en="petrol">petrol</span></span><span class="ctag ctag-w">🍯 <span data-ru="мёд" data-en="honey">honey</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">REGIONS</div><div class="cregs">🇩🇪 <span data-ru="Мозель" data-en="Mosel">Mosel</span> · 🇫🇷 <span data-ru="Эльзас" data-en="Alsace">Alsace</span></div><div style="margin-top:10px"><span class="tbadge">7–9°C</span></div></div>
+    <div class="grape-card" data-type="red"><div class="card-top"><div><div class="cname">Cabernet Sauvignon</div><div class="calt" data-ru="Каберне Совиньон" data-en="Cabernet Sauvignon">Cabernet Sauvignon</div></div><span class="badge br" data-ru="Красное" data-en="Red">Red</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">AROMAS</div><div class="ctags"><span class="ctag ctag-r">🫐 <span data-ru="смородина" data-en="blackcurrant">blackcurrant</span></span><span class="ctag ctag-r">🌶 <span data-ru="перец" data-en="pepper">pepper</span></span><span class="ctag ctag-r">🪵 <span data-ru="кедр" data-en="cedar">cedar</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">REGIONS</div><div class="cregs">🇫🇷 <span data-ru="Бордо" data-en="Bordeaux">Bordeaux</span> · 🇺🇸 <span data-ru="Напа" data-en="Napa">Napa</span> · 🇨🇱 <span data-ru="Чили" data-en="Chile">Chile</span></div><div style="margin-top:10px"><span class="tbadge">16–18°C</span></div></div>
+    <div class="grape-card" data-type="red"><div class="card-top"><div><div class="cname">Merlot</div><div class="calt" data-ru="Мерло" data-en="Merlot">Merlot</div></div><span class="badge br" data-ru="Красное" data-en="Red">Red</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">AROMAS</div><div class="ctags"><span class="ctag ctag-r">🍒 <span data-ru="слива" data-en="plum">plum</span></span><span class="ctag ctag-r">🫐 <span data-ru="черника" data-en="blueberry">blueberry</span></span><span class="ctag ctag-r">☕ <span data-ru="кофе" data-en="coffee">coffee</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">REGIONS</div><div class="cregs">🇫🇷 <span data-ru="Бордо" data-en="Bordeaux">Bordeaux</span> · 🇮🇹 <span data-ru="Италия" data-en="Italy">Italy</span></div><div style="margin-top:10px"><span class="tbadge">16–18°C</span></div></div>
+    <div class="grape-card" data-type="red"><div class="card-top"><div><div class="cname">Pinot Noir</div><div class="calt" data-ru="Пино Нуар" data-en="Pinot Noir">Pinot Noir</div></div><span class="badge br" data-ru="Красное" data-en="Red">Red</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">AROMAS</div><div class="ctags"><span class="ctag ctag-r">🍓 <span data-ru="клубника" data-en="strawberry">strawberry</span></span><span class="ctag ctag-r">🍒 <span data-ru="вишня" data-en="cherry">cherry</span></span><span class="ctag ctag-r">🌹 <span data-ru="роза" data-en="rose">rose</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">REGIONS</div><div class="cregs">🇫🇷 <span data-ru="Бургундия" data-en="Burgundy">Burgundy</span> · 🇳🇿 <span data-ru="Новая Зеландия" data-en="New Zealand">New Zealand</span></div><div style="margin-top:10px"><span class="tbadge">14–16°C</span></div></div>
+    <div class="grape-card" data-type="red"><div class="card-top"><div><div class="cname">Syrah / Shiraz</div><div class="calt" data-ru="Сира / Шираз" data-en="Syrah / Shiraz">Syrah / Shiraz</div></div><span class="badge br" data-ru="Красное" data-en="Red">Red</span></div><div class="clabel" data-ru="АРОМАТЫ" data-en="AROMAS">AROMAS</div><div class="ctags"><span class="ctag ctag-r">🫐 <span data-ru="ежевика" data-en="blackberry">blackberry</span></span><span class="ctag ctag-r">🌶 <span data-ru="перец" data-en="black pepper">black pepper</span></span><span class="ctag ctag-r">🌸 <span data-ru="фиалка" data-en="violet">violet</span></span></div><div class="clabel" data-ru="РЕГИОНЫ" data-en="REGIONS">REGIONS</div><div class="cregs">🇫🇷 <span data-ru="Рона" data-en="Rhône">Rhône</span> · 🇦🇺 <span data-ru="Австралия" data-en="Australia">Australia</span></div><div style="margin-top:10px"><span class="tbadge">16–18°C</span></div></div>
   </div>
   </div>
 
   <hr class="div">
-  <div class="sec-title" data-ru="СОЧЕТАНИЕ С ЕДОЙ" data-en="FOOD PAIRING">СОЧЕТАНИЕ С ЕДОЙ</div>
+  <div class="sec-title" data-ru="СОЧЕТАНИЕ С ЕДОЙ" data-en="FOOD PAIRING">FOOD PAIRING</div>
   <div class="pair-grid">
-    <div class="pair-card"><div class="pair-wine">🟡 Chardonnay</div><div class="pair-foods" data-ru="Рыба · Лобстер · Курица · Сливочные соусы" data-en="Fish · Lobster · Chicken · Cream sauces">Рыба · Лобстер · Курица · Сливочные соусы</div></div>
-    <div class="pair-card"><div class="pair-wine">🟡 Sauvignon Blanc</div><div class="pair-foods" data-ru="Козий сыр · Морепродукты · Спаржа" data-en="Goat cheese · Seafood · Asparagus">Козий сыр · Морепродукты · Спаржа</div></div>
-    <div class="pair-card"><div class="pair-wine">🟡 Pinot Grigio</div><div class="pair-foods" data-ru="Лёгкая паста · Рыба · Овощи" data-en="Light pasta · Fish · Vegetables">Лёгкая паста · Рыба · Овощи</div></div>
-    <div class="pair-card"><div class="pair-wine">🟡 Riesling</div><div class="pair-foods" data-ru="Азиатская кухня · Свинина · Острые блюда" data-en="Asian cuisine · Pork · Spicy dishes">Азиатская кухня · Свинина · Острые блюда</div></div>
-    <div class="pair-card"><div class="pair-wine">🔴 Cabernet Sauvignon</div><div class="pair-foods" data-ru="Стейк · Ягнёнок · Зрелый сыр" data-en="Steak · Lamb · Aged cheese">Стейк · Ягнёнок · Зрелый сыр</div></div>
-    <div class="pair-card"><div class="pair-wine">🔴 Merlot</div><div class="pair-foods" data-ru="Говядина · Паста · Утка" data-en="Beef · Pasta · Duck">Говядина · Паста · Утка</div></div>
-    <div class="pair-card"><div class="pair-wine">🔴 Pinot Noir</div><div class="pair-foods" data-ru="Утка · Лосось · Грибы · Тунец" data-en="Duck · Salmon · Mushrooms · Tuna">Утка · Лосось · Грибы · Тунец</div></div>
-    <div class="pair-card"><div class="pair-wine">🔴 Syrah / Shiraz</div><div class="pair-foods" data-ru="Барбекю · Дичь · Острые блюда" data-en="BBQ · Game · Spicy dishes">Барбекю · Дичь · Острые блюда</div></div>
+    <div class="pair-card"><div class="pair-wine">🟡 Chardonnay</div><div class="pair-foods" data-ru="Рыба · Лобстер · Курица · Сливочные соусы" data-en="Fish · Lobster · Chicken · Cream sauces">Fish · Lobster · Chicken · Cream sauces</div></div>
+    <div class="pair-card"><div class="pair-wine">🟡 Sauvignon Blanc</div><div class="pair-foods" data-ru="Козий сыр · Морепродукты · Спаржа" data-en="Goat cheese · Seafood · Asparagus">Goat cheese · Seafood · Asparagus</div></div>
+    <div class="pair-card"><div class="pair-wine">🟡 Pinot Grigio</div><div class="pair-foods" data-ru="Лёгкая паста · Рыба · Овощи" data-en="Light pasta · Fish · Vegetables">Light pasta · Fish · Vegetables</div></div>
+    <div class="pair-card"><div class="pair-wine">🟡 Riesling</div><div class="pair-foods" data-ru="Азиатская кухня · Свинина · Острые блюда" data-en="Asian cuisine · Pork · Spicy dishes">Asian cuisine · Pork · Spicy dishes</div></div>
+    <div class="pair-card"><div class="pair-wine">🔴 Cabernet Sauvignon</div><div class="pair-foods" data-ru="Стейк · Ягнёнок · Зрелый сыр" data-en="Steak · Lamb · Aged cheese">Steak · Lamb · Aged cheese</div></div>
+    <div class="pair-card"><div class="pair-wine">🔴 Merlot</div><div class="pair-foods" data-ru="Говядина · Паста · Утка" data-en="Beef · Pasta · Duck">Beef · Pasta · Duck</div></div>
+    <div class="pair-card"><div class="pair-wine">🔴 Pinot Noir</div><div class="pair-foods" data-ru="Утка · Лосось · Грибы · Тунец" data-en="Duck · Salmon · Mushrooms · Tuna">Duck · Salmon · Mushrooms · Tuna</div></div>
+    <div class="pair-card"><div class="pair-wine">🔴 Syrah / Shiraz</div><div class="pair-foods" data-ru="Барбекю · Дичь · Острые блюда" data-en="BBQ · Game · Spicy dishes">BBQ · Game · Spicy dishes</div></div>
   </div>
 </div>
 
@@ -492,62 +492,62 @@ footer span{color:var(–gold);}
 ═══════════════════════════════════════════════ -->
 
 <div class="panel" id="panel-winemaking">
-  <div class="sec-title" data-ru="ПРОЦЕСС ВИНОДЕЛИЯ" data-en="WINEMAKING PROCESS">ПРОЦЕСС ВИНОДЕЛИЯ</div>
+  <div class="sec-title" data-ru="ПРОЦЕСС ВИНОДЕЛИЯ" data-en="WINEMAKING PROCESS">WINEMAKING PROCESS</div>
   <div class="tab-bar2">
-    <button class="tb2 active" onclick="openSub('red2',this)" data-ru="🔴 Красное" data-en="🔴 Red Wine">🔴 Красное</button>
-    <button class="tb2" onclick="openSub('white2',this)" data-ru="🟡 Белое" data-en="🟡 White Wine">🟡 Белое</button>
-    <button class="tb2" onclick="openSub('spark2',this)" data-ru="🫧 Игристое" data-en="🫧 Sparkling">🫧 Игристое</button>
-    <button class="tb2" onclick="openSub('cmp2',this)" data-ru="📊 Сравнение" data-en="📊 Comparison">📊 Сравнение</button>
+    <button class="tb2 active" onclick="openSub('red2',this)" data-ru="🔴 Красное" data-en="🔴 Red Wine">🔴 Red Wine</button>
+    <button class="tb2" onclick="openSub('white2',this)" data-ru="🟡 Белое" data-en="🟡 White Wine">🟡 White Wine</button>
+    <button class="tb2" onclick="openSub('spark2',this)" data-ru="🫧 Игристое" data-en="🫧 Sparkling">🫧 Sparkling</button>
+    <button class="tb2" onclick="openSub('cmp2',this)" data-ru="📊 Сравнение" data-en="📊 Comparison">📊 Comparison</button>
   </div>
 
   <div class="sub-panel active" id="sub-red2">
   <div class="flow">
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 1" data-en="Step 1">Шаг 1</div><div class="fname">🍇 <span data-ru="Сбор урожая" data-en="Harvesting">Сбор урожая</span></div></div><span class="fbadge fb-b" data-ru="Общее" data-en="All wines">Общее</span></div><div class="fdesc" data-ru="Виноград собирают вручную или машиной при оптимальной зрелости. Баланс сахара, кислотности и аромата — ключевой момент." data-en="Grapes are harvested by hand or machine at optimal ripeness. Balance of sugar, acidity and aroma is key.">Виноград собирают вручную или машиной при оптимальной зрелости. Баланс сахара, кислотности и аромата — ключевой момент.</div><div class="fnote" data-ru="💡 Более спелый виноград → больше сахара → больше алкоголя" data-en="💡 Riper grapes → more sugar → higher alcohol">💡 Более спелый виноград → больше сахара → больше алкоголя</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 2" data-en="Step 2">Шаг 2</div><div class="fname">🫨 <span data-ru="Дробление" data-en="Crushing">Дробление</span></div></div><span class="fbadge fb-r" data-ru="Красное" data-en="Red">Красное</span></div><div class="fdesc" data-ru="Ягоды раздавливают. Кожица, семена и мякоть остаются вместе — это мезга (must)." data-en="Grapes are crushed. Skins, seeds and pulp remain together — this is called must.">Ягоды раздавливают. Кожица, семена и мякоть остаются вместе — это мезга (must).</div><div class="fnote" data-ru="⚠️ Ключевое отличие от белого: кожица остаётся! Она даёт цвет и танины." data-en="⚠️ Key difference from white wine: skins remain! They give colour and tannins.">⚠️ Ключевое отличие от белого: кожица остаётся! Она даёт цвет и танины.</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 3" data-en="Step 3">Шаг 3</div><div class="fname">🧫 <span data-ru="Ферментация с мезгой" data-en="Fermentation with skins">Ферментация с мезгой</span></div></div><span class="fbadge fb-r" data-ru="Красное" data-en="Red">Красное</span></div><div class="fdesc" data-ru="Дрожжи: сахар → CO₂ + алкоголь. Температура 20–32°C. Мезгу регулярно перемешивают." data-en="Yeast: sugar → CO₂ + alcohol. Temperature 20–32°C. Must is regularly punched down.">Дрожжи: сахар → CO₂ + алкоголь. Температура 20–32°C. Мезгу регулярно перемешивают.</div><div class="fnote" data-ru="🌡️ Выше температура → больше цвета и танинов из кожицы" data-en="🌡️ Higher temperature → more colour and tannins extracted from skins">🌡️ Выше температура → больше цвета и танинов из кожицы</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 4" data-en="Step 4">Шаг 4</div><div class="fname">🗜️ <span data-ru="Отжим" data-en="Pressing">Отжим</span></div></div><span class="fbadge fb-r" data-ru="Красное" data-en="Red">Красное</span></div><div class="fdesc" data-ru="Жидкость отделяют от твёрдых частиц. Free-run wine (лучшее) + press wine (более танинное)." data-en="Liquid is separated from solids. Free-run wine (best quality) + press wine (more tannic).">Жидкость отделяют от твёрдых частиц. Free-run wine (лучшее) + press wine (более танинное).</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 5" data-en="Step 5">Шаг 5</div><div class="fname">🥛 <span data-ru="Яблочно-молочная ферментация (MLF)" data-en="Malolactic Fermentation (MLF)">Яблочно-молочная ферментация (MLF)</span></div></div><span class="fbadge fb-r" data-ru="Красное" data-en="Red">Красное</span></div><div class="fdesc" data-ru="Бактерии: яблочная кислота → молочная кислота. Вино становится мягче. Применяется почти во всех красных винах." data-en="Bacteria convert sharp malic acid → softer lactic acid. Wine becomes rounder. Used in almost all red wines.">Бактерии: яблочная кислота → молочная кислота. Вино становится мягче. Применяется почти во всех красных винах.</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 6" data-en="Step 6">Шаг 6</div><div class="fname">🛢️ <span data-ru="Выдержка в дубе" data-en="Oak Ageing">Выдержка в дубе</span></div></div><span class="fbadge fb-b" data-ru="Необязательно" data-en="Optional">Необязательно</span></div><div class="fdesc" data-ru="Французский или американский дуб добавляет: ваниль, специи, тост, кедр. Также происходит микро-оксигенация." data-en="French or American oak adds vanilla, spice, toast, cedar. Micro-oxygenation also occurs.">Французский или американский дуб добавляет: ваниль, специи, тост, кедр. Также происходит микро-оксигенация.</div><div class="fnote" data-ru="🇫🇷 Французский дуб — тонкий, элегантный · 🇺🇸 Американский — кокос, ваниль" data-en="🇫🇷 French oak — subtle, elegant · 🇺🇸 American oak — coconut, vanilla">🇫🇷 Французский дуб — тонкий, элегантный · 🇺🇸 Американский — кокос, ваниль</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 7–8" data-en="Steps 7–8">Шаг 7–8</div><div class="fname">🧹 <span data-ru="Осветление → Розлив" data-en="Fining → Bottling">Осветление → Розлив</span></div></div><span class="fbadge fb-b" data-ru="Общее" data-en="All wines">Общее</span></div><div class="fdesc" data-ru="Удаление осадка и розлив. Укупорка: натуральная пробка, синтетическая или screwcap." data-en="Sediment removal and bottling. Closure: natural cork, synthetic cork or screwcap.">Удаление осадка и розлив. Укупорка: натуральная пробка, синтетическая или screwcap.</div><div class="fnote" data-ru="🌍 Screwcap популярен в Австралии и Новой Зеландии — исключает пробковый дефект" data-en="🌍 Screwcap popular in Australia & NZ — eliminates cork taint">🌍 Screwcap популярен в Австралии и Новой Зеландии — исключает пробковый дефект</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 1" data-en="Step 1">Step 1</div><div class="fname">🍇 <span data-ru="Сбор урожая" data-en="Harvesting">Harvesting</span></div></div><span class="fbadge fb-b" data-ru="Общее" data-en="All wines">All wines</span></div><div class="fdesc" data-ru="Виноград собирают вручную или машиной при оптимальной зрелости. Баланс сахара, кислотности и аромата — ключевой момент." data-en="Grapes are harvested by hand or machine at optimal ripeness. Balance of sugar, acidity and aroma is key.">Grapes are harvested by hand or machine at optimal ripeness. Balance of sugar, acidity and aroma is key.</div><div class="fnote" data-ru="💡 Более спелый виноград → больше сахара → больше алкоголя" data-en="💡 Riper grapes → more sugar → higher alcohol">💡 Riper grapes → more sugar → higher alcohol</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 2" data-en="Step 2">Step 2</div><div class="fname">🫨 <span data-ru="Дробление" data-en="Crushing">Crushing</span></div></div><span class="fbadge fb-r" data-ru="Красное" data-en="Red">Red</span></div><div class="fdesc" data-ru="Ягоды раздавливают. Кожица, семена и мякоть остаются вместе — это мезга (must)." data-en="Grapes are crushed. Skins, seeds and pulp remain together — this is called must.">Grapes are crushed. Skins, seeds and pulp remain together — this is called must.</div><div class="fnote" data-ru="⚠️ Ключевое отличие от белого: кожица остаётся! Она даёт цвет и танины." data-en="⚠️ Key difference from white wine: skins remain! They give colour and tannins.">⚠️ Key difference from white wine: skins remain! They give colour and tannins.</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 3" data-en="Step 3">Step 3</div><div class="fname">🧫 <span data-ru="Ферментация с мезгой" data-en="Fermentation with skins">Fermentation with skins</span></div></div><span class="fbadge fb-r" data-ru="Красное" data-en="Red">Red</span></div><div class="fdesc" data-ru="Дрожжи: сахар → CO₂ + алкоголь. Температура 20–32°C. Мезгу регулярно перемешивают." data-en="Yeast: sugar → CO₂ + alcohol. Temperature 20–32°C. Must is regularly punched down.">Yeast: sugar → CO₂ + alcohol. Temperature 20–32°C. Must is regularly punched down.</div><div class="fnote" data-ru="🌡️ Выше температура → больше цвета и танинов из кожицы" data-en="🌡️ Higher temperature → more colour and tannins extracted from skins">🌡️ Higher temperature → more colour and tannins extracted from skins</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 4" data-en="Step 4">Step 4</div><div class="fname">🗜️ <span data-ru="Отжим" data-en="Pressing">Pressing</span></div></div><span class="fbadge fb-r" data-ru="Красное" data-en="Red">Red</span></div><div class="fdesc" data-ru="Жидкость отделяют от твёрдых частиц. Free-run wine (лучшее) + press wine (более танинное)." data-en="Liquid is separated from solids. Free-run wine (best quality) + press wine (more tannic).">Liquid is separated from solids. Free-run wine (best quality) + press wine (more tannic).</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 5" data-en="Step 5">Step 5</div><div class="fname">🥛 <span data-ru="Яблочно-молочная ферментация (MLF)" data-en="Malolactic Fermentation (MLF)">Malolactic Fermentation (MLF)</span></div></div><span class="fbadge fb-r" data-ru="Красное" data-en="Red">Red</span></div><div class="fdesc" data-ru="Бактерии: яблочная кислота → молочная кислота. Вино становится мягче. Применяется почти во всех красных винах." data-en="Bacteria convert sharp malic acid → softer lactic acid. Wine becomes rounder. Used in almost all red wines.">Bacteria convert sharp malic acid → softer lactic acid. Wine becomes rounder. Used in almost all red wines.</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 6" data-en="Step 6">Step 6</div><div class="fname">🛢️ <span data-ru="Выдержка в дубе" data-en="Oak Ageing">Oak Ageing</span></div></div><span class="fbadge fb-b" data-ru="Необязательно" data-en="Optional">Optional</span></div><div class="fdesc" data-ru="Французский или американский дуб добавляет: ваниль, специи, тост, кедр. Также происходит микро-оксигенация." data-en="French or American oak adds vanilla, spice, toast, cedar. Micro-oxygenation also occurs.">French or American oak adds vanilla, spice, toast, cedar. Micro-oxygenation also occurs.</div><div class="fnote" data-ru="🇫🇷 Французский дуб — тонкий, элегантный · 🇺🇸 Американский — кокос, ваниль" data-en="🇫🇷 French oak — subtle, elegant · 🇺🇸 American oak — coconut, vanilla">🇫🇷 French oak — subtle, elegant · 🇺🇸 American oak — coconut, vanilla</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 7–8" data-en="Steps 7–8">Steps 7–8</div><div class="fname">🧹 <span data-ru="Осветление → Розлив" data-en="Fining → Bottling">Fining → Bottling</span></div></div><span class="fbadge fb-b" data-ru="Общее" data-en="All wines">All wines</span></div><div class="fdesc" data-ru="Удаление осадка и розлив. Укупорка: натуральная пробка, синтетическая или screwcap." data-en="Sediment removal and bottling. Closure: natural cork, synthetic cork or screwcap.">Sediment removal and bottling. Closure: natural cork, synthetic cork or screwcap.</div><div class="fnote" data-ru="🌍 Screwcap популярен в Австралии и Новой Зеландии — исключает пробковый дефект" data-en="🌍 Screwcap popular in Australia & NZ — eliminates cork taint">🌍 Screwcap popular in Australia & NZ — eliminates cork taint</div></div></div></div>
   </div>
   </div>
 
   <div class="sub-panel" id="sub-white2">
   <div class="flow">
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 1" data-en="Step 1">Шаг 1</div><div class="fname">🍇 <span data-ru="Сбор — немного раньше" data-en="Harvest — slightly earlier">Сбор — немного раньше</span></div></div><span class="fbadge fb-w" data-ru="Белое" data-en="White">Белое</span></div><div class="fdesc" data-ru="Белый виноград собирают раньше красного, чтобы сохранить кислотность и свежесть. Ночной сбор помогает сохранить ароматы." data-en="White grapes are harvested earlier than red to preserve acidity and freshness. Night harvesting helps retain aromas.">Белый виноград собирают раньше красного, чтобы сохранить кислотность и свежесть. Ночной сбор помогает сохранить ароматы.</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 2" data-en="Step 2">Шаг 2</div><div class="fname">🗜️ <span data-ru="Немедленный отжим" data-en="Immediate Pressing">Немедленный отжим</span></div></div><span class="fbadge fb-w" data-ru="Белое" data-en="White">Белое</span></div><div class="fdesc" data-ru="Главное отличие: кожица сразу отделяется от сока. Это предотвращает извлечение танинов." data-en="Key difference: skins are immediately separated from juice. This prevents tannin extraction.">Главное отличие: кожица сразу отделяется от сока. Это предотвращает извлечение танинов.</div><div class="fnote" data-ru="⚠️ Именно поэтому белое вино почти без танинов" data-en="⚠️ This is why white wine has almost no tannins">⚠️ Именно поэтому белое вино почти без танинов</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 3" data-en="Step 3">Шаг 3</div><div class="fname">🧫 <span data-ru="Ферментация при низкой температуре" data-en="Low Temperature Fermentation">Ферментация при низкой температуре</span></div></div><span class="fbadge fb-w" data-ru="Белое" data-en="White">Белое</span></div><div class="fdesc" data-ru="Температура 12–22°C — ниже, чем у красного. Низкая температура сохраняет тонкие ароматы и фруктовость." data-en="Temperature 12–22°C — lower than red wine. Low temperature preserves delicate aromas and fruitiness.">Температура 12–22°C — ниже, чем у красного. Низкая температура сохраняет тонкие ароматы и фруктовость.</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 4" data-en="Step 4">Шаг 4</div><div class="fname">🥛 <span data-ru="MLF — только для некоторых" data-en="MLF — selective use">MLF — только для некоторых</span></div></div><span class="fbadge fb-b" data-ru="Необязательно" data-en="Optional">Необязательно</span></div><div class="fdesc" data-ru="Только для полнотелых белых (Chardonnay). Придаёт маслянистую текстуру. Для Riesling, Sauvignon Blanc — не применяется." data-en="Only for full-bodied whites (Chardonnay). Adds buttery texture. Not used for Riesling or Sauvignon Blanc.">Только для полнотелых белых (Chardonnay). Придаёт маслянистую текстуру. Для Riesling, Sauvignon Blanc — не применяется.</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 5–6" data-en="Steps 5–6">Шаг 5–6</div><div class="fname">🛢️ <span data-ru="Выдержка (сталь или дуб) → Розлив" data-en="Ageing (steel or oak) → Bottling">Выдержка (сталь или дуб) → Розлив</span></div></div><span class="fbadge fb-b" data-ru="Общее" data-en="All wines">Общее</span></div><div class="fdesc" data-ru="Большинство белых — в стали (сохраняет свежесть). Chardonnay часто в дубе. Белые обычно пьют молодыми." data-en="Most whites in steel (preserves freshness). Chardonnay often in oak. Whites are usually drunk young.">Большинство белых — в стали (сохраняет свежесть). Chardonnay часто в дубе. Белые обычно пьют молодыми.</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 1" data-en="Step 1">Step 1</div><div class="fname">🍇 <span data-ru="Сбор — немного раньше" data-en="Harvest — slightly earlier">Harvest — slightly earlier</span></div></div><span class="fbadge fb-w" data-ru="Белое" data-en="White">White</span></div><div class="fdesc" data-ru="Белый виноград собирают раньше красного, чтобы сохранить кислотность и свежесть. Ночной сбор помогает сохранить ароматы." data-en="White grapes are harvested earlier than red to preserve acidity and freshness. Night harvesting helps retain aromas.">White grapes are harvested earlier than red to preserve acidity and freshness. Night harvesting helps retain aromas.</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 2" data-en="Step 2">Step 2</div><div class="fname">🗜️ <span data-ru="Немедленный отжим" data-en="Immediate Pressing">Immediate Pressing</span></div></div><span class="fbadge fb-w" data-ru="Белое" data-en="White">White</span></div><div class="fdesc" data-ru="Главное отличие: кожица сразу отделяется от сока. Это предотвращает извлечение танинов." data-en="Key difference: skins are immediately separated from juice. This prevents tannin extraction.">Key difference: skins are immediately separated from juice. This prevents tannin extraction.</div><div class="fnote" data-ru="⚠️ Именно поэтому белое вино почти без танинов" data-en="⚠️ This is why white wine has almost no tannins">⚠️ This is why white wine has almost no tannins</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 3" data-en="Step 3">Step 3</div><div class="fname">🧫 <span data-ru="Ферментация при низкой температуре" data-en="Low Temperature Fermentation">Low Temperature Fermentation</span></div></div><span class="fbadge fb-w" data-ru="Белое" data-en="White">White</span></div><div class="fdesc" data-ru="Температура 12–22°C — ниже, чем у красного. Низкая температура сохраняет тонкие ароматы и фруктовость." data-en="Temperature 12–22°C — lower than red wine. Low temperature preserves delicate aromas and fruitiness.">Temperature 12–22°C — lower than red wine. Low temperature preserves delicate aromas and fruitiness.</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 4" data-en="Step 4">Step 4</div><div class="fname">🥛 <span data-ru="MLF — только для некоторых" data-en="MLF — selective use">MLF — selective use</span></div></div><span class="fbadge fb-b" data-ru="Необязательно" data-en="Optional">Optional</span></div><div class="fdesc" data-ru="Только для полнотелых белых (Chardonnay). Придаёт маслянистую текстуру. Для Riesling, Sauvignon Blanc — не применяется." data-en="Only for full-bodied whites (Chardonnay). Adds buttery texture. Not used for Riesling or Sauvignon Blanc.">Only for full-bodied whites (Chardonnay). Adds buttery texture. Not used for Riesling or Sauvignon Blanc.</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 5–6" data-en="Steps 5–6">Steps 5–6</div><div class="fname">🛢️ <span data-ru="Выдержка (сталь или дуб) → Розлив" data-en="Ageing (steel or oak) → Bottling">Ageing (steel or oak) → Bottling</span></div></div><span class="fbadge fb-b" data-ru="Общее" data-en="All wines">All wines</span></div><div class="fdesc" data-ru="Большинство белых — в стали (сохраняет свежесть). Chardonnay часто в дубе. Белые обычно пьют молодыми." data-en="Most whites in steel (preserves freshness). Chardonnay often in oak. Whites are usually drunk young.">Most whites in steel (preserves freshness). Chardonnay often in oak. Whites are usually drunk young.</div></div></div></div>
   </div>
   </div>
 
   <div class="sub-panel" id="sub-spark2">
   <div class="flow">
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 1–4" data-en="Steps 1–4">Шаг 1–4</div><div class="fname">🍾 <span data-ru="Базовое вино" data-en="Base Wine">Базовое вино</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Игристое</span></div><div class="fdesc" data-ru="Сначала производится обычное тихое вино — как белое. Высокая кислотность и низкий алкоголь (~10–11%)." data-en="First a still base wine is made like a white wine. High acidity and low alcohol (~10–11%).">Сначала производится обычное тихое вино — как белое. Высокая кислотность и низкий алкоголь (~10–11%).</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 5" data-en="Step 5">Шаг 5</div><div class="fname">🧪 <span data-ru="Тираж (добавление сахара и дрожжей)" data-en="Tirage (adding sugar + yeast)">Тираж</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Игристое</span></div><div class="fdesc" data-ru="В базовое вино добавляют сахар и дрожжи (liqueur de tirage), разливают по бутылкам и закрывают временной крышкой." data-en="Sugar and yeast (liqueur de tirage) are added to base wine, bottled and sealed with a temporary crown cap.">В базовое вино добавляют сахар и дрожжи (liqueur de tirage), разливают по бутылкам и закрывают временной крышкой.</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 6" data-en="Step 6">Шаг 6</div><div class="fname">🫧 <span data-ru="Вторичная ферментация в бутылке" data-en="Secondary Fermentation in bottle">Вторичная ферментация в бутылке</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Игристое</span></div><div class="fdesc" data-ru="CO₂ не уходит — растворяется в вине. Именно так образуются пузырьки! Бутылки лежат горизонтально минимум 15 месяцев." data-en="CO₂ cannot escape — it dissolves into the wine. This is how bubbles form! Bottles lie horizontal for at least 15 months.">CO₂ не уходит — растворяется в вине. Именно так образуются пузырьки! Бутылки лежат горизонтально минимум 15 месяцев.</div><div class="fnote" data-ru="💡 Шампань NV — минимум 15 мес. · Винтажная — 36+ мес." data-en="💡 Champagne NV — minimum 15 months · Vintage — 36+ months">💡 Шампань NV — минимум 15 мес. · Винтажная — 36+ мес.</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 7" data-en="Step 7">Шаг 7</div><div class="fname">🔄 <span data-ru="Ремюаж (riddling)" data-en="Riddling (remuage)">Ремюаж (riddling)</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Игристое</span></div><div class="fdesc" data-ru="Бутылки постепенно переворачивают горлышком вниз. Осадок собирается в горлышке." data-en="Bottles are gradually tilted neck-down. Sediment collects in the neck.">Бутылки постепенно переворачивают горлышком вниз. Осадок собирается в горлышке.</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 8" data-en="Step 8">Шаг 8</div><div class="fname">❄️ <span data-ru="Дегоржаж (disgorgement)" data-en="Disgorgement (dégorgement)">Дегоржаж (disgorgement)</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Игристое</span></div><div class="fdesc" data-ru="Горлышко замораживают, давление выталкивает осадок. Вино остаётся прозрачным!" data-en="The neck is frozen, pressure ejects the frozen sediment plug. Wine remains clear!">Горлышко замораживают, давление выталкивает осадок. Вино остаётся прозрачным!</div></div></div></div>
-    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 9" data-en="Step 9">Шаг 9</div><div class="fname">🍬 <span data-ru="Дозаж → Стиль" data-en="Dosage → Style">Дозаж → Стиль</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Игристое</span></div><div class="fdesc" data-ru="Добавляют вино + сахар. Количество сахара определяет стиль: Brut Nature · Brut · Extra Dry · Sec · Demi-Sec · Doux" data-en="Wine + sugar mixture added. The sugar level determines the style: Brut Nature · Brut · Extra Dry · Sec · Demi-Sec · Doux">Добавляют вино + сахар. Количество сахара определяет стиль: Brut Nature · Brut · Extra Dry · Sec · Demi-Sec · Doux</div><div class="fnote" data-ru="🥂 Brut (до 12 г/л) — самый популярный стиль Шампани" data-en="🥂 Brut (up to 12 g/L) — the most popular Champagne style">🥂 Brut (до 12 г/л) — самый популярный стиль Шампани</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 1–4" data-en="Steps 1–4">Steps 1–4</div><div class="fname">🍾 <span data-ru="Базовое вино" data-en="Base Wine">Base Wine</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Sparkling</span></div><div class="fdesc" data-ru="Сначала производится обычное тихое вино — как белое. Высокая кислотность и низкий алкоголь (~10–11%)." data-en="First a still base wine is made like a white wine. High acidity and low alcohol (~10–11%).">First a still base wine is made like a white wine. High acidity and low alcohol (~10–11%).</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 5" data-en="Step 5">Step 5</div><div class="fname">🧪 <span data-ru="Тираж (добавление сахара и дрожжей)" data-en="Tirage (adding sugar + yeast)">Tirage (adding sugar + yeast)</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Sparkling</span></div><div class="fdesc" data-ru="В базовое вино добавляют сахар и дрожжи (liqueur de tirage), разливают по бутылкам и закрывают временной крышкой." data-en="Sugar and yeast (liqueur de tirage) are added to base wine, bottled and sealed with a temporary crown cap.">Sugar and yeast (liqueur de tirage) are added to base wine, bottled and sealed with a temporary crown cap.</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 6" data-en="Step 6">Step 6</div><div class="fname">🫧 <span data-ru="Вторичная ферментация в бутылке" data-en="Secondary Fermentation in bottle">Secondary Fermentation in bottle</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Sparkling</span></div><div class="fdesc" data-ru="CO₂ не уходит — растворяется в вине. Именно так образуются пузырьки! Бутылки лежат горизонтально минимум 15 месяцев." data-en="CO₂ cannot escape — it dissolves into the wine. This is how bubbles form! Bottles lie horizontal for at least 15 months.">CO₂ cannot escape — it dissolves into the wine. This is how bubbles form! Bottles lie horizontal for at least 15 months.</div><div class="fnote" data-ru="💡 Шампань NV — минимум 15 мес. · Винтажная — 36+ мес." data-en="💡 Champagne NV — minimum 15 months · Vintage — 36+ months">💡 Champagne NV — minimum 15 months · Vintage — 36+ months</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 7" data-en="Step 7">Step 7</div><div class="fname">🔄 <span data-ru="Ремюаж (riddling)" data-en="Riddling (remuage)">Riddling (remuage)</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Sparkling</span></div><div class="fdesc" data-ru="Бутылки постепенно переворачивают горлышком вниз. Осадок собирается в горлышке." data-en="Bottles are gradually tilted neck-down. Sediment collects in the neck.">Bottles are gradually tilted neck-down. Sediment collects in the neck.</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 8" data-en="Step 8">Step 8</div><div class="fname">❄️ <span data-ru="Дегоржаж (disgorgement)" data-en="Disgorgement (dégorgement)">Disgorgement (dégorgement)</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Sparkling</span></div><div class="fdesc" data-ru="Горлышко замораживают, давление выталкивает осадок. Вино остаётся прозрачным!" data-en="The neck is frozen, pressure ejects the frozen sediment plug. Wine remains clear!">The neck is frozen, pressure ejects the frozen sediment plug. Wine remains clear!</div></div></div></div>
+    <div class="fstep"><div class="fline"><div class="fdot"></div><div class="fconn"></div></div><div class="fbody"><div class="fcard"><div class="fhead"><div><div class="fnum" data-ru="Шаг 9" data-en="Step 9">Step 9</div><div class="fname">🍬 <span data-ru="Дозаж → Стиль" data-en="Dosage → Style">Dosage → Style</span></div></div><span class="fbadge fb-s" data-ru="Игристое" data-en="Sparkling">Sparkling</span></div><div class="fdesc" data-ru="Добавляют вино + сахар. Количество сахара определяет стиль: Brut Nature · Brut · Extra Dry · Sec · Demi-Sec · Doux" data-en="Wine + sugar mixture added. The sugar level determines the style: Brut Nature · Brut · Extra Dry · Sec · Demi-Sec · Doux">Wine + sugar mixture added. The sugar level determines the style: Brut Nature · Brut · Extra Dry · Sec · Demi-Sec · Doux</div><div class="fnote" data-ru="🥂 Brut (до 12 г/л) — самый популярный стиль Шампани" data-en="🥂 Brut (up to 12 g/L) — the most popular Champagne style">🥂 Brut (up to 12 g/L) — the most popular Champagne style</div></div></div></div>
   </div>
   </div>
 
   <div class="sub-panel" id="sub-cmp2">
   <table class="ctbl">
     <thead><tr>
-      <th data-ru="Параметр" data-en="Parameter">Параметр</th>
-      <th data-ru="🔴 Красное" data-en="🔴 Red Wine">🔴 Красное</th>
-      <th data-ru="🟡 Белое" data-en="🟡 White Wine">🟡 Белое</th>
-      <th data-ru="🫧 Игристое" data-en="🫧 Sparkling">🫧 Игристое</th>
+      <th data-ru="Параметр" data-en="Parameter">Parameter</th>
+      <th data-ru="🔴 Красное" data-en="🔴 Red Wine">🔴 Red Wine</th>
+      <th data-ru="🟡 Белое" data-en="🟡 White Wine">🟡 White Wine</th>
+      <th data-ru="🫧 Игристое" data-en="🫧 Sparkling">🫧 Sparkling</th>
     </tr></thead>
     <tbody>
-      <tr><td data-ru="Контакт с кожицей" data-en="Skin contact">Контакт с кожицей</td><td data-ru="✅ Да — цвет и танины" data-en="✅ Yes — colour & tannins">✅ Да — цвет и танины</td><td data-ru="❌ Нет — сразу отжим" data-en="❌ No — immediate pressing">❌ Нет — сразу отжим</td><td data-ru="❌ Нет (как белое)" data-en="❌ No (like white)">❌ Нет (как белое)</td></tr>
-      <tr><td data-ru="Температура ферм." data-en="Fermentation temp.">Температура ферм.</td><td>20–32°C</td><td>12–22°C</td><td>10–15°C</td></tr>
-      <tr><td>MLF</td><td data-ru="Почти всегда" data-en="Almost always">Почти всегда</td><td data-ru="Иногда (Chardonnay)" data-en="Sometimes (Chardonnay)">Иногда (Chardonnay)</td><td data-ru="Редко" data-en="Rarely">Редко</td></tr>
-      <tr><td data-ru="Выдержка" data-en="Ageing">Выдержка</td><td data-ru="Дуб или сталь" data-en="Oak or steel">Дуб или сталь</td><td data-ru="Чаще сталь" data-en="Usually steel">Чаще сталь</td><td data-ru="На осадке в бутылке" data-en="On lees in bottle">На осадке в бутылке</td></tr>
-      <tr><td>CO₂</td><td data-ru="Уходит при ферм." data-en="Released during fermentation">Уходит при ферм.</td><td data-ru="Уходит при ферм." data-en="Released during fermentation">Уходит при ферм.</td><td data-ru="Растворяется в вине" data-en="Dissolves into wine">Растворяется в вине</td></tr>
-      <tr><td data-ru="Танины" data-en="Tannins">Танины</td><td data-ru="Высокие" data-en="High">Высокие</td><td data-ru="Очень низкие" data-en="Very low">Очень низкие</td><td data-ru="Низкие" data-en="Low">Низкие</td></tr>
+      <tr><td data-ru="Контакт с кожицей" data-en="Skin contact">Skin contact</td><td data-ru="✅ Да — цвет и танины" data-en="✅ Yes — colour & tannins">✅ Yes — colour & tannins</td><td data-ru="❌ Нет — сразу отжим" data-en="❌ No — immediate pressing">❌ No — immediate pressing</td><td data-ru="❌ Нет (как белое)" data-en="❌ No (like white)">❌ No (like white)</td></tr>
+      <tr><td data-ru="Температура ферм." data-en="Fermentation temp.">Fermentation temp.</td><td>20–32°C</td><td>12–22°C</td><td>10–15°C</td></tr>
+      <tr><td>MLF</td><td data-ru="Почти всегда" data-en="Almost always">Almost always</td><td data-ru="Иногда (Chardonnay)" data-en="Sometimes (Chardonnay)">Sometimes (Chardonnay)</td><td data-ru="Редко" data-en="Rarely">Rarely</td></tr>
+      <tr><td data-ru="Выдержка" data-en="Ageing">Ageing</td><td data-ru="Дуб или сталь" data-en="Oak or steel">Oak or steel</td><td data-ru="Чаще сталь" data-en="Usually steel">Usually steel</td><td data-ru="На осадке в бутылке" data-en="On lees in bottle">On lees in bottle</td></tr>
+      <tr><td>CO₂</td><td data-ru="Уходит при ферм." data-en="Released during fermentation">Released during fermentation</td><td data-ru="Уходит при ферм." data-en="Released during fermentation">Released during fermentation</td><td data-ru="Растворяется в вине" data-en="Dissolves into wine">Dissolves into wine</td></tr>
+      <tr><td data-ru="Танины" data-en="Tannins">Tannins</td><td data-ru="Высокие" data-en="High">High</td><td data-ru="Очень низкие" data-en="Very low">Very low</td><td data-ru="Низкие" data-en="Low">Low</td></tr>
     </tbody>
   </table>
   </div>
@@ -558,51 +558,51 @@ footer span{color:var(–gold);}
 ═══════════════════════════════════════════════ -->
 
 <div class="panel" id="panel-sat">
-  <div class="sec-title" data-ru="СИСТЕМАТИЧЕСКИЙ ПОДХОД К ДЕГУСТАЦИИ (SAT)" data-en="SYSTEMATIC APPROACH TO TASTING (SAT)">СИСТЕМАТИЧЕСКИЙ ПОДХОД К ДЕГУСТАЦИИ (SAT)</div>
+  <div class="sec-title" data-ru="СИСТЕМАТИЧЕСКИЙ ПОДХОД К ДЕГУСТАЦИИ (SAT)" data-en="SYSTEMATIC APPROACH TO TASTING (SAT)">SYSTEMATIC APPROACH TO TASTING (SAT)</div>
 
   <div class="sat-grid">
     <div class="sat-phase p1">
-      <div class="ph-header"><div class="ph-num">1</div><div><div class="ph-lbl" data-ru="Зрение" data-en="Sight">Зрение</div><div class="ph-ttl">👁️ <span data-ru="Внешний вид" data-en="Appearance">Внешний вид</span></div></div></div>
+      <div class="ph-header"><div class="ph-num">1</div><div><div class="ph-lbl" data-ru="Зрение" data-en="Sight">Sight</div><div class="ph-ttl">👁️ <span data-ru="Внешний вид" data-en="Appearance">Appearance</span></div></div></div>
       <div class="ph-body"><ul class="crit-list">
-        <li class="crit"><span class="ci">💎</span><div><div class="cn" data-ru="Прозрачность" data-en="Clarity">Прозрачность</div><div class="copts"><span class="copt" data-ru="Прозрачное" data-en="Clear">Прозрачное</span><span class="copt" data-ru="С осадком" data-en="With sediment">С осадком</span></div></div></li>
-        <li class="crit"><span class="ci">🎨</span><div><div class="cn" data-ru="Оттенок" data-en="Colour hue">Оттенок</div><div class="copts"><span class="copt" data-ru="Лимонный" data-en="Lemon">Лимонный</span><span class="copt" data-ru="Золотистый" data-en="Gold">Золотистый</span><span class="copt" data-ru="Янтарный" data-en="Amber">Янтарный</span><span class="copt" data-ru="Розовый" data-en="Pink">Розовый</span><span class="copt" data-ru="Рубиновый" data-en="Ruby">Рубиновый</span><span class="copt" data-ru="Гранатовый" data-en="Garnet">Гранатовый</span></div></div></li>
-        <li class="crit"><span class="ci">🌊</span><div><div class="cn" data-ru="Интенсивность цвета" data-en="Colour intensity">Интенсивность цвета</div><div class="copts"><span class="copt" data-ru="Бледный" data-en="Pale">Бледный</span><span class="copt" data-ru="Средний" data-en="Medium">Средний</span><span class="copt" data-ru="Глубокий" data-en="Deep">Глубокий</span></div></div></li>
+        <li class="crit"><span class="ci">💎</span><div><div class="cn" data-ru="Прозрачность" data-en="Clarity">Clarity</div><div class="copts"><span class="copt" data-ru="Прозрачное" data-en="Clear">Clear</span><span class="copt" data-ru="С осадком" data-en="With sediment">With sediment</span></div></div></li>
+        <li class="crit"><span class="ci">🎨</span><div><div class="cn" data-ru="Оттенок" data-en="Colour hue">Colour hue</div><div class="copts"><span class="copt" data-ru="Лимонный" data-en="Lemon">Lemon</span><span class="copt" data-ru="Золотистый" data-en="Gold">Gold</span><span class="copt" data-ru="Янтарный" data-en="Amber">Amber</span><span class="copt" data-ru="Розовый" data-en="Pink">Pink</span><span class="copt" data-ru="Рубиновый" data-en="Ruby">Ruby</span><span class="copt" data-ru="Гранатовый" data-en="Garnet">Garnet</span></div></div></li>
+        <li class="crit"><span class="ci">🌊</span><div><div class="cn" data-ru="Интенсивность цвета" data-en="Colour intensity">Colour intensity</div><div class="copts"><span class="copt" data-ru="Бледный" data-en="Pale">Pale</span><span class="copt" data-ru="Средний" data-en="Medium">Medium</span><span class="copt" data-ru="Глубокий" data-en="Deep">Deep</span></div></div></li>
       </ul></div>
     </div>
     <div class="sat-phase p2">
-      <div class="ph-header"><div class="ph-num">2</div><div><div class="ph-lbl" data-ru="Обоняние" data-en="Smell">Обоняние</div><div class="ph-ttl">👃 <span data-ru="Нос" data-en="Nose">Нос</span></div></div></div>
+      <div class="ph-header"><div class="ph-num">2</div><div><div class="ph-lbl" data-ru="Обоняние" data-en="Smell">Smell</div><div class="ph-ttl">👃 <span data-ru="Нос" data-en="Nose">Nose</span></div></div></div>
       <div class="ph-body"><ul class="crit-list">
-        <li class="crit"><span class="ci">🔊</span><div><div class="cn" data-ru="Интенсивность аромата" data-en="Aroma intensity">Интенсивность аромата</div><div class="copts"><span class="copt" data-ru="Лёгкий" data-en="Light">Лёгкий</span><span class="copt" data-ru="Средний" data-en="Medium">Средний</span><span class="copt" data-ru="Выраженный" data-en="Pronounced">Выраженный</span></div></div></li>
-        <li class="crit"><span class="ci">🍓</span><div><div class="cn" data-ru="Характер аромата" data-en="Aroma character">Характер аромата</div><div class="copts"><span class="copt" data-ru="Фруктовый" data-en="Fruity">Фруктовый</span><span class="copt" data-ru="Цветочный" data-en="Floral">Цветочный</span><span class="copt" data-ru="Пряный" data-en="Spicy">Пряный</span><span class="copt" data-ru="Растительный" data-en="Vegetal">Растительный</span><span class="copt" data-ru="Дубовый" data-en="Oaky">Дубовый</span></div></div></li>
-        <li class="crit"><span class="ci">⏰</span><div><div class="cn" data-ru="Зрелость аромата" data-en="Development">Зрелость аромата</div><div class="copts"><span class="copt" data-ru="Молодое" data-en="Youthful">Молодое</span><span class="copt" data-ru="Развивающееся" data-en="Developing">Развивающееся</span><span class="copt" data-ru="Зрелое" data-en="Mature">Зрелое</span></div></div></li>
+        <li class="crit"><span class="ci">🔊</span><div><div class="cn" data-ru="Интенсивность аромата" data-en="Aroma intensity">Aroma intensity</div><div class="copts"><span class="copt" data-ru="Лёгкий" data-en="Light">Light</span><span class="copt" data-ru="Средний" data-en="Medium">Medium</span><span class="copt" data-ru="Выраженный" data-en="Pronounced">Pronounced</span></div></div></li>
+        <li class="crit"><span class="ci">🍓</span><div><div class="cn" data-ru="Характер аромата" data-en="Aroma character">Aroma character</div><div class="copts"><span class="copt" data-ru="Фруктовый" data-en="Fruity">Fruity</span><span class="copt" data-ru="Цветочный" data-en="Floral">Floral</span><span class="copt" data-ru="Пряный" data-en="Spicy">Spicy</span><span class="copt" data-ru="Растительный" data-en="Vegetal">Vegetal</span><span class="copt" data-ru="Дубовый" data-en="Oaky">Oaky</span></div></div></li>
+        <li class="crit"><span class="ci">⏰</span><div><div class="cn" data-ru="Зрелость аромата" data-en="Development">Development</div><div class="copts"><span class="copt" data-ru="Молодое" data-en="Youthful">Youthful</span><span class="copt" data-ru="Развивающееся" data-en="Developing">Developing</span><span class="copt" data-ru="Зрелое" data-en="Mature">Mature</span></div></div></li>
       </ul></div>
     </div>
     <div class="sat-phase p3">
-      <div class="ph-header"><div class="ph-num">3</div><div><div class="ph-lbl" data-ru="Вкус" data-en="Taste">Вкус</div><div class="ph-ttl">👅 <span data-ru="Вкус (Palate)" data-en="Palate">Вкус (Palate)</span></div></div></div>
+      <div class="ph-header"><div class="ph-num">3</div><div><div class="ph-lbl" data-ru="Вкус" data-en="Taste">Taste</div><div class="ph-ttl">👅 <span data-ru="Вкус (Palate)" data-en="Palate">Palate</span></div></div></div>
       <div class="ph-body"><ul class="crit-list">
-        <li class="crit"><span class="ci">🍋</span><div><div class="cn" data-ru="Кислотность" data-en="Acidity">Кислотность</div><div class="copts"><span class="copt" data-ru="Низкая" data-en="Low">Низкая</span><span class="copt" data-ru="Средняя" data-en="Medium">Средняя</span><span class="copt" data-ru="Высокая" data-en="High">Высокая</span></div></div></li>
-        <li class="crit"><span class="ci">🍵</span><div><div class="cn" data-ru="Танины (только красное)" data-en="Tannins (red only)">Танины (только красное)</div><div class="copts"><span class="copt" data-ru="Низкие" data-en="Low">Низкие</span><span class="copt" data-ru="Средние" data-en="Medium">Средние</span><span class="copt" data-ru="Высокие" data-en="High">Высокие</span></div></div></li>
-        <li class="crit"><span class="ci">💧</span><div><div class="cn" data-ru="Тело (Body)" data-en="Body">Тело (Body)</div><div class="copts"><span class="copt" data-ru="Лёгкое" data-en="Light">Лёгкое</span><span class="copt" data-ru="Среднее" data-en="Medium">Среднее</span><span class="copt" data-ru="Полное" data-en="Full">Полное</span></div></div></li>
-        <li class="crit"><span class="ci">🔥</span><div><div class="cn" data-ru="Алкоголь" data-en="Alcohol">Алкоголь</div><div class="copts"><span class="copt" data-ru="Низкий &lt;11%" data-en="Low &lt;11%">Низкий &lt;11%</span><span class="copt" data-ru="Средний 11–14%" data-en="Medium 11–14%">Средний 11–14%</span><span class="copt" data-ru="Высокий &gt;14%" data-en="High &gt;14%">Высокий &gt;14%</span></div></div></li>
-        <li class="crit"><span class="ci">🍯</span><div><div class="cn" data-ru="Сладость" data-en="Sweetness">Сладость</div><div class="copts"><span class="copt" data-ru="Сухое" data-en="Dry">Сухое</span><span class="copt" data-ru="Полусухое" data-en="Off-dry">Полусухое</span><span class="copt" data-ru="Сладкое" data-en="Sweet">Сладкое</span></div></div></li>
+        <li class="crit"><span class="ci">🍋</span><div><div class="cn" data-ru="Кислотность" data-en="Acidity">Acidity</div><div class="copts"><span class="copt" data-ru="Низкая" data-en="Low">Low</span><span class="copt" data-ru="Средняя" data-en="Medium">Medium</span><span class="copt" data-ru="Высокая" data-en="High">High</span></div></div></li>
+        <li class="crit"><span class="ci">🍵</span><div><div class="cn" data-ru="Танины (только красное)" data-en="Tannins (red only)">Tannins (red only)</div><div class="copts"><span class="copt" data-ru="Низкие" data-en="Low">Low</span><span class="copt" data-ru="Средние" data-en="Medium">Medium</span><span class="copt" data-ru="Высокие" data-en="High">High</span></div></div></li>
+        <li class="crit"><span class="ci">💧</span><div><div class="cn" data-ru="Тело (Body)" data-en="Body">Body</div><div class="copts"><span class="copt" data-ru="Лёгкое" data-en="Light">Light</span><span class="copt" data-ru="Среднее" data-en="Medium">Medium</span><span class="copt" data-ru="Полное" data-en="Full">Full</span></div></div></li>
+        <li class="crit"><span class="ci">🔥</span><div><div class="cn" data-ru="Алкоголь" data-en="Alcohol">Alcohol</div><div class="copts"><span class="copt" data-ru="Низкий &lt;11%" data-en="Low &lt;11%">Low &lt;11%</span><span class="copt" data-ru="Средний 11–14%" data-en="Medium 11–14%">Medium 11–14%</span><span class="copt" data-ru="Высокий &gt;14%" data-en="High &gt;14%">High &gt;14%</span></div></div></li>
+        <li class="crit"><span class="ci">🍯</span><div><div class="cn" data-ru="Сладость" data-en="Sweetness">Sweetness</div><div class="copts"><span class="copt" data-ru="Сухое" data-en="Dry">Dry</span><span class="copt" data-ru="Полусухое" data-en="Off-dry">Off-dry</span><span class="copt" data-ru="Сладкое" data-en="Sweet">Sweet</span></div></div></li>
       </ul></div>
     </div>
     <div class="sat-phase p4">
-      <div class="ph-header"><div class="ph-num">4</div><div><div class="ph-lbl" data-ru="Анализ" data-en="Analysis">Анализ</div><div class="ph-ttl">📝 <span data-ru="Вывод" data-en="Conclusions">Вывод</span></div></div></div>
+      <div class="ph-header"><div class="ph-num">4</div><div><div class="ph-lbl" data-ru="Анализ" data-en="Analysis">Analysis</div><div class="ph-ttl">📝 <span data-ru="Вывод" data-en="Conclusions">Conclusions</span></div></div></div>
       <div class="ph-body"><ul class="crit-list">
-        <li class="crit"><span class="ci">⭐</span><div><div class="cn" data-ru="Качество" data-en="Quality">Качество</div><div class="copts"><span class="copt" data-ru="Неприемлемое" data-en="Faulty">Неприемлемое</span><span class="copt" data-ru="Простое" data-en="Simple">Простое</span><span class="copt" data-ru="Хорошее" data-en="Good">Хорошее</span><span class="copt" data-ru="Очень хорошее" data-en="Very good">Очень хорошее</span><span class="copt" data-ru="Отличное" data-en="Outstanding">Отличное</span></div></div></li>
-        <li class="crit"><span class="ci">⌛</span><div><div class="cn" data-ru="Послевкусие (Finish)" data-en="Finish">Послевкусие (Finish)</div><div class="copts"><span class="copt" data-ru="Короткое" data-en="Short">Короткое</span><span class="copt" data-ru="Среднее" data-en="Medium">Среднее</span><span class="copt" data-ru="Долгое" data-en="Long">Долгое</span></div></div></li>
-        <li class="crit"><span class="ci">🎯</span><div><div class="cn" data-ru="Готовность к употреблению" data-en="Readiness to drink">Готовность к употреблению</div><div class="copts"><span class="copt" data-ru="Слишком молодое" data-en="Too young">Слишком молодое</span><span class="copt" data-ru="Готово" data-en="Ready">Готово</span><span class="copt" data-ru="Слишком старое" data-en="Too old">Слишком старое</span></div></div></li>
+        <li class="crit"><span class="ci">⭐</span><div><div class="cn" data-ru="Качество" data-en="Quality">Quality</div><div class="copts"><span class="copt" data-ru="Неприемлемое" data-en="Faulty">Faulty</span><span class="copt" data-ru="Простое" data-en="Simple">Simple</span><span class="copt" data-ru="Хорошее" data-en="Good">Good</span><span class="copt" data-ru="Очень хорошее" data-en="Very good">Very good</span><span class="copt" data-ru="Отличное" data-en="Outstanding">Outstanding</span></div></div></li>
+        <li class="crit"><span class="ci">⌛</span><div><div class="cn" data-ru="Послевкусие (Finish)" data-en="Finish">Finish</div><div class="copts"><span class="copt" data-ru="Короткое" data-en="Short">Short</span><span class="copt" data-ru="Среднее" data-en="Medium">Medium</span><span class="copt" data-ru="Долгое" data-en="Long">Long</span></div></div></li>
+        <li class="crit"><span class="ci">🎯</span><div><div class="cn" data-ru="Готовность к употреблению" data-en="Readiness to drink">Readiness to drink</div><div class="copts"><span class="copt" data-ru="Слишком молодое" data-en="Too young">Too young</span><span class="copt" data-ru="Готово" data-en="Ready">Ready</span><span class="copt" data-ru="Слишком старое" data-en="Too old">Too old</span></div></div></li>
       </ul></div>
     </div>
   </div>
 
   <div class="qr-box">
-    <h3 data-ru="📋 Быстрый справочник SAT — все параметры" data-en="📋 SAT Quick Reference — all parameters">📋 Быстрый справочник SAT — все параметры</h3>
-    <div class="qr-row"><div class="qr-ph c1" data-ru="ВНЕШ. ВИД" data-en="APPEARANCE">ВНЕШ. ВИД</div><div class="qr-items"><span class="qi" data-ru="Прозрачность" data-en="Clarity">Прозрачность</span><span class="qi" data-ru="Оттенок" data-en="Hue">Оттенок</span><span class="qi" data-ru="Интенсивность цвета" data-en="Colour intensity">Интенсивность цвета</span></div></div>
-    <div class="qr-row"><div class="qr-ph c2" data-ru="НОС" data-en="NOSE">НОС</div><div class="qr-items"><span class="qi" data-ru="Интенсивность аромата" data-en="Aroma intensity">Интенсивность аромата</span><span class="qi" data-ru="Характер" data-en="Character">Характер</span><span class="qi" data-ru="Зрелость" data-en="Development">Зрелость</span></div></div>
-    <div class="qr-row"><div class="qr-ph c3" data-ru="ВКУС" data-en="PALATE">ВКУС</div><div class="qr-items"><span class="qi" data-ru="Сладость" data-en="Sweetness">Сладость</span><span class="qi" data-ru="Кислотность" data-en="Acidity">Кислотность</span><span class="qi" data-ru="Танины" data-en="Tannins">Танины</span><span class="qi" data-ru="Тело" data-en="Body">Тело</span><span class="qi" data-ru="Алкоголь" data-en="Alcohol">Алкоголь</span><span class="qi" data-ru="Послевкусие" data-en="Finish">Послевкусие</span></div></div>
-    <div class="qr-row"><div class="qr-ph c4" data-ru="ВЫВОД" data-en="CONCLUSION">ВЫВОД</div><div class="qr-items"><span class="qi" data-ru="Качество" data-en="Quality">Качество</span><span class="qi" data-ru="Готовность" data-en="Readiness">Готовность</span></div></div>
+    <h3 data-ru="📋 Быстрый справочник SAT — все параметры" data-en="📋 SAT Quick Reference — all parameters">📋 SAT Quick Reference — all parameters</h3>
+    <div class="qr-row"><div class="qr-ph c1" data-ru="ВНЕШ. ВИД" data-en="APPEARANCE">APPEARANCE</div><div class="qr-items"><span class="qi" data-ru="Прозрачность" data-en="Clarity">Clarity</span><span class="qi" data-ru="Оттенок" data-en="Hue">Hue</span><span class="qi" data-ru="Интенсивность цвета" data-en="Colour intensity">Colour intensity</span></div></div>
+    <div class="qr-row"><div class="qr-ph c2" data-ru="НОС" data-en="NOSE">NOSE</div><div class="qr-items"><span class="qi" data-ru="Интенсивность аромата" data-en="Aroma intensity">Aroma intensity</span><span class="qi" data-ru="Характер" data-en="Character">Character</span><span class="qi" data-ru="Зрелость" data-en="Development">Development</span></div></div>
+    <div class="qr-row"><div class="qr-ph c3" data-ru="ВКУС" data-en="PALATE">PALATE</div><div class="qr-items"><span class="qi" data-ru="Сладость" data-en="Sweetness">Sweetness</span><span class="qi" data-ru="Кислотность" data-en="Acidity">Acidity</span><span class="qi" data-ru="Танины" data-en="Tannins">Tannins</span><span class="qi" data-ru="Тело" data-en="Body">Body</span><span class="qi" data-ru="Алкоголь" data-en="Alcohol">Alcohol</span><span class="qi" data-ru="Послевкусие" data-en="Finish">Finish</span></div></div>
+    <div class="qr-row"><div class="qr-ph c4" data-ru="ВЫВОД" data-en="CONCLUSION">CONCLUSION</div><div class="qr-items"><span class="qi" data-ru="Качество" data-en="Quality">Quality</span><span class="qi" data-ru="Готовность" data-en="Readiness">Readiness</span></div></div>
   </div>
 </div>
 
@@ -611,76 +611,76 @@ footer span{color:var(–gold);}
 ═══════════════════════════════════════════════ -->
 
 <div class="panel" id="panel-storage">
-  <div class="sec-title" data-ru="ХРАНЕНИЕ И ПОДАЧА" data-en="STORAGE & SERVING">ХРАНЕНИЕ И ПОДАЧА</div>
+  <div class="sec-title" data-ru="ХРАНЕНИЕ И ПОДАЧА" data-en="STORAGE & SERVING">STORAGE & SERVING</div>
 
   <div class="stor-grid">
     <div class="stor-card">
       <div class="stor-icon">🌡️</div>
-      <div class="stor-title" data-ru="Температура хранения" data-en="Storage temperature">Температура хранения</div>
-      <div class="stor-row"><span class="lbl" data-ru="Оптимально" data-en="Optimal">Оптимально</span><span class="val">10–15°C</span></div>
-      <div class="stor-row"><span class="lbl" data-ru="Колебания" data-en="Fluctuations">Колебания</span><span class="val" data-ru="Вредны — ускоряют старение" data-en="Harmful — accelerate ageing">Вредны — ускоряют старение</span></div>
+      <div class="stor-title" data-ru="Температура хранения" data-en="Storage temperature">Storage temperature</div>
+      <div class="stor-row"><span class="lbl" data-ru="Оптимально" data-en="Optimal">Optimal</span><span class="val">10–15°C</span></div>
+      <div class="stor-row"><span class="lbl" data-ru="Колебания" data-en="Fluctuations">Fluctuations</span><span class="val" data-ru="Вредны — ускоряют старение" data-en="Harmful — accelerate ageing">Harmful — accelerate ageing</span></div>
     </div>
     <div class="stor-card">
       <div class="stor-icon">💧</div>
-      <div class="stor-title" data-ru="Влажность" data-en="Humidity">Влажность</div>
-      <div class="stor-row"><span class="lbl" data-ru="Оптимально" data-en="Optimal">Оптимально</span><span class="val">60–80%</span></div>
-      <div class="stor-row"><span class="lbl" data-ru="Сухой воздух" data-en="Dry air">Сухой воздух</span><span class="val" data-ru="Пробка сохнет → окисление" data-en="Cork dries out → oxidation">Пробка сохнет → окисление</span></div>
+      <div class="stor-title" data-ru="Влажность" data-en="Humidity">Humidity</div>
+      <div class="stor-row"><span class="lbl" data-ru="Оптимально" data-en="Optimal">Optimal</span><span class="val">60–80%</span></div>
+      <div class="stor-row"><span class="lbl" data-ru="Сухой воздух" data-en="Dry air">Dry air</span><span class="val" data-ru="Пробка сохнет → окисление" data-en="Cork dries out → oxidation">Cork dries out → oxidation</span></div>
     </div>
     <div class="stor-card">
       <div class="stor-icon">💡</div>
-      <div class="stor-title" data-ru="Свет" data-en="Light">Свет</div>
-      <div class="stor-row"><span class="lbl" data-ru="УФ-лучи" data-en="UV light">УФ-лучи</span><span class="val" data-ru="Разрушают ароматы" data-en="Damages aromas">Разрушают ароматы</span></div>
-      <div class="stor-row"><span class="lbl" data-ru="Хранить" data-en="Store">Хранить</span><span class="val" data-ru="В темноте" data-en="In darkness">В темноте</span></div>
+      <div class="stor-title" data-ru="Свет" data-en="Light">Light</div>
+      <div class="stor-row"><span class="lbl" data-ru="УФ-лучи" data-en="UV light">UV light</span><span class="val" data-ru="Разрушают ароматы" data-en="Damages aromas">Damages aromas</span></div>
+      <div class="stor-row"><span class="lbl" data-ru="Хранить" data-en="Store">Store</span><span class="val" data-ru="В темноте" data-en="In darkness">In darkness</span></div>
     </div>
     <div class="stor-card">
       <div class="stor-icon">↔️</div>
-      <div class="stor-title" data-ru="Положение бутылки" data-en="Bottle position">Положение бутылки</div>
-      <div class="stor-row"><span class="lbl" data-ru="Натуральная пробка" data-en="Cork closure">Натуральная пробка</span><span class="val" data-ru="Горизонтально" data-en="Horizontal">Горизонтально</span></div>
-      <div class="stor-row"><span class="lbl" data-ru="Screwcap / синтетика" data-en="Screwcap / synthetic">Screwcap / синтетика</span><span class="val" data-ru="Любое положение" data-en="Any position">Любое положение</span></div>
+      <div class="stor-title" data-ru="Положение бутылки" data-en="Bottle position">Bottle position</div>
+      <div class="stor-row"><span class="lbl" data-ru="Натуральная пробка" data-en="Cork closure">Cork closure</span><span class="val" data-ru="Горизонтально" data-en="Horizontal">Horizontal</span></div>
+      <div class="stor-row"><span class="lbl" data-ru="Screwcap / синтетика" data-en="Screwcap / synthetic">Screwcap / synthetic</span><span class="val" data-ru="Любое положение" data-en="Any position">Any position</span></div>
     </div>
     <div class="stor-card">
       <div class="stor-icon">💨</div>
-      <div class="stor-title" data-ru="Вибрация и запахи" data-en="Vibration & Odours">Вибрация и запахи</div>
-      <div class="stor-row"><span class="lbl" data-ru="Вибрация" data-en="Vibration">Вибрация</span><span class="val" data-ru="Ускоряет старение" data-en="Accelerates ageing">Ускоряет старение</span></div>
-      <div class="stor-row"><span class="lbl" data-ru="Сильные запахи" data-en="Strong odours">Сильные запахи</span><span class="val" data-ru="Проникают через пробку" data-en="Penetrate through cork">Проникают через пробку</span></div>
+      <div class="stor-title" data-ru="Вибрация и запахи" data-en="Vibration & Odours">Vibration & Odours</div>
+      <div class="stor-row"><span class="lbl" data-ru="Вибрация" data-en="Vibration">Vibration</span><span class="val" data-ru="Ускоряет старение" data-en="Accelerates ageing">Accelerates ageing</span></div>
+      <div class="stor-row"><span class="lbl" data-ru="Сильные запахи" data-en="Strong odours">Strong odours</span><span class="val" data-ru="Проникают через пробку" data-en="Penetrate through cork">Penetrate through cork</span></div>
     </div>
     <div class="stor-card">
       <div class="stor-icon">🍾</div>
-      <div class="stor-title" data-ru="Открытое вино" data-en="Opened wine">Открытое вино</div>
-      <div class="stor-row"><span class="lbl" data-ru="Красное" data-en="Red">Красное</span><span class="val" data-ru="2–5 дней в холодильнике" data-en="2–5 days in fridge">2–5 дней в холодильнике</span></div>
-      <div class="stor-row"><span class="lbl" data-ru="Белое / Розовое" data-en="White / Rosé">Белое / Розовое</span><span class="val" data-ru="1–3 дня в холодильнике" data-en="1–3 days in fridge">1–3 дня в холодильнике</span></div>
-      <div class="stor-row"><span class="lbl" data-ru="Игристое" data-en="Sparkling">Игристое</span><span class="val" data-ru="1–2 дня (пробка-зажим)" data-en="1–2 days (stopper)">1–2 дня (пробка-зажим)</span></div>
+      <div class="stor-title" data-ru="Открытое вино" data-en="Opened wine">Opened wine</div>
+      <div class="stor-row"><span class="lbl" data-ru="Красное" data-en="Red">Red</span><span class="val" data-ru="2–5 дней в холодильнике" data-en="2–5 days in fridge">2–5 days in fridge</span></div>
+      <div class="stor-row"><span class="lbl" data-ru="Белое / Розовое" data-en="White / Rosé">White / Rosé</span><span class="val" data-ru="1–3 дня в холодильнике" data-en="1–3 days in fridge">1–3 days in fridge</span></div>
+      <div class="stor-row"><span class="lbl" data-ru="Игристое" data-en="Sparkling">Sparkling</span><span class="val" data-ru="1–2 дня (пробка-зажим)" data-en="1–2 days (stopper)">1–2 days (stopper)</span></div>
     </div>
   </div>
 
   <hr class="div">
-  <div class="sec-title" data-ru="ТЕМПЕРАТУРА ПОДАЧИ" data-en="SERVING TEMPERATURES">ТЕМПЕРАТУРА ПОДАЧИ</div>
+  <div class="sec-title" data-ru="ТЕМПЕРАТУРА ПОДАЧИ" data-en="SERVING TEMPERATURES">SERVING TEMPERATURES</div>
   <table class="temp-tbl">
     <thead><tr>
-      <th data-ru="Тип вина" data-en="Wine type">Тип вина</th>
-      <th data-ru="Пример" data-en="Example">Пример</th>
-      <th data-ru="Температура" data-en="Temperature">Температура</th>
-      <th data-ru="Диапазон" data-en="Range">Диапазон</th>
+      <th data-ru="Тип вина" data-en="Wine type">Wine type</th>
+      <th data-ru="Пример" data-en="Example">Example</th>
+      <th data-ru="Температура" data-en="Temperature">Temperature</th>
+      <th data-ru="Диапазон" data-en="Range">Range</th>
     </tr></thead>
     <tbody>
-      <tr><td data-ru="🫧 Игристое" data-en="🫧 Sparkling">🫧 Игристое</td><td data-ru="Шампань, Просекко, Кава" data-en="Champagne, Prosecco, Cava">Шампань, Просекко, Кава</td><td><span class="tbadge">5–8°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:12%"></div></div></div></td></tr>
-      <tr><td data-ru="🟡 Белое лёгкое" data-en="🟡 Light white">🟡 Белое лёгкое</td><td>Riesling, Sauvignon Blanc, Pinot Grigio</td><td><span class="tbadge">7–10°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:22%"></div></div></div></td></tr>
-      <tr><td data-ru="🟡 Белое полнотелое" data-en="🟡 Full white">🟡 Белое полнотелое</td><td data-ru="Chardonnay (с дубом)" data-en="Chardonnay (oaked)">Chardonnay (с дубом)</td><td><span class="tbadge">10–13°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:32%"></div></div></div></td></tr>
-      <tr><td data-ru="🌸 Розовое" data-en="🌸 Rosé">🌸 Розовое</td><td data-ru="Прованс, Тоскана" data-en="Provence, Tuscany">Прованс, Тоскана</td><td><span class="tbadge">8–12°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:28%"></div></div></div></td></tr>
-      <tr><td data-ru="🔴 Красное лёгкое" data-en="🔴 Light red">🔴 Красное лёгкое</td><td>Pinot Noir, Beaujolais</td><td><span class="tbadge">12–16°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:52%"></div></div></div></td></tr>
-      <tr><td data-ru="🔴 Красное среднее" data-en="🔴 Medium red">🔴 Красное среднее</td><td>Merlot, Syrah, Tempranillo</td><td><span class="tbadge">14–17°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:62%"></div></div></div></td></tr>
-      <tr><td data-ru="🔴 Красное полнотелое" data-en="🔴 Full red">🔴 Красное полнотелое</td><td>Cabernet Sauvignon, Barolo</td><td><span class="tbadge">16–18°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:72%"></div></div></div></td></tr>
-      <tr><td data-ru="🍯 Сладкое" data-en="🍯 Sweet">🍯 Сладкое</td><td data-ru="Sauternes, Tokay, Eiswein" data-en="Sauternes, Tokaji, Eiswein">Sauternes, Tokay, Eiswein</td><td><span class="tbadge">6–10°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:18%"></div></div></div></td></tr>
+      <tr><td data-ru="🫧 Игристое" data-en="🫧 Sparkling">🫧 Sparkling</td><td data-ru="Шампань, Просекко, Кава" data-en="Champagne, Prosecco, Cava">Champagne, Prosecco, Cava</td><td><span class="tbadge">5–8°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:12%"></div></div></div></td></tr>
+      <tr><td data-ru="🟡 Белое лёгкое" data-en="🟡 Light white">🟡 Light white</td><td>Riesling, Sauvignon Blanc, Pinot Grigio</td><td><span class="tbadge">7–10°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:22%"></div></div></div></td></tr>
+      <tr><td data-ru="🟡 Белое полнотелое" data-en="🟡 Full white">🟡 Full white</td><td data-ru="Chardonnay (с дубом)" data-en="Chardonnay (oaked)">Chardonnay (oaked)</td><td><span class="tbadge">10–13°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:32%"></div></div></div></td></tr>
+      <tr><td data-ru="🌸 Розовое" data-en="🌸 Rosé">🌸 Rosé</td><td data-ru="Прованс, Тоскана" data-en="Provence, Tuscany">Provence, Tuscany</td><td><span class="tbadge">8–12°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:28%"></div></div></div></td></tr>
+      <tr><td data-ru="🔴 Красное лёгкое" data-en="🔴 Light red">🔴 Light red</td><td>Pinot Noir, Beaujolais</td><td><span class="tbadge">12–16°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:52%"></div></div></div></td></tr>
+      <tr><td data-ru="🔴 Красное среднее" data-en="🔴 Medium red">🔴 Medium red</td><td>Merlot, Syrah, Tempranillo</td><td><span class="tbadge">14–17°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:62%"></div></div></div></td></tr>
+      <tr><td data-ru="🔴 Красное полнотелое" data-en="🔴 Full red">🔴 Full red</td><td>Cabernet Sauvignon, Barolo</td><td><span class="tbadge">16–18°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:72%"></div></div></div></td></tr>
+      <tr><td data-ru="🍯 Сладкое" data-en="🍯 Sweet">🍯 Sweet</td><td data-ru="Sauternes, Tokay, Eiswein" data-en="Sauternes, Tokaji, Eiswein">Sauternes, Tokaji, Eiswein</td><td><span class="tbadge">6–10°C</span></td><td><div class="temp-bar-wrap"><div class="temp-bar"><div class="temp-fill" style="width:18%"></div></div></div></td></tr>
     </tbody>
   </table>
 
   <hr class="div">
-  <div class="sec-title" data-ru="БОКАЛЫ И ДЕКАНТАЦИЯ" data-en="GLASSWARE & DECANTING">БОКАЛЫ И ДЕКАНТАЦИЯ</div>
+  <div class="sec-title" data-ru="БОКАЛЫ И ДЕКАНТАЦИЯ" data-en="GLASSWARE & DECANTING">GLASSWARE & DECANTING</div>
   <div class="pair-grid">
-    <div class="pair-card"><div class="pair-wine" data-ru="🔴 Полнотелое красное" data-en="🔴 Full-bodied red">🔴 Полнотелое красное</div><div class="pair-foods" data-ru="Широкий бокал — большая поверхность аэрации. Декантация 30–60 мин для молодых вин." data-en="Wide bowl — large aeration surface. Decant 30–60 min for young wines.">Широкий бокал — большая поверхность аэрации. Декантация 30–60 мин для молодых вин.</div></div>
-    <div class="pair-card"><div class="pair-wine" data-ru="🔴 Лёгкое красное" data-en="🔴 Light red">🔴 Лёгкое красное</div><div class="pair-foods" data-ru="Тюльпанообразный бокал. Декантация не нужна — сохраняет деликатные ароматы." data-en="Tulip-shaped glass. No decanting needed — preserves delicate aromas.">Тюльпанообразный бокал. Декантация не нужна — сохраняет деликатные ароматы.</div></div>
-    <div class="pair-card"><div class="pair-wine" data-ru="🟡 Белое" data-en="🟡 White">🟡 Белое</div><div class="pair-foods" data-ru="Бокал меньше красного. Охлаждённым — держать за ножку, чтобы не нагревалось." data-en="Smaller than red glass. Hold by the stem to keep wine cool.">Бокал меньше красного. Охлаждённым — держать за ножку, чтобы не нагревалось.</div></div>
-    <div class="pair-card"><div class="pair-wine" data-ru="🫧 Игристое" data-en="🫧 Sparkling">🫧 Игристое</div><div class="pair-foods" data-ru="Флюте или тюльпан. Флюте — лучше видны пузырьки. Тюльпан — лучше чувствуется аромат." data-en="Flute or tulip glass. Flute shows bubbles better. Tulip concentrates aromas.">Флюте или тюльпан. Флюте — лучше видны пузырьки. Тюльпан — лучше чувствуется аромат.</div></div>
+    <div class="pair-card"><div class="pair-wine" data-ru="🔴 Полнотелое красное" data-en="🔴 Full-bodied red">🔴 Full-bodied red</div><div class="pair-foods" data-ru="Широкий бокал — большая поверхность аэрации. Декантация 30–60 мин для молодых вин." data-en="Wide bowl — large aeration surface. Decant 30–60 min for young wines.">Wide bowl — large aeration surface. Decant 30–60 min for young wines.</div></div>
+    <div class="pair-card"><div class="pair-wine" data-ru="🔴 Лёгкое красное" data-en="🔴 Light red">🔴 Light red</div><div class="pair-foods" data-ru="Тюльпанообразный бокал. Декантация не нужна — сохраняет деликатные ароматы." data-en="Tulip-shaped glass. No decanting needed — preserves delicate aromas.">Tulip-shaped glass. No decanting needed — preserves delicate aromas.</div></div>
+    <div class="pair-card"><div class="pair-wine" data-ru="🟡 Белое" data-en="🟡 White">🟡 White</div><div class="pair-foods" data-ru="Бокал меньше красного. Охлаждённым — держать за ножку, чтобы не нагревалось." data-en="Smaller than red glass. Hold by the stem to keep wine cool.">Smaller than red glass. Hold by the stem to keep wine cool.</div></div>
+    <div class="pair-card"><div class="pair-wine" data-ru="🫧 Игристое" data-en="🫧 Sparkling">🫧 Sparkling</div><div class="pair-foods" data-ru="Флюте или тюльпан. Флюте — лучше видны пузырьки. Тюльпан — лучше чувствуется аромат." data-en="Flute or tulip glass. Flute shows bubbles better. Tulip concentrates aromas.">Flute or tulip glass. Flute shows bubbles better. Tulip concentrates aromas.</div></div>
   </div>
 </div>
 
@@ -690,189 +690,189 @@ footer span{color:var(–gold);}
 
 <div class="panel" id="panel-l2terroir">
   <div style="display:flex;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:8px;">
-    <div class="l2-title" style="margin-bottom:0">LEVEL 2 · МОДУЛЬ 1</div>
-    <span class="l2-badge" data-ru="Факторы качества" data-en="Quality Factors">Факторы качества</span>
+    <div class="l2-title" style="margin-bottom:0" data-ru="LEVEL 2 · МОДУЛЬ 1" data-en="LEVEL 2 · MODULE 1">LEVEL 2 · MODULE 1</div>
+    <span class="l2-badge" data-ru="Факторы качества" data-en="Quality Factors">Quality Factors</span>
   </div>
 
   <!-- CLIMATE TYPES -->
 
-  <div class="l2-title" data-ru="🌤️ ТИПЫ КЛИМАТА" data-en="🌤️ CLIMATE TYPES">🌤️ ТИПЫ КЛИМАТА</div>
+  <div class="l2-title" data-ru="🌤️ ТИПЫ КЛИМАТА" data-en="🌤️ CLIMATE TYPES">🌤️ CLIMATE TYPES</div>
   <div class="factor-grid">
     <div class="factor-card">
       <div class="fc-header" style="background:linear-gradient(135deg,rgba(32,64,160,.25),rgba(32,64,160,.08))">
         <div class="fc-icon">❄️</div>
-        <div><div class="fc-title" data-ru="Прохладный климат" data-en="Cool Climate">Прохладный климат</div><div class="fc-sub" data-ru="Cool Climate" data-en="Cool Climate">Cool Climate</div></div>
+        <div><div class="fc-title" data-ru="Прохладный климат" data-en="Cool Climate">Cool Climate</div><div class="fc-sub" data-ru="Cool Climate" data-en="Cool Climate">Cool Climate</div></div>
       </div>
       <div class="fc-body">
-        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Примеры</span><span class="fc-val" data-ru="Германия, Шампань, Новая Зеландия" data-en="Germany, Champagne, New Zealand">Германия, Шампань, Новая Зеландия</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Кислотность" data-en="Acidity">Кислотность</span><span class="fc-val" data-ru="⬆️ Высокая" data-en="⬆️ High">⬆️ Высокая</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Алкоголь" data-en="Alcohol">Алкоголь</span><span class="fc-val" data-ru="⬇️ Низкий" data-en="⬇️ Low">⬇️ Низкий</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Сахар" data-en="Sugar">Сахар</span><span class="fc-val" data-ru="⬇️ Меньше" data-en="⬇️ Less">⬇️ Меньше</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Ароматы" data-en="Aromas">Ароматы</span><span class="fc-val" data-ru="Цветочные, зелёные фрукты, цитрус" data-en="Floral, green fruit, citrus">Цветочные, зелёные фрукты, цитрус</span></div>
-        <div class="fc-note" data-ru="💡 Длинный вегетационный сезон → виноград медленно зреет → больше ароматической сложности" data-en="💡 Long growing season → grapes ripen slowly → more aromatic complexity">💡 Длинный вегетационный сезон → виноград медленно зреет → больше ароматической сложности</div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Examples</span><span class="fc-val" data-ru="Германия, Шампань, Новая Зеландия" data-en="Germany, Champagne, New Zealand">Germany, Champagne, New Zealand</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Кислотность" data-en="Acidity">Acidity</span><span class="fc-val" data-ru="⬆️ Высокая" data-en="⬆️ High">⬆️ High</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Алкоголь" data-en="Alcohol">Alcohol</span><span class="fc-val" data-ru="⬇️ Низкий" data-en="⬇️ Low">⬇️ Low</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Сахар" data-en="Sugar">Sugar</span><span class="fc-val" data-ru="⬇️ Меньше" data-en="⬇️ Less">⬇️ Less</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Ароматы" data-en="Aromas">Aromas</span><span class="fc-val" data-ru="Цветочные, зелёные фрукты, цитрус" data-en="Floral, green fruit, citrus">Floral, green fruit, citrus</span></div>
+        <div class="fc-note" data-ru="💡 Длинный вегетационный сезон → виноград медленно зреет → больше ароматической сложности" data-en="💡 Long growing season → grapes ripen slowly → more aromatic complexity">💡 Long growing season → grapes ripen slowly → more aromatic complexity</div>
       </div>
     </div>
     <div class="factor-card">
       <div class="fc-header" style="background:linear-gradient(135deg,rgba(176,80,16,.25),rgba(176,80,16,.08))">
         <div class="fc-icon">☀️</div>
-        <div><div class="fc-title" data-ru="Тёплый климат" data-en="Warm Climate">Тёплый климат</div><div class="fc-sub" data-ru="Warm Climate" data-en="Warm Climate">Warm Climate</div></div>
+        <div><div class="fc-title" data-ru="Тёплый климат" data-en="Warm Climate">Warm Climate</div><div class="fc-sub" data-ru="Warm Climate" data-en="Warm Climate">Warm Climate</div></div>
       </div>
       <div class="fc-body">
-        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Примеры</span><span class="fc-val" data-ru="Австралия, Калифорния, Южная Испания" data-en="Australia, California, S. Spain">Австралия, Калифорния, Южная Испания</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Кислотность" data-en="Acidity">Кислотность</span><span class="fc-val" data-ru="⬇️ Низкая" data-en="⬇️ Low">⬇️ Низкая</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Алкоголь" data-en="Alcohol">Алкоголь</span><span class="fc-val" data-ru="⬆️ Высокий" data-en="⬆️ High">⬆️ Высокий</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Сахар" data-en="Sugar">Сахар</span><span class="fc-val" data-ru="⬆️ Больше" data-en="⬆️ More">⬆️ Больше</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Ароматы" data-en="Aromas">Ароматы</span><span class="fc-val" data-ru="Тропические фрукты, варенье, джем" data-en="Tropical fruit, jam, ripe berry">Тропические фрукты, варенье, джем</span></div>
-        <div class="fc-note" data-ru="💡 Короткий вегетационный сезон → виноград быстро набирает сахар → жирные, насыщенные вина" data-en="💡 Short growing season → grapes ripen fast → rich, full-bodied wines">💡 Короткий вегетационный сезон → виноград быстро набирает сахар → жирные, насыщенные вина</div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Examples</span><span class="fc-val" data-ru="Австралия, Калифорния, Южная Испания" data-en="Australia, California, S. Spain">Australia, California, S. Spain</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Кислотность" data-en="Acidity">Acidity</span><span class="fc-val" data-ru="⬇️ Низкая" data-en="⬇️ Low">⬇️ Low</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Алкоголь" data-en="Alcohol">Alcohol</span><span class="fc-val" data-ru="⬆️ Высокий" data-en="⬆️ High">⬆️ High</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Сахар" data-en="Sugar">Sugar</span><span class="fc-val" data-ru="⬆️ Больше" data-en="⬆️ More">⬆️ More</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Ароматы" data-en="Aromas">Aromas</span><span class="fc-val" data-ru="Тропические фрукты, варенье, джем" data-en="Tropical fruit, jam, ripe berry">Tropical fruit, jam, ripe berry</span></div>
+        <div class="fc-note" data-ru="💡 Короткий вегетационный сезон → виноград быстро набирает сахар → жирные, насыщенные вина" data-en="💡 Short growing season → grapes ripen fast → rich, full-bodied wines">💡 Short growing season → grapes ripen fast → rich, full-bodied wines</div>
       </div>
     </div>
     <div class="factor-card">
       <div class="fc-header" style="background:linear-gradient(135deg,rgba(32,120,80,.25),rgba(32,120,80,.08))">
         <div class="fc-icon">🌊</div>
-        <div><div class="fc-title" data-ru="Морской климат" data-en="Maritime Climate">Морской климат</div><div class="fc-sub" data-ru="Maritime" data-en="Maritime">Maritime</div></div>
+        <div><div class="fc-title" data-ru="Морской климат" data-en="Maritime Climate">Maritime Climate</div><div class="fc-sub" data-ru="Maritime" data-en="Maritime">Maritime</div></div>
       </div>
       <div class="fc-body">
-        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Примеры</span><span class="fc-val" data-ru="Бордо, Бургундия, Новая Зеландия" data-en="Bordeaux, Burgundy, New Zealand">Бордо, Бургундия, Новая Зеландия</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Характеристика" data-en="Feature">Характеристика</span><span class="fc-val" data-ru="Влажное, мягкие зимы, прохладное лето" data-en="Wet, mild winters, cool summers">Влажное, мягкие зимы, прохладное лето</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Риск" data-en="Risk">Риск</span><span class="fc-val" data-ru="Дожди во время сбора урожая" data-en="Rain during harvest">Дожди во время сбора урожая</span></div>
-        <div class="fc-note" data-ru="🌧️ Близость океана смягчает температуры — нет экстремальных жары и морозов" data-en="🌧️ Ocean proximity moderates temperatures — no extreme heat or frost">🌧️ Близость океана смягчает температуры — нет экстремальных жары и морозов</div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Examples</span><span class="fc-val" data-ru="Бордо, Бургундия, Новая Зеландия" data-en="Bordeaux, Burgundy, New Zealand">Bordeaux, Burgundy, New Zealand</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Характеристика" data-en="Feature">Feature</span><span class="fc-val" data-ru="Влажное, мягкие зимы, прохладное лето" data-en="Wet, mild winters, cool summers">Wet, mild winters, cool summers</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Риск" data-en="Risk">Risk</span><span class="fc-val" data-ru="Дожди во время сбора урожая" data-en="Rain during harvest">Rain during harvest</span></div>
+        <div class="fc-note" data-ru="🌧️ Близость океана смягчает температуры — нет экстремальных жары и морозов" data-en="🌧️ Ocean proximity moderates temperatures — no extreme heat or frost">🌧️ Ocean proximity moderates temperatures — no extreme heat or frost</div>
       </div>
     </div>
     <div class="factor-card">
       <div class="fc-header" style="background:linear-gradient(135deg,rgba(120,32,120,.25),rgba(120,32,120,.08))">
         <div class="fc-icon">🏔️</div>
-        <div><div class="fc-title" data-ru="Континентальный климат" data-en="Continental Climate">Континентальный климат</div><div class="fc-sub" data-ru="Continental" data-en="Continental">Continental</div></div>
+        <div><div class="fc-title" data-ru="Континентальный климат" data-en="Continental Climate">Continental Climate</div><div class="fc-sub" data-ru="Continental" data-en="Continental">Continental</div></div>
       </div>
       <div class="fc-body">
-        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Примеры</span><span class="fc-val" data-ru="Германия (Мозель), Бургундия" data-en="Germany (Mosel), Burgundy">Германия (Мозель), Бургундия</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Характеристика" data-en="Feature">Характеристика</span><span class="fc-val" data-ru="Холодные зимы, жаркое лето" data-en="Cold winters, hot summers">Холодные зимы, жаркое лето</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Суточный перепад" data-en="Diurnal range">Суточный перепад</span><span class="fc-val" data-ru="Большой → сохраняет кислотность" data-en="Large → preserves acidity">Большой → сохраняет кислотность</span></div>
-        <div class="fc-note" data-ru="🌡️ Большой перепад температур день/ночь сохраняет кислотность и ароматы" data-en="🌡️ Large day/night temperature difference preserves acidity and aromas">🌡️ Большой перепад температур день/ночь сохраняет кислотность и ароматы</div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Examples</span><span class="fc-val" data-ru="Германия (Мозель), Бургундия" data-en="Germany (Mosel), Burgundy">Germany (Mosel), Burgundy</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Характеристика" data-en="Feature">Feature</span><span class="fc-val" data-ru="Холодные зимы, жаркое лето" data-en="Cold winters, hot summers">Cold winters, hot summers</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Суточный перепад" data-en="Diurnal range">Diurnal range</span><span class="fc-val" data-ru="Большой → сохраняет кислотность" data-en="Large → preserves acidity">Large → preserves acidity</span></div>
+        <div class="fc-note" data-ru="🌡️ Большой перепад температур день/ночь сохраняет кислотность и ароматы" data-en="🌡️ Large day/night temperature difference preserves acidity and aromas">🌡️ Large day/night temperature difference preserves acidity and aromas</div>
       </div>
     </div>
     <div class="factor-card">
       <div class="fc-header" style="background:linear-gradient(135deg,rgba(160,128,32,.25),rgba(160,128,32,.08))">
         <div class="fc-icon">🫒</div>
-        <div><div class="fc-title" data-ru="Средиземноморский климат" data-en="Mediterranean Climate">Средиземноморский климат</div><div class="fc-sub" data-ru="Mediterranean" data-en="Mediterranean">Mediterranean</div></div>
+        <div><div class="fc-title" data-ru="Средиземноморский климат" data-en="Mediterranean Climate">Mediterranean Climate</div><div class="fc-sub" data-ru="Mediterranean" data-en="Mediterranean">Mediterranean</div></div>
       </div>
       <div class="fc-body">
-        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Примеры</span><span class="fc-val" data-ru="Тоскана, Риоха, Калифорния" data-en="Tuscany, Rioja, California">Тоскана, Риоха, Калифорния</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Характеристика" data-en="Feature">Характеристика</span><span class="fc-val" data-ru="Сухое жаркое лето, мягкая зима" data-en="Dry hot summer, mild winter">Сухое жаркое лето, мягкая зима</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Вина" data-en="Wines">Вина</span><span class="fc-val" data-ru="Зрелые, насыщенные, низкая кислотность" data-en="Ripe, full-bodied, lower acidity">Зрелые, насыщенные, низкая кислотность</span></div>
-        <div class="fc-note" data-ru="☀️ Минимальный риск дождей = стабильный урожай каждый год" data-en="☀️ Minimal rain risk = consistent harvest every year">☀️ Минимальный риск дождей = стабильный урожай каждый год</div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Примеры" data-en="Examples">Examples</span><span class="fc-val" data-ru="Тоскана, Риоха, Калифорния" data-en="Tuscany, Rioja, California">Tuscany, Rioja, California</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Характеристика" data-en="Feature">Feature</span><span class="fc-val" data-ru="Сухое жаркое лето, мягкая зима" data-en="Dry hot summer, mild winter">Dry hot summer, mild winter</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Вина" data-en="Wines">Wines</span><span class="fc-val" data-ru="Зрелые, насыщенные, низкая кислотность" data-en="Ripe, full-bodied, lower acidity">Ripe, full-bodied, lower acidity</span></div>
+        <div class="fc-note" data-ru="☀️ Минимальный риск дождей = стабильный урожай каждый год" data-en="☀️ Minimal rain risk = consistent harvest every year">☀️ Minimal rain risk = consistent harvest every year</div>
       </div>
     </div>
   </div>
 
   <!-- CLIMATE COMPARISON TABLE -->
 
-  <div class="l2-title" data-ru="📊 СРАВНЕНИЕ: ПРОХЛАДНЫЙ vs ТЁПЛЫЙ КЛИМАТ" data-en="📊 COOL vs WARM CLIMATE COMPARISON">📊 СРАВНЕНИЕ: ПРОХЛАДНЫЙ vs ТЁПЛЫЙ КЛИМАТ</div>
+  <div class="l2-title" data-ru="📊 СРАВНЕНИЕ: ПРОХЛАДНЫЙ vs ТЁПЛЫЙ КЛИМАТ" data-en="📊 COOL vs WARM CLIMATE COMPARISON">📊 COOL vs WARM CLIMATE COMPARISON</div>
   <table class="compare-l2">
     <thead><tr>
-      <th data-ru="Параметр" data-en="Parameter">Параметр</th>
-      <th data-ru="❄️ Прохладный" data-en="❄️ Cool">❄️ Прохладный</th>
-      <th data-ru="☀️ Тёплый" data-en="☀️ Warm">☀️ Тёплый</th>
+      <th data-ru="Параметр" data-en="Parameter">Parameter</th>
+      <th data-ru="❄️ Прохладный" data-en="❄️ Cool">❄️ Cool</th>
+      <th data-ru="☀️ Тёплый" data-en="☀️ Warm">☀️ Warm</th>
     </tr></thead>
     <tbody>
-      <tr><td data-ru="Кислотность" data-en="Acidity">Кислотность</td><td data-ru="⬆️ Высокая" data-en="⬆️ High">⬆️ Высокая</td><td data-ru="⬇️ Низкая" data-en="⬇️ Low">⬇️ Низкая</td></tr>
-      <tr><td data-ru="Сахар / Алкоголь" data-en="Sugar / Alcohol">Сахар / Алкоголь</td><td data-ru="⬇️ Низкий" data-en="⬇️ Low">⬇️ Низкий</td><td data-ru="⬆️ Высокий" data-en="⬆️ High">⬆️ Высокий</td></tr>
-      <tr><td data-ru="Ароматы" data-en="Aromas">Ароматы</td><td data-ru="Цитрус, зелёные фрукты, цветы" data-en="Citrus, green fruit, floral">Цитрус, зелёные фрукты, цветы</td><td data-ru="Тропические фрукты, джем, варенье" data-en="Tropical fruit, jam, preserves">Тропические фрукты, джем, варенье</td></tr>
-      <tr><td data-ru="Тело вина" data-en="Body">Тело вина</td><td data-ru="Лёгкое / среднее" data-en="Light / medium">Лёгкое / среднее</td><td data-ru="Среднее / полное" data-en="Medium / full">Среднее / полное</td></tr>
-      <tr><td data-ru="Риск" data-en="Risk">Риск</td><td data-ru="Недозрелость, морозы, дожди" data-en="Under-ripeness, frost, rain">Недозрелость, морозы, дожди</td><td data-ru="Перезрелость, высокий алкоголь" data-en="Over-ripeness, high alcohol">Перезрелость, высокий алкоголь</td></tr>
-      <tr><td data-ru="Примеры" data-en="Examples">Примеры</td><td data-ru="Германия, Шампань, Луара" data-en="Germany, Champagne, Loire">Германия, Шампань, Луара</td><td data-ru="Австралия, Юж. Испания, Аргентина" data-en="Australia, S. Spain, Argentina">Австралия, Юж. Испания, Аргентина</td></tr>
+      <tr><td data-ru="Кислотность" data-en="Acidity">Acidity</td><td data-ru="⬆️ Высокая" data-en="⬆️ High">⬆️ High</td><td data-ru="⬇️ Низкая" data-en="⬇️ Low">⬇️ Low</td></tr>
+      <tr><td data-ru="Сахар / Алкоголь" data-en="Sugar / Alcohol">Sugar / Alcohol</td><td data-ru="⬇️ Низкий" data-en="⬇️ Low">⬇️ Low</td><td data-ru="⬆️ Высокий" data-en="⬆️ High">⬆️ High</td></tr>
+      <tr><td data-ru="Ароматы" data-en="Aromas">Aromas</td><td data-ru="Цитрус, зелёные фрукты, цветы" data-en="Citrus, green fruit, floral">Citrus, green fruit, floral</td><td data-ru="Тропические фрукты, джем, варенье" data-en="Tropical fruit, jam, preserves">Tropical fruit, jam, preserves</td></tr>
+      <tr><td data-ru="Тело вина" data-en="Body">Body</td><td data-ru="Лёгкое / среднее" data-en="Light / medium">Light / medium</td><td data-ru="Среднее / полное" data-en="Medium / full">Medium / full</td></tr>
+      <tr><td data-ru="Риск" data-en="Risk">Risk</td><td data-ru="Недозрелость, морозы, дожди" data-en="Under-ripeness, frost, rain">Under-ripeness, frost, rain</td><td data-ru="Перезрелость, высокий алкоголь" data-en="Over-ripeness, high alcohol">Over-ripeness, high alcohol</td></tr>
+      <tr><td data-ru="Примеры" data-en="Examples">Examples</td><td data-ru="Германия, Шампань, Луара" data-en="Germany, Champagne, Loire">Germany, Champagne, Loire</td><td data-ru="Австралия, Юж. Испания, Аргентина" data-en="Australia, S. Spain, Argentina">Australia, S. Spain, Argentina</td></tr>
     </tbody>
   </table>
 
   <!-- TERROIR FACTORS -->
 
-  <div class="l2-title" data-ru="🌱 ТЕРРУАР — ФАКТОРЫ ВИНОГРАДНИКА" data-en="🌱 TERROIR — VINEYARD FACTORS">🌱 ТЕРРУАР — ФАКТОРЫ ВИНОГРАДНИКА</div>
+  <div class="l2-title" data-ru="🌱 ТЕРРУАР — ФАКТОРЫ ВИНОГРАДНИКА" data-en="🌱 TERROIR — VINEYARD FACTORS">🌱 TERROIR — VINEYARD FACTORS</div>
   <div class="factor-grid">
     <div class="factor-card">
       <div class="fc-header" style="background:linear-gradient(135deg,rgba(96,64,32,.4),rgba(96,64,32,.1))">
         <div class="fc-icon">🪨</div>
-        <div><div class="fc-title" data-ru="Почва" data-en="Soil">Почва</div><div class="fc-sub" data-ru="Soil Type" data-en="Soil Type">Soil Type</div></div>
+        <div><div class="fc-title" data-ru="Почва" data-en="Soil">Soil</div><div class="fc-sub" data-ru="Soil Type" data-en="Soil Type">Soil Type</div></div>
       </div>
       <div class="fc-body">
-        <div class="fc-row"><span class="fc-lbl" data-ru="Дренаж" data-en="Drainage">Дренаж</span><span class="fc-val" data-ru="Хороший дренаж = контролируемый стресс для лозы" data-en="Good drainage = controlled vine stress">Хороший дренаж = контролируемый стресс для лозы</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Тепло" data-en="Heat">Тепло</span><span class="fc-val" data-ru="Камни и сланец накапливают тепло днём, отдают ночью" data-en="Stones retain heat during day, release at night">Камни и сланец накапливают тепло днём, отдают ночью</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Питательные вещества" data-en="Nutrients">Питательные вещества</span><span class="fc-val" data-ru="Бедная почва → лоза углубляет корни → сложность" data-en="Poor soil → deep roots → complexity">Бедная почва → лоза углубляет корни → сложность</span></div>
-        <div class="fc-note" data-ru="💡 Стресс для лозы — это хорошо! Лоза борется за выживание → концентрирует ароматы в ягодах" data-en="💡 Vine stress is good! The vine fights to survive → concentrates aromas in berries">💡 Стресс для лозы — это хорошо! Лоза борется за выживание → концентрирует ароматы в ягодах</div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Дренаж" data-en="Drainage">Drainage</span><span class="fc-val" data-ru="Хороший дренаж = контролируемый стресс для лозы" data-en="Good drainage = controlled vine stress">Good drainage = controlled vine stress</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Тепло" data-en="Heat">Heat</span><span class="fc-val" data-ru="Камни и сланец накапливают тепло днём, отдают ночью" data-en="Stones retain heat during day, release at night">Stones retain heat during day, release at night</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Питательные вещества" data-en="Nutrients">Nutrients</span><span class="fc-val" data-ru="Бедная почва → лоза углубляет корни → сложность" data-en="Poor soil → deep roots → complexity">Poor soil → deep roots → complexity</span></div>
+        <div class="fc-note" data-ru="💡 Стресс для лозы — это хорошо! Лоза борется за выживание → концентрирует ароматы в ягодах" data-en="💡 Vine stress is good! The vine fights to survive → concentrates aromas in berries">💡 Vine stress is good! The vine fights to survive → concentrates aromas in berries</div>
       </div>
     </div>
     <div class="factor-card">
       <div class="fc-header" style="background:linear-gradient(135deg,rgba(32,80,160,.3),rgba(32,80,160,.08))">
         <div class="fc-icon">🧭</div>
-        <div><div class="fc-title" data-ru="Экспозиция склона" data-en="Aspect">Экспозиция склона</div><div class="fc-sub" data-ru="Aspect & Slope" data-en="Aspect & Slope">Aspect & Slope</div></div>
+        <div><div class="fc-title" data-ru="Экспозиция склона" data-en="Aspect">Aspect</div><div class="fc-sub" data-ru="Aspect & Slope" data-en="Aspect & Slope">Aspect & Slope</div></div>
       </div>
       <div class="fc-body">
-        <div class="fc-row"><span class="fc-lbl" data-ru="Южный склон (сев. полушарие)" data-en="South-facing (N. hemisphere)">Южный склон (сев. полушарие)</span><span class="fc-val" data-ru="Максимум солнца → лучшее созревание" data-en="Maximum sun → better ripening">Максимум солнца → лучшее созревание</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Угол склона" data-en="Slope angle">Угол склона</span><span class="fc-val" data-ru="Крутой склон = лучший дренаж и прогрев" data-en="Steep slope = better drainage & warmth">Крутой склон = лучший дренаж и прогрев</span></div>
-        <div class="fc-note" data-ru="🍷 Мозель (Германия): крутые сланцевые склоны вдоль реки — идеальны для Riesling в холодном климате" data-en="🍷 Mosel (Germany): steep slate slopes along river — perfect for Riesling in cool climate">🍷 Мозель (Германия): крутые сланцевые склоны вдоль реки — идеальны для Riesling в холодном климате</div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Южный склон (сев. полушарие)" data-en="South-facing (N. hemisphere)">South-facing (N. hemisphere)</span><span class="fc-val" data-ru="Максимум солнца → лучшее созревание" data-en="Maximum sun → better ripening">Maximum sun → better ripening</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Угол склона" data-en="Slope angle">Slope angle</span><span class="fc-val" data-ru="Крутой склон = лучший дренаж и прогрев" data-en="Steep slope = better drainage & warmth">Steep slope = better drainage & warmth</span></div>
+        <div class="fc-note" data-ru="🍷 Мозель (Германия): крутые сланцевые склоны вдоль реки — идеальны для Riesling в холодном климате" data-en="🍷 Mosel (Germany): steep slate slopes along river — perfect for Riesling in cool climate">🍷 Mosel (Germany): steep slate slopes along river — perfect for Riesling in cool climate</div>
       </div>
     </div>
     <div class="factor-card">
       <div class="fc-header" style="background:linear-gradient(135deg,rgba(32,120,120,.25),rgba(32,120,120,.08))">
         <div class="fc-icon">⛰️</div>
-        <div><div class="fc-title" data-ru="Высота над уровнем моря" data-en="Altitude">Высота над уровнем моря</div><div class="fc-sub" data-ru="Altitude" data-en="Altitude">Altitude</div></div>
+        <div><div class="fc-title" data-ru="Высота над уровнем моря" data-en="Altitude">Altitude</div><div class="fc-sub" data-ru="Altitude" data-en="Altitude">Altitude</div></div>
       </div>
       <div class="fc-body">
-        <div class="fc-row"><span class="fc-lbl" data-ru="Эффект" data-en="Effect">Эффект</span><span class="fc-val" data-ru="Каждые 100м ↑ = ~0,6°C холоднее" data-en="Every 100m ↑ = ~0.6°C cooler">Каждые 100м ↑ = ~0,6°C холоднее</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Применение" data-en="Use">Применение</span><span class="fc-val" data-ru="В тёплых регионах высота компенсирует жару" data-en="In warm regions altitude compensates heat">В тёплых регионах высота компенсирует жару</span></div>
-        <div class="fc-note" data-ru="🇦🇷 Мальбек Мендосы (Аргентина) растёт на высоте 800–1500м — благодаря этому сохраняет свежесть" data-en="🇦🇷 Mendoza Malbec (Argentina) grows at 800–1500m — this preserves freshness">🇦🷷 Мальбек Мендосы (Аргентина) растёт на высоте 800–1500м — благодаря этому сохраняет свежесть</div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Эффект" data-en="Effect">Effect</span><span class="fc-val" data-ru="Каждые 100м ↑ = ~0,6°C холоднее" data-en="Every 100m ↑ = ~0.6°C cooler">Every 100m ↑ = ~0.6°C cooler</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Применение" data-en="Use">Use</span><span class="fc-val" data-ru="В тёплых регионах высота компенсирует жару" data-en="In warm regions altitude compensates heat">In warm regions altitude compensates heat</span></div>
+        <div class="fc-note" data-ru="🇦🇷 Мальбек Мендосы (Аргентина) растёт на высоте 800–1500м — благодаря этому сохраняет свежесть" data-en="🇦🇷 Mendoza Malbec (Argentina) grows at 800–1500m — this preserves freshness">🇦🇷 Mendoza Malbec (Argentina) grows at 800–1500m — this preserves freshness</div>
       </div>
     </div>
     <div class="factor-card">
       <div class="fc-header" style="background:linear-gradient(135deg,rgba(32,60,120,.3),rgba(32,60,120,.08))">
         <div class="fc-icon">💧</div>
-        <div><div class="fc-title" data-ru="Вода и ирригация" data-en="Water & Irrigation">Вода и ирригация</div><div class="fc-sub" data-ru="Water Management" data-en="Water Management">Water Management</div></div>
+        <div><div class="fc-title" data-ru="Вода и ирригация" data-en="Water & Irrigation">Water & Irrigation</div><div class="fc-sub" data-ru="Water Management" data-en="Water Management">Water Management</div></div>
       </div>
       <div class="fc-body">
-        <div class="fc-row"><span class="fc-lbl" data-ru="Дефицит воды" data-en="Water deficit">Дефицит воды</span><span class="fc-val" data-ru="Концентрирует ягоды, усиливает вкус" data-en="Concentrates berries, intensifies flavour">Концентрирует ягоды, усиливает вкус</span></div>
-        <div class="fc-row"><span class="fc-lbl" data-ru="Избыток воды" data-en="Excess water">Избыток воды</span><span class="fc-val" data-ru="Разбавляет ягоды → менее насыщенное вино" data-en="Dilutes berries → less concentrated wine">Разбавляет ягоды → менее насыщенное вино</span></div>
-        <div class="fc-note" data-ru="🇪🇺 В Европе ирригация во многих регионах запрещена. В Новом Свете — распространена." data-en="🇪🇺 Irrigation banned in many European regions. Common in New World.">🇪🇺 В Европе ирригация во многих регионах запрещена. В Новом Свете — распространена.</div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Дефицит воды" data-en="Water deficit">Water deficit</span><span class="fc-val" data-ru="Концентрирует ягоды, усиливает вкус" data-en="Concentrates berries, intensifies flavour">Concentrates berries, intensifies flavour</span></div>
+        <div class="fc-row"><span class="fc-lbl" data-ru="Избыток воды" data-en="Excess water">Excess water</span><span class="fc-val" data-ru="Разбавляет ягоды → менее насыщенное вино" data-en="Dilutes berries → less concentrated wine">Dilutes berries → less concentrated wine</span></div>
+        <div class="fc-note" data-ru="🇪🇺 В Европе ирригация во многих регионах запрещена. В Новом Свете — распространена." data-en="🇪🇺 Irrigation banned in many European regions. Common in New World.">🇪🇺 Irrigation banned in many European regions. Common in New World.</div>
       </div>
     </div>
   </div>
 
   <!-- SOIL TYPES -->
 
-  <div class="l2-title" data-ru="🪨 ТИПЫ ПОЧВЫ И ИХ ВЛИЯНИЕ" data-en="🪨 SOIL TYPES AND THEIR INFLUENCE">🪨 ТИПЫ ПОЧВЫ И ИХ ВЛИЯНИЕ</div>
+  <div class="l2-title" data-ru="🪨 ТИПЫ ПОЧВЫ И ИХ ВЛИЯНИЕ" data-en="🪨 SOIL TYPES AND THEIR INFLUENCE">🪨 SOIL TYPES AND THEIR INFLUENCE</div>
   <div class="soil-grid">
-    <div class="soil-card"><div class="soil-icon">🪨</div><div class="soil-name" data-ru="Сланец / Шифер" data-en="Slate / Schist">Сланец / Шифер</div><div class="soil-desc" data-ru="Накапливает тепло, отличный дренаж. Бедный питательными веществами." data-en="Retains heat, excellent drainage. Poor in nutrients.">Накапливает тепло, отличный дренаж. Бедный питательными веществами.</div><div class="soil-example">→ Мозель (Riesling), Дору (Порту)</div></div>
-    <div class="soil-card"><div class="soil-icon">🧱</div><div class="soil-name" data-ru="Известняк / Мел" data-en="Limestone / Chalk">Известняк / Мел</div><div class="soil-desc" data-ru="Хороший дренаж, удерживает влагу. Даёт высокую кислотность." data-en="Good drainage, retains moisture. Promotes high acidity.">Хороший дренаж, удерживает влагу. Даёт высокую кислотность.</div><div class="soil-example">→ Шампань, Шабли (Chardonnay), Бургундия</div></div>
-    <div class="soil-card"><div class="soil-icon">🪵</div><div class="soil-name" data-ru="Гравий" data-en="Gravel">Гравий</div><div class="soil-desc" data-ru="Отличный дренаж, хорошо прогревается. Лоза уходит вглубь за водой." data-en="Excellent drainage, warms well. Vine roots deep for water.">Отличный дренаж, хорошо прогревается. Лоза уходит вглубь за водой.</div><div class="soil-example">→ Медок (Cab Sauv), Грав (Бордо)</div></div>
-    <div class="soil-card"><div class="soil-icon">🌑</div><div class="soil-name" data-ru="Вулканическая почва" data-en="Volcanic Soil">Вулканическая почва</div><div class="soil-desc" data-ru="Пористая, богатая минералами. Даёт минеральность и дымность вину." data-en="Porous, mineral-rich. Gives minerality and smokiness.">Пористая, богатая минералами. Даёт минеральность и дымность вину.</div><div class="soil-example">→ Этна (Сицилия), Санторини (Греция)</div></div>
-    <div class="soil-card"><div class="soil-icon">🟤</div><div class="soil-name" data-ru="Глина" data-en="Clay">Глина</div><div class="soil-desc" data-ru="Удерживает воду и тепло. Подходит для красных сортов." data-en="Retains water and heat. Suits red varieties.">Удерживает воду и тепло. Подходит для красных сортов.</div><div class="soil-example">→ Помроль (Merlot), Кьянти</div></div>
-    <div class="soil-card"><div class="soil-icon">⚪</div><div class="soil-name" data-ru="Песок" data-en="Sand">Песок</div><div class="soil-desc" data-ru="Плохо удерживает воду и питательные вещества. Защищает от филлоксеры." data-en="Poor water/nutrient retention. Protects from phylloxera.">Плохо удерживает воду и питательные вещества. Защищает от филлоксеры.</div><div class="soil-example">→ Колáрес (Португалия), части Бордо</div></div>
+    <div class="soil-card"><div class="soil-icon">🪨</div><div class="soil-name" data-ru="Сланец / Шифер" data-en="Slate / Schist">Slate / Schist</div><div class="soil-desc" data-ru="Накапливает тепло, отличный дренаж. Бедный питательными веществами." data-en="Retains heat, excellent drainage. Poor in nutrients.">Retains heat, excellent drainage. Poor in nutrients.</div><div class="soil-example" data-ru="→ Мозель (Riesling), Дору (Порту)" data-en="→ Mosel (Riesling), Douro (Port)">→ Mosel (Riesling), Douro (Port)</div></div>
+    <div class="soil-card"><div class="soil-icon">🧱</div><div class="soil-name" data-ru="Известняк / Мел" data-en="Limestone / Chalk">Limestone / Chalk</div><div class="soil-desc" data-ru="Хороший дренаж, удерживает влагу. Даёт высокую кислотность." data-en="Good drainage, retains moisture. Promotes high acidity.">Good drainage, retains moisture. Promotes high acidity.</div><div class="soil-example" data-ru="→ Шампань, Шабли (Chardonnay), Бургундия" data-en="→ Champagne, Chablis (Chardonnay), Burgundy">→ Champagne, Chablis (Chardonnay), Burgundy</div></div>
+    <div class="soil-card"><div class="soil-icon">🪵</div><div class="soil-name" data-ru="Гравий" data-en="Gravel">Gravel</div><div class="soil-desc" data-ru="Отличный дренаж, хорошо прогревается. Лоза уходит вглубь за водой." data-en="Excellent drainage, warms well. Vine roots deep for water.">Excellent drainage, warms well. Vine roots deep for water.</div><div class="soil-example" data-ru="→ Медок (Cab Sauv), Грав (Бордо)" data-en="→ Médoc (Cab Sauv), Graves (Bordeaux)">→ Médoc (Cab Sauv), Graves (Bordeaux)</div></div>
+    <div class="soil-card"><div class="soil-icon">🌑</div><div class="soil-name" data-ru="Вулканическая почва" data-en="Volcanic Soil">Volcanic Soil</div><div class="soil-desc" data-ru="Пористая, богатая минералами. Даёт минеральность и дымность вину." data-en="Porous, mineral-rich. Gives minerality and smokiness.">Porous, mineral-rich. Gives minerality and smokiness.</div><div class="soil-example" data-ru="→ Этна (Сицилия), Санторини (Греция)" data-en="→ Etna (Sicily), Santorini (Greece)">→ Etna (Sicily), Santorini (Greece)</div></div>
+    <div class="soil-card"><div class="soil-icon">🟤</div><div class="soil-name" data-ru="Глина" data-en="Clay">Clay</div><div class="soil-desc" data-ru="Удерживает воду и тепло. Подходит для красных сортов." data-en="Retains water and heat. Suits red varieties.">Retains water and heat. Suits red varieties.</div><div class="soil-example" data-ru="→ Помроль (Merlot), Кьянти" data-en="→ Pomerol (Merlot), Chianti">→ Pomerol (Merlot), Chianti</div></div>
+    <div class="soil-card"><div class="soil-icon">⚪</div><div class="soil-name" data-ru="Песок" data-en="Sand">Sand</div><div class="soil-desc" data-ru="Плохо удерживает воду и питательные вещества. Защищает от филлоксеры." data-en="Poor water/nutrient retention. Protects from phylloxera.">Poor water/nutrient retention. Protects from phylloxera.</div><div class="soil-example" data-ru="→ Колáрес (Португалия), части Бордо" data-en="→ Colares (Portugal), parts of Bordeaux">→ Colares (Portugal), parts of Bordeaux</div></div>
   </div>
 
   <!-- VINEYARD CYCLE -->
 
-  <div class="l2-title" data-ru="🌿 ГОДОВОЙ ЦИКЛ ВИНОГРАДНИКА" data-en="🌿 ANNUAL VINEYARD CYCLE">🌿 ГОДОВОЙ ЦИКЛ ВИНОГРАДНИКА</div>
+  <div class="l2-title" data-ru="🌿 ГОДОВОЙ ЦИКЛ ВИНОГРАДНИКА" data-en="🌿 ANNUAL VINEYARD CYCLE">🌿 ANNUAL VINEYARD CYCLE</div>
   <div class="vine-flow">
-    <div class="vine-step"><div class="vs-month" data-ru="Зима · Дек–Фев" data-en="Winter · Dec–Feb">Зима · Дек–Фев</div><div class="vs-name">✂️ <span data-ru="Обрезка" data-en="Pruning">Обрезка</span></div><div class="vs-desc" data-ru="Удаление побегов прошлого года. Определяет количество гроздей — влияет на урожай." data-en="Remove last year's shoots. Determines grape cluster number — affects yield.">Удаление побегов прошлого года. Определяет количество гроздей — влияет на урожай.</div></div>
-    <div class="vine-step"><div class="vs-month" data-ru="Весна · Март–Май" data-en="Spring · Mar–May">Весна · Март–Май</div><div class="vs-name">🌱 <span data-ru="Распускание почек" data-en="Budburst">Распускание почек</span></div><div class="vs-desc" data-ru="Появляются новые побеги. Угроза заморозков — может уничтожить весь урожай." data-en="New shoots emerge. Frost risk — can destroy entire harvest.">Появляются новые побеги. Угроза заморозков — может уничтожить весь урожай.</div></div>
-    <div class="vine-step"><div class="vs-month" data-ru="Лето · Июнь–Авг" data-en="Summer · Jun–Aug">Лето · Июнь–Авг</div><div class="vs-name">🌸 <span data-ru="Цветение → Завязь" data-en="Flowering → Set">Цветение → Завязь</span></div><div class="vs-desc" data-ru="Цветение → опыление → формирование ягод. Дождь во время цветения = меньше урожая." data-en="Flowering → pollination → berry formation. Rain during flowering = smaller yield.">Цветение → опыление → формирование ягод. Дождь во время цветения = меньше урожая.</div></div>
-    <div class="vine-step"><div class="vs-month" data-ru="Авг–Сент" data-en="Aug–Sept">Авг–Сент</div><div class="vs-name">🍇 <span data-ru="Véraison — смена цвета" data-en="Véraison — colour change">Véraison</span></div><div class="vs-desc" data-ru="Ягоды меняют цвет (красные) или становятся прозрачными (белые). Начинается накопление сахара." data-en="Berries change colour (red) or become translucent (white). Sugar accumulation begins.">Ягоды меняют цвет (красные) или становятся прозрачными (белые). Начинается накопление сахара.</div></div>
-    <div class="vine-step"><div class="vs-month" data-ru="Сентябрь–Октябрь" data-en="September–October">Сентябрь–Октябрь</div><div class="vs-name">🌾 <span data-ru="Сбор урожая" data-en="Harvest">Сбор урожая</span></div><div class="vs-desc" data-ru="Оптимальный момент: баланс сахара и кислотности. Ручной или машинный сбор." data-en="Optimal moment: balance of sugar and acidity. Hand or machine harvest.">Оптимальный момент: баланс сахара и кислотности. Ручной или машинный сбор.</div></div>
-    <div class="vine-step"><div class="vs-month" data-ru="Осень · После сбора" data-en="Autumn · Post-harvest">Осень · После сбора</div><div class="vs-name">🍂 <span data-ru="Листопад → Покой" data-en="Leaf fall → Dormancy">Листопад → Покой</span></div><div class="vs-desc" data-ru="Лоза накапливает питательные вещества в корнях и древесине. Подготовка к зиме." data-en="Vine stores nutrients in roots and wood. Preparing for winter.">Лоза накапливает питательные вещества в корнях и древесине. Подготовка к зиме.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Зима · Дек–Фев" data-en="Winter · Dec–Feb">Winter · Dec–Feb</div><div class="vs-name">✂️ <span data-ru="Обрезка" data-en="Pruning">Pruning</span></div><div class="vs-desc" data-ru="Удаление побегов прошлого года. Определяет количество гроздей — влияет на урожай." data-en="Remove last year's shoots. Determines grape cluster number — affects yield.">Remove last year's shoots. Determines grape cluster number — affects yield.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Весна · Март–Май" data-en="Spring · Mar–May">Spring · Mar–May</div><div class="vs-name">🌱 <span data-ru="Распускание почек" data-en="Budburst">Budburst</span></div><div class="vs-desc" data-ru="Появляются новые побеги. Угроза заморозков — может уничтожить весь урожай." data-en="New shoots emerge. Frost risk — can destroy entire harvest.">New shoots emerge. Frost risk — can destroy entire harvest.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Лето · Июнь–Авг" data-en="Summer · Jun–Aug">Summer · Jun–Aug</div><div class="vs-name">🌸 <span data-ru="Цветение → Завязь" data-en="Flowering → Set">Flowering → Set</span></div><div class="vs-desc" data-ru="Цветение → опыление → формирование ягод. Дождь во время цветения = меньше урожая." data-en="Flowering → pollination → berry formation. Rain during flowering = smaller yield.">Flowering → pollination → berry formation. Rain during flowering = smaller yield.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Авг–Сент" data-en="Aug–Sept">Aug–Sept</div><div class="vs-name">🍇 <span data-ru="Véraison — смена цвета" data-en="Véraison — colour change">Véraison — colour change</span></div><div class="vs-desc" data-ru="Ягоды меняют цвет (красные) или становятся прозрачными (белые). Начинается накопление сахара." data-en="Berries change colour (red) or become translucent (white). Sugar accumulation begins.">Berries change colour (red) or become translucent (white). Sugar accumulation begins.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Сентябрь–Октябрь" data-en="September–October">September–October</div><div class="vs-name">🌾 <span data-ru="Сбор урожая" data-en="Harvest">Harvest</span></div><div class="vs-desc" data-ru="Оптимальный момент: баланс сахара и кислотности. Ручной или машинный сбор." data-en="Optimal moment: balance of sugar and acidity. Hand or machine harvest.">Optimal moment: balance of sugar and acidity. Hand or machine harvest.</div></div>
+    <div class="vine-step"><div class="vs-month" data-ru="Осень · После сбора" data-en="Autumn · Post-harvest">Autumn · Post-harvest</div><div class="vs-name">🍂 <span data-ru="Листопад → Покой" data-en="Leaf fall → Dormancy">Leaf fall → Dormancy</span></div><div class="vs-desc" data-ru="Лоза накапливает питательные вещества в корнях и древесине. Подготовка к зиме." data-en="Vine stores nutrients in roots and wood. Preparing for winter.">Vine stores nutrients in roots and wood. Preparing for winter.</div></div>
   </div>
 
   <!-- WINEMAKING QUALITY FACTORS -->
 
-  <div class="l2-title" data-ru="🏭 ФАКТОРЫ КАЧЕСТВА В ВИНОДЕЛИИ" data-en="🏭 WINEMAKING QUALITY FACTORS">🏭 ФАКТОРЫ КАЧЕСТВА В ВИНОДЕЛИИ</div>
+  <div class="l2-title" data-ru="🏭 ФАКТОРЫ КАЧЕСТВА В ВИНОДЕЛИИ" data-en="🏭 WINEMAKING QUALITY FACTORS">🏭 WINEMAKING QUALITY FACTORS</div>
   <table class="compare-l2">
     <thead><tr>
-      <th data-ru="Фактор" data-en="Factor">Фактор</th>
-      <th data-ru="Влияние на вино" data-en="Effect on wine">Влияние на вино</th>
-      <th data-ru="Пример" data-en="Example">Пример</th>
+      <th data-ru="Фактор" data-en="Factor">Factor</th>
+      <th data-ru="Влияние на вино" data-en="Effect on wine">Effect on wine</th>
+      <th data-ru="Пример" data-en="Example">Example</th>
     </tr></thead>
     <tbody>
-      <tr><td data-ru="🌡️ Температура ферментации" data-en="🌡️ Fermentation temp">🌡️ Температура ферментации</td><td data-ru="Низкая → свежесть и аромат. Высокая → экстракция цвета и танинов" data-en="Low → freshness & aroma. High → colour & tannin extraction">Низкая → свежесть и аромат. Высокая → экстракция цвета и танинов</td><td data-ru="Белое: 12–18°C. Красное: 20–32°C" data-en="White: 12–18°C. Red: 20–32°C">Белое: 12–18°C. Красное: 20–32°C</td></tr>
-      <tr><td data-ru="🛢️ Дубовые бочки" data-en="🛢️ Oak barrels">🛢️ Дубовые бочки</td><td data-ru="Добавляют ваниль, специи, тост. Новые бочки = больше влияния" data-en="Add vanilla, spice, toast. New barrels = more influence">Добавляют ваниль, специи, тост. Новые бочки = больше влияния</td><td data-ru="Chardonnay, Cab Sauv, Rioja Reserva" data-en="Chardonnay, Cab Sauv, Rioja Reserva">Chardonnay, Cab Sauv, Rioja Reserva</td></tr>
-      <tr><td data-ru="⏱️ Время выдержки" data-en="⏱️ Ageing time">⏱️ Время выдержки</td><td data-ru="Дольше = сложность, третичные ароматы. Танины смягчаются" data-en="Longer = complexity, tertiary aromas. Tannins soften">Дольше = сложность, третичные ароматы. Танины смягчаются</td><td data-ru="Rioja Gran Reserva — мин. 5 лет" data-en="Rioja Gran Reserva — min. 5 years">Rioja Gran Reserva — мин. 5 лет</td></tr>
-      <tr><td data-ru="🧫 Тип дрожжей" data-en="🧫 Yeast type">🧫 Тип дрожжей</td><td data-ru="Культурные дрожжи — предсказуемый результат. Дикие — уникальность, риск" data-en="Cultured yeast — predictable. Wild yeast — unique, risky">Культурные дрожжи — предсказуемый результат. Дикие — уникальность, риск</td><td data-ru="Натуральные вина = дикие дрожжи" data-en="Natural wines = wild yeast">Натуральные вина = дикие дрожжи</td></tr>
-      <tr><td data-ru="✂️ Урожайность (yield)" data-en="✂️ Yield">✂️ Урожайность (yield)</td><td data-ru="Меньше гроздей = концентрированнее вкус. Больше = разбавленность" data-en="Fewer clusters = more concentrated. More = diluted">Меньше гроздей = концентрированнее вкус. Больше = разбавленность</td><td data-ru="Премиальные вина = низкий yield" data-en="Premium wines = low yield">Премиальные вина = низкий yield</td></tr>
+      <tr><td data-ru="🌡️ Температура ферментации" data-en="🌡️ Fermentation temp">🌡️ Fermentation temp</td><td data-ru="Низкая → свежесть и аромат. Высокая → экстракция цвета и танинов" data-en="Low → freshness & aroma. High → colour & tannin extraction">Low → freshness & aroma. High → colour & tannin extraction</td><td data-ru="Белое: 12–18°C. Красное: 20–32°C" data-en="White: 12–18°C. Red: 20–32°C">White: 12–18°C. Red: 20–32°C</td></tr>
+      <tr><td data-ru="🛢️ Дубовые бочки" data-en="🛢️ Oak barrels">🛢️ Oak barrels</td><td data-ru="Добавляют ваниль, специи, тост. Новые бочки = больше влияния" data-en="Add vanilla, spice, toast. New barrels = more influence">Add vanilla, spice, toast. New barrels = more influence</td><td data-ru="Chardonnay, Cab Sauv, Rioja Reserva" data-en="Chardonnay, Cab Sauv, Rioja Reserva">Chardonnay, Cab Sauv, Rioja Reserva</td></tr>
+      <tr><td data-ru="⏱️ Время выдержки" data-en="⏱️ Ageing time">⏱️ Ageing time</td><td data-ru="Дольше = сложность, третичные ароматы. Танины смягчаются" data-en="Longer = complexity, tertiary aromas. Tannins soften">Longer = complexity, tertiary aromas. Tannins soften</td><td data-ru="Rioja Gran Reserva — мин. 5 лет" data-en="Rioja Gran Reserva — min. 5 years">Rioja Gran Reserva — min. 5 years</td></tr>
+      <tr><td data-ru="🧫 Тип дрожжей" data-en="🧫 Yeast type">🧫 Yeast type</td><td data-ru="Культурные дрожжи — предсказуемый результат. Дикие — уникальность, риск" data-en="Cultured yeast — predictable. Wild yeast — unique, risky">Cultured yeast — predictable. Wild yeast — unique, risky</td><td data-ru="Натуральные вина = дикие дрожжи" data-en="Natural wines = wild yeast">Natural wines = wild yeast</td></tr>
+      <tr><td data-ru="✂️ Урожайность (yield)" data-en="✂️ Yield">✂️ Yield</td><td data-ru="Меньше гроздей = концентрированнее вкус. Больше = разбавленность" data-en="Fewer clusters = more concentrated. More = diluted">Fewer clusters = more concentrated. More = diluted</td><td data-ru="Премиальные вина = низкий yield" data-en="Premium wines = low yield">Premium wines = low yield</td></tr>
     </tbody>
   </table>
 
@@ -880,17 +880,17 @@ footer span{color:var(–gold);}
      PANEL REF: GLOSSARY (placeholder)
 ═══════════════════════════════════════════════ -->
 <div class="panel" id="panel-ref">
-  <div class="l2-title" data-ru="📖 ГЛОССАРИЙ — СКОРО" data-en="📖 GLOSSARY — COMING SOON">📖 ГЛОССАРИЙ — СКОРО</div>
+  <div class="l2-title" data-ru="📖 ГЛОССАРИЙ — СКОРО" data-en="📖 GLOSSARY — COMING SOON">📖 GLOSSARY — COMING SOON</div>
   <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:40px;text-align:center;color:var(--muted);">
     <div style="font-size:40px;margin-bottom:16px;">📖</div>
-    <div style="font-family:'Playfair Display',serif;font-size:20px;color:var(--cream);margin-bottom:8px;" data-ru="Общий справочник в разработке" data-en="General reference coming soon">Общий справочник в разработке</div>
-    <div style="font-size:13px;" data-ru="Здесь будет глоссарий терминов, шпаргалка по экзамену и другие полезные материалы" data-en="Wine glossary, exam cheat sheet and other useful materials will be here">Здесь будет глоссарий терминов, шпаргалка по экзамену и другие полезные материалы</div>
+    <div style="font-family:'Playfair Display',serif;font-size:20px;color:var(--cream);margin-bottom:8px;" data-ru="Общий справочник в разработке" data-en="General reference coming soon">General reference coming soon</div>
+    <div style="font-size:13px;" data-ru="Здесь будет глоссарий терминов, шпаргалка по экзамену и другие полезные материалы" data-en="Wine glossary, exam cheat sheet and other useful materials will be here">Wine glossary, exam cheat sheet and other useful materials will be here</div>
   </div>
 </div>
 
 </div><!-- /content -->
 
-<footer><span data-ru="WSET Level 1 & 2" data-en="WSET Level 1 & 2">WSET Level 1 & 2</span> · <span data-ru="Полный справочник · 5 разделов" data-en="Complete Study Guide · 5 sections">Полный справочник · 5 разделов</span></footer>
+<footer><span data-ru="WSET Level 1 & 2" data-en="WSET Level 1 & 2">WSET Level 1 & 2</span> · <span data-ru="Полный справочник · 5 разделов" data-en="Complete Study Guide · 5 sections">Complete Study Guide · 5 sections</span></footer>
 
 <script>
 let currentLang = 'en';
