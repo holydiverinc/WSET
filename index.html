@@ -40,6 +40,20 @@
 .compare-l2 tbody tr:hover{background:rgba(176,80,16,.06);}
 .compare-l2 td{padding:13px 16px;font-size:13px;color:#c8a888;vertical-align:top;}
 .compare-l2 td:first-child{font-family:'Playfair Display',serif;font-size:14px;color:#f0e8e0;font-weight:700;}
+/* ── MOD CARD & REGION TABLE (SAT panels) ── */
+.mod-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;}
+.mod-title{font-family:'Playfair Display',serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--l2-l);font-weight:400;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.region-table{width:100%;border-collapse:collapse;}
+.region-table thead tr{background:rgba(255,255,255,.03);border-bottom:2px solid var(--border);}
+.region-table thead th{padding:10px 14px;text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);font-weight:600;}
+.region-table tbody tr{border-bottom:1px solid rgba(46,34,68,.6);transition:background .15s;}
+.region-table tbody tr:hover{background:rgba(112,64,192,.06);}
+.region-table td{padding:12px 14px;font-size:13px;color:var(--cream);vertical-align:top;line-height:1.55;}
+.region-table td:first-child{font-weight:600;color:var(--white);}
+[data-theme="light"] .mod-card{background:var(--card);}
+[data-theme="light"] .region-table td{color:var(--cream);}
+[data-theme="light"] .region-table thead tr{background:var(--bg2);}
+
 .soil-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:32px;}
 .soil-card{background:#1c1208;border:1px solid #3a2010;border-radius:10px;padding:16px;transition:border-color .2s;}
 .soil-card:hover{border-color:#b05010;}
