@@ -462,6 +462,7 @@ header{position:relative;padding:18px 100px 16px;}
   <button class="sub-btn" onclick="openPanel('l2labels',this,'l2')"><span data-ru="🏷️ Этикетки" data-en="🏷️ Labels">🏷️ Labels</span></button>
   <button class="sub-btn" onclick="openPanel('l2sparkling',this,'l2')"><span data-ru="🍾 Игристые и крепл." data-en="🍾 Sparkling & Fortified">🍾 Sparkling & Fortified</span></button>
   <button class="sub-btn" onclick="openPanel('l2food',this,'l2')"><span data-ru="🍽️ Вино и еда" data-en="🍽️ Food & Wine">🍽️ Food & Wine</span></button>
+  <button class="sub-btn" onclick="openPanel('l2sat',this,'l2')"><span data-ru="👃 Дегустация SAT L2" data-en="👃 SAT Tasting L2">👃 SAT Tasting L2</span></button>
 </div>
 
 <!-- SUB NAV REF (placeholder) -->
@@ -715,6 +716,54 @@ header{position:relative;padding:18px 100px 16px;}
     <div class="qr-row"><div class="qr-ph c2" data-ru="НОС" data-en="NOSE">NOSE</div><div class="qr-items"><span class="qi" data-ru="Интенсивность аромата" data-en="Aroma intensity">Aroma intensity</span><span class="qi" data-ru="Характер" data-en="Character">Character</span><span class="qi" data-ru="Зрелость" data-en="Development">Development</span></div></div>
     <div class="qr-row"><div class="qr-ph c3" data-ru="ВКУС" data-en="PALATE">PALATE</div><div class="qr-items"><span class="qi" data-ru="Сладость" data-en="Sweetness">Sweetness</span><span class="qi" data-ru="Кислотность" data-en="Acidity">Acidity</span><span class="qi" data-ru="Танины" data-en="Tannins">Tannins</span><span class="qi" data-ru="Тело" data-en="Body">Body</span><span class="qi" data-ru="Алкоголь" data-en="Alcohol">Alcohol</span><span class="qi" data-ru="Послевкусие" data-en="Finish">Finish</span></div></div>
     <div class="qr-row"><div class="qr-ph c4" data-ru="ВЫВОД" data-en="CONCLUSION">CONCLUSION</div><div class="qr-items"><span class="qi" data-ru="Качество" data-en="Quality">Quality</span><span class="qi" data-ru="Готовность" data-en="Readiness">Readiness</span></div></div>
+  </div>
+
+  <!-- AROMA DESCRIPTORS -->
+  <div class="mod-card" style="margin-top:24px;">
+    <div class="mod-title" data-ru="🍓 Дескрипторы ароматов — по категориям" data-en="🍓 Aroma Descriptors — by category">🍓 Aroma Descriptors — by category</div>
+    <table class="region-table">
+      <thead><tr>
+        <th data-ru="Категория" data-en="Category">Category</th>
+        <th data-ru="Белые вина" data-en="White wines">White wines</th>
+        <th data-ru="Красные вина" data-en="Red wines">Red wines</th>
+      </tr></thead>
+      <tbody>
+        <tr><td data-ru="🍎 Фрукты" data-en="🍎 Fruit">🍎 Fruit</td><td data-ru="Лимон, яблоко, груша, персик, манго, ананас" data-en="Lemon, apple, pear, peach, mango, pineapple">Lemon, apple, pear, peach, mango, pineapple</td><td data-ru="Вишня, слива, малина, черника, чёрная смородина" data-en="Cherry, plum, raspberry, blueberry, blackcurrant">Cherry, plum, raspberry, blueberry, blackcurrant</td></tr>
+        <tr><td data-ru="🌸 Цветы" data-en="🌸 Floral">🌸 Floral</td><td data-ru="Жасмин, белый персик, акация, роза" data-en="Jasmine, white peach, acacia, rose">Jasmine, white peach, acacia, rose</td><td data-ru="Роза, фиалка, лаванда" data-en="Rose, violet, lavender">Rose, violet, lavender</td></tr>
+        <tr><td data-ru="🌿 Растения" data-en="🌿 Vegetal">🌿 Vegetal</td><td data-ru="Трава, бузина, зелёный перец, минерал" data-en="Grass, elderflower, green pepper, mineral">Grass, elderflower, green pepper, mineral</td><td data-ru="Зелёный перец, табак, земля, грибы" data-en="Green pepper, tobacco, earth, mushroom">Green pepper, tobacco, earth, mushroom</td></tr>
+        <tr><td data-ru="🪵 Дуб / выдержка" data-en="🪵 Oak / aged">🪵 Oak / aged</td><td data-ru="Ваниль, тост, масло, мёд, орехи" data-en="Vanilla, toast, butter, honey, nuts">Vanilla, toast, butter, honey, nuts</td><td data-ru="Кедр, ваниль, табак, кожа, специи" data-en="Cedar, vanilla, tobacco, leather, spice">Cedar, vanilla, tobacco, leather, spice</td></tr>
+        <tr><td data-ru="🍯 Зрелость / сушёные" data-en="🍯 Mature / dried">🍯 Mature / dried</td><td data-ru="Мёд, воск, сухофрукты, марципан" data-en="Honey, beeswax, dried fruit, marzipan">Honey, beeswax, dried fruit, marzipan</td><td data-ru="Чернослив, инжир, изюм, шоколад" data-en="Prune, fig, raisin, chocolate">Prune, fig, raisin, chocolate</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SAMPLE TASTING NOTE -->
+  <div class="mod-card" style="margin-top:16px;">
+    <div class="mod-title" data-ru="📝 Образец дегустационной заметки" data-en="📝 Sample Tasting Note">📝 Sample Tasting Note</div>
+    <div style="background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:16px;font-size:13px;line-height:1.8;">
+      <div style="color:var(--gold);font-weight:700;margin-bottom:8px;" data-ru="Chardonnay, Бургундия, 2–3 года выдержки" data-en="Chardonnay, Burgundy, 2–3 years old">Chardonnay, Burgundy, 2–3 years old</div>
+      <div><span style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВНЕШНИЙ ВИД — " data-en="APPEARANCE — ">APPEARANCE — </span><span data-ru="Прозрачное, золотисто-лимонный оттенок, средняя интенсивность." data-en="Clear, lemon-gold hue, medium intensity.">Clear, lemon-gold hue, medium intensity.</span></div>
+      <div><span style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="НОС — " data-en="NOSE — ">NOSE — </span><span data-ru="Средний аромат, яблоко, груша, лёгкая ваниль и тост от дуба. Развивающееся." data-en="Medium aroma intensity, apple, pear, light vanilla and toast from oak. Developing.">Medium aroma intensity, apple, pear, light vanilla and toast from oak. Developing.</span></div>
+      <div><span style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВКУС — " data-en="PALATE — ">PALATE — </span><span data-ru="Сухое, высокая кислотность, среднее тело, 12.5% алкоголь, среднее послевкусие." data-en="Dry, high acidity, medium body, 12.5% alcohol, medium finish.">Dry, high acidity, medium body, 12.5% alcohol, medium finish.</span></div>
+      <div><span style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВЫВОД — " data-en="CONCLUSION — ">CONCLUSION — </span><span data-ru="Хорошее качество, готово к употреблению." data-en="Good quality, ready to drink.">Good quality, ready to drink.</span></div>
+    </div>
+  </div>
+
+  <!-- EXAM TIPS -->
+  <div class="mod-card" style="margin-top:16px;">
+    <div class="mod-title" data-ru="🎯 Советы для экзамена" data-en="🎯 Exam Tips">🎯 Exam Tips</div>
+    <table class="region-table">
+      <thead><tr>
+        <th data-ru="Частая ошибка" data-en="Common mistake">Common mistake</th>
+        <th data-ru="Правило" data-en="Rule">Rule</th>
+      </tr></thead>
+      <tbody>
+        <tr><td data-ru="Путать Body и Alcohol" data-en="Confusing Body and Alcohol">Confusing Body and Alcohol</td><td data-ru="Тело = общее ощущение веса во рту. Алкоголь = тепло/жжение." data-en="Body = overall weight in mouth. Alcohol = heat/burning.">Body = overall weight in mouth. Alcohol = heat/burning.</td></tr>
+        <tr><td data-ru="Пропускать Tannins у белых" data-en="Skipping Tannins for whites">Skipping Tannins for whites</td><td data-ru="Для белых — не оценивается, можно написать 'N/A'" data-en="For whites — not assessed, write 'N/A'">For whites — not assessed, write 'N/A'</td></tr>
+        <tr><td data-ru="Путать Finish и Aroma" data-en="Confusing Finish and Aroma">Confusing Finish and Aroma</td><td data-ru="Finish = сколько вкус держится ПОСЛЕ глотка" data-en="Finish = how long taste persists AFTER swallowing">Finish = how long taste persists AFTER swallowing</td></tr>
+        <tr><td data-ru="Субъективные описания" data-en="Subjective descriptions">Subjective descriptions</td><td data-ru="'Вкусное' — не SAT. Используй точные термины: Dry / Medium / High" data-en="'Delicious' — not SAT. Use exact terms: Dry / Medium / High">'Delicious' — not SAT. Use exact terms: Dry / Medium / High</td></tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
@@ -2429,6 +2478,203 @@ header{position:relative;padding:18px 100px 16px;}
   </div>
 
 </div><!-- end l2food panel -->
+
+
+<!-- ═══════════════════════════════════════════════
+     PANEL L2 SAT: SYSTEMATIC APPROACH TO TASTING L2
+═══════════════════════════════════════════════ -->
+<div class="panel" id="panel-l2sat">
+  <div class="l2-title" data-ru="ДЕГУСТАЦИЯ SAT — УРОВЕНЬ 2" data-en="SAT TASTING — LEVEL 2">SAT TASTING — LEVEL 2</div>
+
+  <!-- SUB TABS -->
+  <div class="sub-tabs" id="sub-l2sat">
+    <button class="stab active" onclick="openSub('l2sat-descriptors','sub-l2sat',this)" data-ru="🍓 Дескрипторы" data-en="🍓 Descriptors">🍓 Descriptors</button>
+    <button class="stab" onclick="openSub('l2sat-climate','sub-l2sat',this)" data-ru="🌡️ Климат и SAT" data-en="🌡️ Climate & SAT">🌡️ Climate & SAT</button>
+    <button class="stab" onclick="openSub('l2sat-oak','sub-l2sat',this)" data-ru="🪵 Выдержка и SAT" data-en="🪵 Ageing & SAT">🪵 Ageing & SAT</button>
+    <button class="stab" onclick="openSub('l2sat-notes','sub-l2sat',this)" data-ru="📝 Примеры заметок" data-en="📝 Sample Notes">📝 Sample Notes</button>
+  </div>
+
+  <!-- DESCRIPTORS -->
+  <div class="sub-panel active" id="sub-l2sat-descriptors">
+    <div class="mod-card">
+      <div class="mod-title" data-ru="Первичные ароматы — от винограда" data-en="Primary Aromas — from grape">Primary Aromas — from grape</div>
+      <table class="region-table">
+        <thead><tr>
+          <th data-ru="Тип" data-en="Type">Type</th>
+          <th data-ru="Дескрипторы" data-en="Descriptors">Descriptors</th>
+          <th data-ru="Типичные сорта" data-en="Typical varieties">Typical varieties</th>
+        </tr></thead>
+        <tbody>
+          <tr><td data-ru="Цитрус" data-en="Citrus">Citrus</td><td data-ru="Лимон, лайм, грейпфрут, цедра" data-en="Lemon, lime, grapefruit, zest">Lemon, lime, grapefruit, zest</td><td>Riesling, Sauvignon Blanc</td></tr>
+          <tr><td data-ru="Семечковые" data-en="Tree fruit">Tree fruit</td><td data-ru="Яблоко, груша, айва" data-en="Apple, pear, quince">Apple, pear, quince</td><td>Chardonnay, Pinot Gris</td></tr>
+          <tr><td data-ru="Косточковые" data-en="Stone fruit">Stone fruit</td><td data-ru="Персик, абрикос, нектарин, слива" data-en="Peach, apricot, nectarine, plum">Peach, apricot, nectarine, plum</td><td>Viognier, Merlot</td></tr>
+          <tr><td data-ru="Тропические" data-en="Tropical">Tropical</td><td data-ru="Манго, ананас, маракуя, личи" data-en="Mango, pineapple, passion fruit, lychee">Mango, pineapple, passion fruit, lychee</td><td data-ru="Sauvignon Blanc (тёпл.), Gewürztraminer" data-en="Sauvignon Blanc (warm), Gewürztraminer">Sauvignon Blanc (warm), Gewürztraminer</td></tr>
+          <tr><td data-ru="Красные ягоды" data-en="Red fruit">Red fruit</td><td data-ru="Вишня, малина, клубника, красная смородина" data-en="Cherry, raspberry, strawberry, redcurrant">Cherry, raspberry, strawberry, redcurrant</td><td>Pinot Noir, Grenache</td></tr>
+          <tr><td data-ru="Тёмные ягоды" data-en="Dark fruit">Dark fruit</td><td data-ru="Черника, ежевика, чёрная смородина, чернослив" data-en="Blueberry, blackberry, blackcurrant, prune">Blueberry, blackberry, blackcurrant, prune</td><td>Cabernet Sauvignon, Syrah</td></tr>
+          <tr><td data-ru="Цветы" data-en="Floral">Floral</td><td data-ru="Роза, фиалка, жасмин, акация" data-en="Rose, violet, jasmine, acacia">Rose, violet, jasmine, acacia</td><td>Gewürztraminer, Viognier</td></tr>
+          <tr><td data-ru="Растительный" data-en="Herbaceous">Herbaceous</td><td data-ru="Трава, зелёный перец, листья смородины" data-en="Grass, green pepper, blackcurrant leaf">Grass, green pepper, blackcurrant leaf</td><td data-ru="Sauvignon Blanc, Cab Sauv (незрелый)" data-en="Sauvignon Blanc, Cab Sauv (unripe)">Sauvignon Blanc, Cab Sauv (unripe)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mod-card" style="margin-top:16px;">
+      <div class="mod-title" data-ru="Вторичные ароматы — от ферментации" data-en="Secondary Aromas — from fermentation">Secondary Aromas — from fermentation</div>
+      <table class="region-table">
+        <thead><tr>
+          <th data-ru="Дескриптор" data-en="Descriptor">Descriptor</th>
+          <th data-ru="Источник" data-en="Source">Source</th>
+          <th data-ru="Пример вина" data-en="Wine example">Wine example</th>
+        </tr></thead>
+        <tbody>
+          <tr><td data-ru="Масло, крем" data-en="Butter, cream">Butter, cream</td><td data-ru="Малолактическая ферментация (MLF)" data-en="Malolactic fermentation (MLF)">Malolactic fermentation (MLF)</td><td data-ru="Шардоне из Бургундии/Калифорнии" data-en="Burgundy/California Chardonnay">Burgundy/California Chardonnay</td></tr>
+          <tr><td data-ru="Хлеб, тесто, дрожжи" data-en="Bread, dough, yeast">Bread, dough, yeast</td><td data-ru="Выдержка на дрожжевом осадке (lees)" data-en="Lees ageing">Lees ageing</td><td data-ru="Шампань, Мюскаде" data-en="Champagne, Muscadet">Champagne, Muscadet</td></tr>
+          <tr><td data-ru="Сыр, йогурт" data-en="Cheese, yogurt">Cheese, yogurt</td><td data-ru="MLF (молочная кислота)" data-en="MLF (lactic acid)">MLF (lactic acid)</td><td data-ru="Полнотелые белые" data-en="Full-bodied whites">Full-bodied whites</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mod-card" style="margin-top:16px;">
+      <div class="mod-title" data-ru="Третичные ароматы — от выдержки" data-en="Tertiary Aromas — from ageing">Tertiary Aromas — from ageing</div>
+      <table class="region-table">
+        <thead><tr>
+          <th data-ru="Дескриптор" data-en="Descriptor">Descriptor</th>
+          <th data-ru="Тип выдержки" data-en="Ageing type">Ageing type</th>
+          <th data-ru="Цвет вина" data-en="Wine colour">Wine colour</th>
+        </tr></thead>
+        <tbody>
+          <tr><td data-ru="Ваниль, кокос" data-en="Vanilla, coconut">Vanilla, coconut</td><td data-ru="Новый дуб (американский)" data-en="New oak (American)">New oak (American)</td><td data-ru="Белые и красные" data-en="White & red">White & red</td></tr>
+          <tr><td data-ru="Тост, специи" data-en="Toast, spice">Toast, spice</td><td data-ru="Новый дуб (французский)" data-en="New oak (French)">New oak (French)</td><td data-ru="Белые и красные" data-en="White & red">White & red</td></tr>
+          <tr><td data-ru="Кедр, сигарная коробка" data-en="Cedar, cigar box">Cedar, cigar box</td><td data-ru="Бутылочная выдержка (красные)" data-en="Bottle ageing (reds)">Bottle ageing (reds)</td><td data-ru="Красные" data-en="Red">Red</td></tr>
+          <tr><td data-ru="Мёд, воск, орехи" data-en="Honey, beeswax, nuts">Honey, beeswax, nuts</td><td data-ru="Бутылочная выдержка (белые)" data-en="Bottle ageing (whites)">Bottle ageing (whites)</td><td data-ru="Белые" data-en="White">White</td></tr>
+          <tr><td data-ru="Кожа, табак, земля" data-en="Leather, tobacco, earth">Leather, tobacco, earth</td><td data-ru="Длительная бутылочная выдержка" data-en="Extended bottle ageing">Extended bottle ageing</td><td data-ru="Красные" data-en="Red">Red</td></tr>
+          <tr><td data-ru="Грибы, трюфель" data-en="Mushroom, truffle">Mushroom, truffle</td><td data-ru="Очень зрелые красные" data-en="Very mature reds">Very mature reds</td><td data-ru="Красные" data-en="Red">Red</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- CLIMATE & SAT -->
+  <div class="sub-panel" id="sub-l2sat-climate">
+    <div class="mod-card">
+      <div class="mod-title" data-ru="Как климат влияет на дегустационные характеристики" data-en="How climate affects tasting characteristics">How climate affects tasting characteristics</div>
+      <table class="region-table">
+        <thead><tr>
+          <th data-ru="Параметр SAT" data-en="SAT parameter">SAT parameter</th>
+          <th data-ru="❄️ Прохладный климат" data-en="❄️ Cool climate">❄️ Cool climate</th>
+          <th data-ru="☀️ Тёплый климат" data-en="☀️ Warm climate">☀️ Warm climate</th>
+        </tr></thead>
+        <tbody>
+          <tr><td data-ru="Кислотность" data-en="Acidity">Acidity</td><td data-ru="Высокая" data-en="High">High</td><td data-ru="Низкая–средняя" data-en="Low–medium">Low–medium</td></tr>
+          <tr><td data-ru="Алкоголь" data-en="Alcohol">Alcohol</td><td data-ru="Низкий–средний" data-en="Low–medium">Low–medium</td><td data-ru="Высокий" data-en="High">High</td></tr>
+          <tr><td data-ru="Тело" data-en="Body">Body</td><td data-ru="Лёгкое–среднее" data-en="Light–medium">Light–medium</td><td data-ru="Среднее–полное" data-en="Medium–full">Medium–full</td></tr>
+          <tr><td data-ru="Фруктовый профиль" data-en="Fruit profile">Fruit profile</td><td data-ru="Цитрус, зелёные яблоко, красные ягоды" data-en="Citrus, green apple, red fruit">Citrus, green apple, red fruit</td><td data-ru="Тропические, косточковые, тёмные ягоды" data-en="Tropical, stone fruit, dark fruit">Tropical, stone fruit, dark fruit</td></tr>
+          <tr><td data-ru="Танины (красные)" data-en="Tannins (reds)">Tannins (reds)</td><td data-ru="Средние, часто жёсткие" data-en="Medium, often firm">Medium, often firm</td><td data-ru="Высокие, мягкие" data-en="High, ripe/soft">High, ripe/soft</td></tr>
+          <tr><td data-ru="Цвет" data-en="Colour">Colour</td><td data-ru="Бледный–средний" data-en="Pale–medium">Pale–medium</td><td data-ru="Глубокий" data-en="Deep">Deep</td></tr>
+          <tr><td data-ru="Примеры регионов" data-en="Region examples">Region examples</td><td data-ru="Шампань, Мозель, Бургундия, Новая Зеландия" data-en="Champagne, Mosel, Burgundy, New Zealand">Champagne, Mosel, Burgundy, New Zealand</td><td data-ru="Австралия (Barossa), Аргентина, Юж. Испания" data-en="Australia (Barossa), Argentina, S. Spain">Australia (Barossa), Argentina, S. Spain</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mod-card" style="margin-top:16px;">
+      <div class="mod-title" data-ru="Правило для экзамена: определяем климат по SAT" data-en="Exam rule: identify climate from SAT">Exam rule: identify climate from SAT</div>
+      <table class="region-table">
+        <thead><tr>
+          <th data-ru="Если в дегустационной заметке..." data-en="If tasting note shows...">If tasting note shows...</th>
+          <th data-ru="→ Вывод о климате" data-en="→ Climate conclusion">→ Climate conclusion</th>
+        </tr></thead>
+        <tbody>
+          <tr><td data-ru="Высокая кислотность + лёгкий алкоголь + лимон/яблоко" data-en="High acidity + low alcohol + lemon/apple">High acidity + low alcohol + lemon/apple</td><td data-ru="❄️ Прохладный климат" data-en="❄️ Cool climate">❄️ Cool climate</td></tr>
+          <tr><td data-ru="Низкая кислотность + высокий алкоголь + манго/слива" data-en="Low acidity + high alcohol + mango/plum">Low acidity + high alcohol + mango/plum</td><td data-ru="☀️ Тёплый климат" data-en="☀️ Warm climate">☀️ Warm climate</td></tr>
+          <tr><td data-ru="Средняя кислотность + персик + абрикос" data-en="Medium acidity + peach + apricot">Medium acidity + peach + apricot</td><td data-ru="🌤️ Умеренно тёплый" data-en="🌤️ Moderate/warm">🌤️ Moderate/warm</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- AGEING & SAT -->
+  <div class="sub-panel" id="sub-l2sat-oak">
+    <div class="mod-card">
+      <div class="mod-title" data-ru="Как выдержка меняет дегустационные характеристики" data-en="How ageing changes tasting characteristics">How ageing changes tasting characteristics</div>
+      <table class="region-table">
+        <thead><tr>
+          <th data-ru="Параметр" data-en="Parameter">Parameter</th>
+          <th data-ru="Молодое вино" data-en="Young wine">Young wine</th>
+          <th data-ru="Выдержанное (бочка)" data-en="Aged (oak)">Aged (oak)</th>
+          <th data-ru="Очень зрелое (бутылка)" data-en="Very mature (bottle)">Very mature (bottle)</th>
+        </tr></thead>
+        <tbody>
+          <tr><td data-ru="Цвет (белые)" data-en="Colour (white)">Colour (white)</td><td data-ru="Лимонный" data-en="Lemon">Lemon</td><td data-ru="Золотистый" data-en="Gold">Gold</td><td data-ru="Янтарный" data-en="Amber">Amber</td></tr>
+          <tr><td data-ru="Цвет (красные)" data-en="Colour (red)">Colour (red)</td><td data-ru="Рубиново-фиолетовый" data-en="Ruby-purple">Ruby-purple</td><td data-ru="Рубиново-гранатовый" data-en="Ruby-garnet">Ruby-garnet</td><td data-ru="Гранатово-кирпичный" data-en="Garnet-brick">Garnet-brick</td></tr>
+          <tr><td data-ru="Аромат" data-en="Aroma">Aroma</td><td data-ru="Первичные: свежие фрукты, цветы" data-en="Primary: fresh fruit, floral">Primary: fresh fruit, floral</td><td data-ru="Вторичные/третичные: ваниль, тост, масло" data-en="Secondary/tertiary: vanilla, toast, butter">Secondary/tertiary: vanilla, toast, butter</td><td data-ru="Третичные: мёд, кожа, табак, земля" data-en="Tertiary: honey, leather, tobacco, earth">Tertiary: honey, leather, tobacco, earth</td></tr>
+          <tr><td data-ru="Танины" data-en="Tannins">Tannins</td><td data-ru="Высокие, жёсткие" data-en="High, firm">High, firm</td><td data-ru="Средние, мягче" data-en="Medium, softer">Medium, softer</td><td data-ru="Низкие, шелковистые" data-en="Low, silky">Low, silky</td></tr>
+          <tr><td data-ru="Кислотность" data-en="Acidity">Acidity</td><td data-ru="Яркая, выраженная" data-en="Bright, prominent">Bright, prominent</td><td data-ru="Интегрированная" data-en="Integrated">Integrated</td><td data-ru="Менее заметная" data-en="Less prominent">Less prominent</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mod-card" style="margin-top:16px;">
+      <div class="mod-title" data-ru="Дуб: новый vs старый, французский vs американский" data-en="Oak: new vs old, French vs American">Oak: new vs old, French vs American</div>
+      <table class="region-table">
+        <thead><tr>
+          <th data-ru="Тип дуба" data-en="Oak type">Oak type</th>
+          <th data-ru="Влияние на вкус" data-en="Flavour impact">Flavour impact</th>
+          <th data-ru="Типичные регионы" data-en="Typical regions">Typical regions</th>
+        </tr></thead>
+        <tbody>
+          <tr><td data-ru="Новый французский" data-en="New French">New French</td><td data-ru="Тонкие специи, тост, кедр, сдержанная ваниль" data-en="Subtle spice, toast, cedar, restrained vanilla">Subtle spice, toast, cedar, restrained vanilla</td><td data-ru="Бургундия, Бордо, Нового Света топ-вина" data-en="Burgundy, Bordeaux, top New World">Burgundy, Bordeaux, top New World</td></tr>
+          <tr><td data-ru="Новый американский" data-en="New American">New American</td><td data-ru="Яркая ваниль, кокос, сладкие специи" data-en="Pronounced vanilla, coconut, sweet spice">Pronounced vanilla, coconut, sweet spice</td><td data-ru="Риоха, Австралия, США" data-en="Rioja, Australia, USA">Rioja, Australia, USA</td></tr>
+          <tr><td data-ru="Старый дуб (2–3+ года)" data-en="Old oak (2–3+ years)">Old oak (2–3+ years)</td><td data-ru="Минимальный дубовый характер, оксигенация" data-en="Minimal oak flavour, oxygenation only">Minimal oak flavour, oxygenation only</td><td data-ru="Традиционные европейские производители" data-en="Traditional European producers">Traditional European producers</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SAMPLE NOTES -->
+  <div class="sub-panel" id="sub-l2sat-notes">
+    <div class="mod-card">
+      <div class="mod-title" data-ru="📝 Полные образцы дегустационных заметок" data-en="📝 Full Sample Tasting Notes">📝 Full Sample Tasting Notes</div>
+
+      <!-- Note 1 -->
+      <div style="background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px;">
+        <div style="color:var(--gold);font-weight:700;margin-bottom:10px;font-size:14px;">Cabernet Sauvignon, Napa Valley, California — 5 years old</div>
+        <table class="region-table">
+          <tbody>
+            <tr><td style="width:120px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВНЕШНИЙ ВИД" data-en="APPEARANCE">APPEARANCE</td><td data-ru="Прозрачное, глубокий рубиново-гранатовый, насыщенный." data-en="Clear, deep ruby-garnet, high intensity.">Clear, deep ruby-garnet, high intensity.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="НОС" data-en="NOSE">NOSE</td><td data-ru="Выраженный. Черника, чёрная смородина, слива. Ваниль, кедр, лёгкий тост (новый американский дуб). Развивающееся." data-en="Pronounced. Blackberry, blackcurrant, plum. Vanilla, cedar, light toast (new American oak). Developing.">Pronounced. Blackberry, blackcurrant, plum. Vanilla, cedar, light toast (new American oak). Developing.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВКУС" data-en="PALATE">PALATE</td><td data-ru="Сухое. Кислотность средняя. Танины высокие, спелые. Тело полное. Алкоголь высокий (14.5%). Послевкусие длинное." data-en="Dry. Acidity medium. Tannins high, ripe. Body full. Alcohol high (14.5%). Finish long.">Dry. Acidity medium. Tannins high, ripe. Body full. Alcohol high (14.5%). Finish long.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВЫВОД" data-en="CONCLUSION">CONCLUSION</td><td data-ru="Очень хорошее качество. Готово к употреблению, но выдержит ещё 3–5 лет." data-en="Very good quality. Ready to drink, will improve 3–5 years.">Very good quality. Ready to drink, will improve 3–5 years.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="КЛИМАТ" data-en="CLIMATE">CLIMATE</td><td data-ru="☀️ Тёплый — высокий алкоголь, тёмные фрукты, мягкие танины" data-en="☀️ Warm — high alcohol, dark fruit, ripe tannins">☀️ Warm — high alcohol, dark fruit, ripe tannins</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Note 2 -->
+      <div style="background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px;">
+        <div style="color:var(--gold);font-weight:700;margin-bottom:10px;font-size:14px;">Riesling, Mosel, Germany — 3 years old</div>
+        <table class="region-table">
+          <tbody>
+            <tr><td style="width:120px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВНЕШНИЙ ВИД" data-en="APPEARANCE">APPEARANCE</td><td data-ru="Прозрачное, бледно-лимонный, средняя интенсивность." data-en="Clear, pale lemon, medium intensity.">Clear, pale lemon, medium intensity.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="НОС" data-en="NOSE">NOSE</td><td data-ru="Средний. Лайм, зелёное яблоко, белый персик. Лёгкие нефтяные нотки (петроль). Молодое/развивающееся." data-en="Medium. Lime, green apple, white peach. Light petrol note. Youthful/developing.">Medium. Lime, green apple, white peach. Light petrol note. Youthful/developing.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВКУС" data-en="PALATE">PALATE</td><td data-ru="Полусухое. Кислотность высокая. Без танинов. Тело лёгкое. Алкоголь низкий (8.5%). Послевкусие среднее." data-en="Off-dry. Acidity high. No tannins (white). Body light. Alcohol low (8.5%). Finish medium.">Off-dry. Acidity high. No tannins (white). Body light. Alcohol low (8.5%). Finish medium.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВЫВОД" data-en="CONCLUSION">CONCLUSION</td><td data-ru="Хорошее качество. Готово к употреблению, выдержит 5–10 лет." data-en="Good quality. Ready to drink, can age 5–10 years.">Good quality. Ready to drink, can age 5–10 years.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="КЛИМАТ" data-en="CLIMATE">CLIMATE</td><td data-ru="❄️ Прохладный — высокая кислотность, низкий алкоголь, цитрусы" data-en="❄️ Cool — high acidity, low alcohol, citrus">❄️ Cool — high acidity, low alcohol, citrus</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Note 3 -->
+      <div style="background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:16px;">
+        <div style="color:var(--gold);font-weight:700;margin-bottom:10px;font-size:14px;">Pinot Noir, Burgundy, France — 8 years old</div>
+        <table class="region-table">
+          <tbody>
+            <tr><td style="width:120px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВНЕШНИЙ ВИД" data-en="APPEARANCE">APPEARANCE</td><td data-ru="Прозрачное, гранатово-кирпичный край, средняя интенсивность." data-en="Clear, garnet with brick rim, medium intensity.">Clear, garnet with brick rim, medium intensity.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="НОС" data-en="NOSE">NOSE</td><td data-ru="Средний. Сушёная вишня, земля, кожа, лёгкие грибные нотки. Зрелое." data-en="Medium. Dried cherry, earth, leather, light mushroom. Mature.">Medium. Dried cherry, earth, leather, light mushroom. Mature.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВКУС" data-en="PALATE">PALATE</td><td data-ru="Сухое. Кислотность высокая. Танины низкие, шелковистые. Тело лёгкое. Алкоголь средний (13%). Послевкусие длинное." data-en="Dry. Acidity high. Tannins low, silky. Body light. Alcohol medium (13%). Finish long.">Dry. Acidity high. Tannins low, silky. Body light. Alcohol medium (13%). Finish long.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВЫВОД" data-en="CONCLUSION">CONCLUSION</td><td data-ru="Отличное качество. Готово к употреблению сейчас." data-en="Outstanding quality. Ready to drink now.">Outstanding quality. Ready to drink now.</td></tr>
+            <tr><td style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;" data-ru="ВЫДЕРЖКА" data-en="AGEING">AGEING</td><td data-ru="🪵 Зрелое — третичные ароматы, мягкие танины, кирпичный край" data-en="🪵 Mature — tertiary aromas, silky tannins, brick rim">🪵 Mature — tertiary aromas, silky tannins, brick rim</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end l2sat panel -->
 
 <!-- ═══════════════════════════════════════════════
      PANEL REF: GLOSSARY
