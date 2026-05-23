@@ -50,7 +50,14 @@
 .region-table tbody tr:hover{background:rgba(112,64,192,.06);}
 .region-table td{padding:12px 14px;font-size:13px;color:var(--cream);vertical-align:top;line-height:1.55;}
 .region-table td:first-child{font-weight:600;color:var(--white);}
-[data-theme="light"] .mod-card{background:var(--card);}
+[data-theme="light"] .mod-card{background:var(--card);border-color:var(--border);}
+[data-theme="light"] .mod-title{color:var(--l2);}
+[data-theme="light"] .region-table thead tr{background:rgba(0,0,0,.04);}
+[data-theme="light"] .region-table thead th{color:var(--muted);}
+[data-theme="light"] .region-table tbody tr{border-color:rgba(0,0,0,.08);}
+[data-theme="light"] .region-table tbody tr:hover{background:rgba(112,64,192,.05);}
+[data-theme="light"] .region-table td{color:var(--cream);}
+[data-theme="light"] .region-table td:first-child{color:var(--white);}
 [data-theme="light"] .region-table td{color:var(--cream);}
 [data-theme="light"] .region-table thead tr{background:var(--bg2);}
 
@@ -2501,11 +2508,11 @@ header{position:relative;padding:18px 100px 16px;}
   <div class="l2-title" data-ru="ДЕГУСТАЦИЯ SAT — УРОВЕНЬ 2" data-en="SAT TASTING — LEVEL 2">SAT TASTING — LEVEL 2</div>
 
   <!-- SUB TABS -->
-  <div class="sub-tabs" id="sub-l2sat">
-    <button class="stab active" onclick="openSub('l2sat-descriptors','sub-l2sat',this)" data-ru="🍓 Дескрипторы" data-en="🍓 Descriptors">🍓 Descriptors</button>
-    <button class="stab" onclick="openSub('l2sat-climate','sub-l2sat',this)" data-ru="🌡️ Климат и SAT" data-en="🌡️ Climate & SAT">🌡️ Climate & SAT</button>
-    <button class="stab" onclick="openSub('l2sat-oak','sub-l2sat',this)" data-ru="🪵 Выдержка и SAT" data-en="🪵 Ageing & SAT">🪵 Ageing & SAT</button>
-    <button class="stab" onclick="openSub('l2sat-notes','sub-l2sat',this)" data-ru="📝 Примеры заметок" data-en="📝 Sample Notes">📝 Sample Notes</button>
+  <div class="tab-bar2" id="sub-l2sat">
+    <button class="tb2 active" onclick="openSub('l2sat-descriptors',this)" data-ru="🍓 Дескрипторы" data-en="🍓 Descriptors">🍓 Descriptors</button>
+    <button class="tb2" onclick="openSub('l2sat-climate',this)" data-ru="🌡️ Климат и SAT" data-en="🌡️ Climate & SAT">🌡️ Climate & SAT</button>
+    <button class="tb2" onclick="openSub('l2sat-oak',this)" data-ru="🪵 Выдержка и SAT" data-en="🪵 Ageing & SAT">🪵 Ageing & SAT</button>
+    <button class="tb2" onclick="openSub('l2sat-notes',this)" data-ru="📝 Примеры заметок" data-en="📝 Sample Notes">📝 Sample Notes</button>
   </div>
 
   <!-- DESCRIPTORS -->
@@ -2519,14 +2526,14 @@ header{position:relative;padding:18px 100px 16px;}
           <th data-ru="Типичные сорта" data-en="Typical varieties">Typical varieties</th>
         </tr></thead>
         <tbody>
-          <tr><td data-ru="Цитрус" data-en="Citrus">Citrus</td><td data-ru="Лимон, лайм, грейпфрут, цедра" data-en="Lemon, lime, grapefruit, zest">Lemon, lime, grapefruit, zest</td><td>Riesling, Sauvignon Blanc</td></tr>
-          <tr><td data-ru="Семечковые" data-en="Tree fruit">Tree fruit</td><td data-ru="Яблоко, груша, айва" data-en="Apple, pear, quince">Apple, pear, quince</td><td>Chardonnay, Pinot Gris</td></tr>
-          <tr><td data-ru="Косточковые" data-en="Stone fruit">Stone fruit</td><td data-ru="Персик, абрикос, нектарин, слива" data-en="Peach, apricot, nectarine, plum">Peach, apricot, nectarine, plum</td><td>Viognier, Merlot</td></tr>
-          <tr><td data-ru="Тропические" data-en="Tropical">Tropical</td><td data-ru="Манго, ананас, маракуя, личи" data-en="Mango, pineapple, passion fruit, lychee">Mango, pineapple, passion fruit, lychee</td><td data-ru="Sauvignon Blanc (тёпл.), Gewürztraminer" data-en="Sauvignon Blanc (warm), Gewürztraminer">Sauvignon Blanc (warm), Gewürztraminer</td></tr>
-          <tr><td data-ru="Красные ягоды" data-en="Red fruit">Red fruit</td><td data-ru="Вишня, малина, клубника, красная смородина" data-en="Cherry, raspberry, strawberry, redcurrant">Cherry, raspberry, strawberry, redcurrant</td><td>Pinot Noir, Grenache</td></tr>
-          <tr><td data-ru="Тёмные ягоды" data-en="Dark fruit">Dark fruit</td><td data-ru="Черника, ежевика, чёрная смородина, чернослив" data-en="Blueberry, blackberry, blackcurrant, prune">Blueberry, blackberry, blackcurrant, prune</td><td>Cabernet Sauvignon, Syrah</td></tr>
-          <tr><td data-ru="Цветы" data-en="Floral">Floral</td><td data-ru="Роза, фиалка, жасмин, акация" data-en="Rose, violet, jasmine, acacia">Rose, violet, jasmine, acacia</td><td>Gewürztraminer, Viognier</td></tr>
-          <tr><td data-ru="Растительный" data-en="Herbaceous">Herbaceous</td><td data-ru="Трава, зелёный перец, листья смородины" data-en="Grass, green pepper, blackcurrant leaf">Grass, green pepper, blackcurrant leaf</td><td data-ru="Sauvignon Blanc, Cab Sauv (незрелый)" data-en="Sauvignon Blanc, Cab Sauv (unripe)">Sauvignon Blanc, Cab Sauv (unripe)</td></tr>
+          <tr><td data-ru="🍋 Цитрус" data-en="🍋 Citrus">🍋 Citrus</td><td data-ru="Лимон, лайм, грейпфрут, цедра" data-en="Lemon, lime, grapefruit, zest">Lemon, lime, grapefruit, zest</td><td>Riesling, Sauvignon Blanc</td></tr>
+          <tr><td data-ru="🍎 Семечковые" data-en="🍎 Tree fruit">🍎 Tree fruit</td><td data-ru="Яблоко, груша, айва" data-en="Apple, pear, quince">Apple, pear, quince</td><td>Chardonnay, Pinot Gris</td></tr>
+          <tr><td data-ru="🍑 Косточковые" data-en="🍑 Stone fruit">🍑 Stone fruit</td><td data-ru="Персик, абрикос, нектарин, слива" data-en="Peach, apricot, nectarine, plum">Peach, apricot, nectarine, plum</td><td>Viognier, Merlot</td></tr>
+          <tr><td data-ru="🌴 Тропические" data-en="🌴 Tropical">🌴 Tropical</td><td data-ru="Манго, ананас, маракуя, личи" data-en="Mango, pineapple, passion fruit, lychee">Mango, pineapple, passion fruit, lychee</td><td data-ru="Sauvignon Blanc (тёпл.), Gewürztraminer" data-en="Sauvignon Blanc (warm), Gewürztraminer">Sauvignon Blanc (warm), Gewürztraminer</td></tr>
+          <tr><td data-ru="🍒 Красные ягоды" data-en="🍒 Red fruit">🍒 Red fruit</td><td data-ru="Вишня, малина, клубника, красная смородина" data-en="Cherry, raspberry, strawberry, redcurrant">Cherry, raspberry, strawberry, redcurrant</td><td>Pinot Noir, Grenache</td></tr>
+          <tr><td data-ru="🫐 Тёмные ягоды" data-en="🫐 Dark fruit">🫐 Dark fruit</td><td data-ru="Черника, ежевика, чёрная смородина, чернослив" data-en="Blueberry, blackberry, blackcurrant, prune">Blueberry, blackberry, blackcurrant, prune</td><td>Cabernet Sauvignon, Syrah</td></tr>
+          <tr><td data-ru="🌸 Цветы" data-en="🌸 Floral">🌸 Floral</td><td data-ru="Роза, фиалка, жасмин, акация" data-en="Rose, violet, jasmine, acacia">Rose, violet, jasmine, acacia</td><td>Gewürztraminer, Viognier</td></tr>
+          <tr><td data-ru="🌿 Растительный" data-en="🌿 Herbaceous">🌿 Herbaceous</td><td data-ru="Трава, зелёный перец, листья смородины" data-en="Grass, green pepper, blackcurrant leaf">Grass, green pepper, blackcurrant leaf</td><td data-ru="Sauvignon Blanc, Cab Sauv (незрелый)" data-en="Sauvignon Blanc, Cab Sauv (unripe)">Sauvignon Blanc, Cab Sauv (unripe)</td></tr>
         </tbody>
       </table>
     </div>
@@ -2885,8 +2892,8 @@ header{position:relative;padding:18px 100px 16px;}
         <div class="fc-body">
           <div class="fc-row"><span class="fc-lbl" data-ru="Красные фрукты" data-en="Red fruits">Red fruits</span><span class="fc-val" data-ru="клубника · малина · вишня · смородина" data-en="strawberry · raspberry · cherry · redcurrant">strawberry · raspberry · cherry</span></div>
           <div class="fc-row"><span class="fc-lbl" data-ru="Чёрные фрукты" data-en="Black fruits">Black fruits</span><span class="fc-val" data-ru="ежевика · чернослив · черника · чёрная смородина" data-en="blackberry · plum · blueberry · blackcurrant">blackberry · plum · blackcurrant</span></div>
-          <div class="fc-row"><span class="fc-lbl" data-ru="Цитрус" data-en="Citrus">Citrus</span><span class="fc-val" data-ru="лимон · лайм · грейпфрут · апельсин" data-en="lemon · lime · grapefruit · orange">lemon · lime · grapefruit</span></div>
-          <div class="fc-row"><span class="fc-lbl" data-ru="Тропические" data-en="Tropical">Tropical</span><span class="fc-val" data-ru="манго · ананас · личи · маракуйя" data-en="mango · pineapple · lychee · passion fruit">mango · pineapple · lychee</span></div>
+          <div class="fc-row"><span class="fc-lbl" data-ru="🍋 Цитрус" data-en="🍋 Citrus">🍋 Citrus</span><span class="fc-val" data-ru="лимон · лайм · грейпфрут · апельсин" data-en="lemon · lime · grapefruit · orange">lemon · lime · grapefruit</span></div>
+          <div class="fc-row"><span class="fc-lbl" data-ru="🌴 Тропические" data-en="🌴 Tropical">🌴 Tropical</span><span class="fc-val" data-ru="манго · ананас · личи · маракуйя" data-en="mango · pineapple · lychee · passion fruit">mango · pineapple · lychee</span></div>
           <div class="fc-row"><span class="fc-lbl" data-ru="Цветочные" data-en="Floral">Floral</span><span class="fc-val" data-ru="роза · фиалка · жасмин · бузина · акация" data-en="rose · violet · jasmine · elderflower · acacia">rose · violet · jasmine</span></div>
           <div class="fc-row"><span class="fc-lbl" data-ru="Растительные" data-en="Vegetal">Vegetal</span><span class="fc-val" data-ru="трава · перец · спаржа · томат · эвкалипт" data-en="grass · pepper · asparagus · tomato · eucalyptus">grass · pepper · eucalyptus</span></div>
           <div class="fc-note" data-ru="💡 Прохладный климат → красные фрукты и цитрус. Тёплый климат → тропические фрукты и джем." data-en="💡 Cool climate → red fruits and citrus. Warm climate → tropical fruits and jam.">💡 Cool = red/citrus · Warm = tropical/jam</div>
