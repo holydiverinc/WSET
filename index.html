@@ -418,11 +418,13 @@ header{position:relative;padding:18px 100px 16px;}
       <div class="h-tag" data-ru="WSET · Полный справочник" data-en="WSET · Complete Study Guide">WSET · Complete Study Guide</div>
       <h1 data-ru="Справочник <span>виноделия</span>" data-en="Wine <span>Study Guide</span>">Wine <span>Study Guide</span></h1>
     </div>
-    <div class="lang-btn" style="position:absolute;top:16px;right:16px;">
-      <button class="lang-opt active" onclick="setLang('en',this)">EN</button>
-      <button class="lang-opt" onclick="setLang('ru',this)">RU</button>
+    <div style="position:absolute;top:12px;right:16px;display:flex;align-items:center;gap:8px;">
+      <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Toggle theme">☀️</button>
+      <div class="lang-btn">
+        <button class="lang-opt active" onclick="setLang('en',this)">EN</button>
+        <button class="lang-opt" onclick="setLang('ru',this)">RU</button>
+      </div>
     </div>
-    <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Toggle theme">☀️</button>
   </div>
 </header>
 
