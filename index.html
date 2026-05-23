@@ -330,20 +330,99 @@ footer span{color:var(--gold);}
 .fc-complete p{font-size:13px;color:#c8a888;margin-bottom:24px;line-height:1.6;}
 .fc-restart-btn{padding:10px 28px;border-radius:8px;background:#b05010;border:none;color:#fff;font-size:14px;font-weight:700;cursor:pointer;font-family:'Source Sans 3',sans-serif;transition:background .2s;}
 .fc-restart-btn:hover{background:#e08040;}
+
+/* ── STICKY TOP ── */
+.sticky-top{position:sticky;top:0;z-index:200;}
+header{position:relative;padding:18px 100px 16px;}
+
+/* ── FULL WIDTH CONTENT ── */
+.content{padding:28px;max-width:100%;width:100%;}
+
+/* ── THEME TOGGLE ── */
+.theme-toggle{
+  position:absolute;top:16px;right:76px;
+  width:32px;height:32px;border-radius:6px;
+  border:1px solid var(--border);background:rgba(255,255,255,.04);
+  cursor:pointer;font-size:15px;transition:all .2s;
+  display:flex;align-items:center;justify-content:center;
+}
+.theme-toggle:hover{border-color:var(--gold);}
+
+/* ── SCROLL TO TOP ── */
+.scroll-top-btn{
+  position:fixed;bottom:28px;right:28px;z-index:999;
+  width:44px;height:44px;border-radius:12px;
+  background:var(--accent);border:none;color:#fff;
+  font-size:18px;cursor:pointer;
+  opacity:0;pointer-events:none;
+  transition:opacity .3s,transform .2s;
+  box-shadow:0 4px 20px rgba(0,0,0,.4);
+}
+.scroll-top-btn.visible{opacity:1;pointer-events:auto;}
+.scroll-top-btn:hover{transform:translateY(-3px);}
+
+/* ── LIGHT THEME ── */
+[data-theme="light"]{
+  --bg:#f5f0e8;--bg2:#ede7d9;--card:#faf7f2;--border:#d4c8a8;
+  --white:#1a1208;--cream:#3a2a10;--gold:#7a4e00;
+  --accent:#6030a0;--muted:#8a7060;
+  --red:#900020;--red-l:#a03040;
+  --whi:#7a5800;--whi-l:#9a7200;
+  --grn:#1a6030;--grn-l:#2a8040;
+  --blu:#1a3870;--blu-l:#2a5090;
+  --l2:#904010;--l2-l:#b05020;
+}
+[data-theme="light"] body{background:var(--bg);color:var(--white);}
+[data-theme="light"] .sticky-top{background:var(--bg);}
+[data-theme="light"] header{background:linear-gradient(135deg,#e8d8b8 0%,#f5edd8 50%,#e8d8b8 100%);}
+[data-theme="light"] header::before{background:radial-gradient(ellipse at 50% 50%,rgba(160,100,0,.06) 0%,transparent 68%);}
+[data-theme="light"] .level-nav{background:var(--bg2);}
+[data-theme="light"] .sub-nav{background:#e8e0cc;}
+[data-theme="light"] .fcard,.grape-card,[data-theme="light"] .pair-card,[data-theme="light"] .stor-card,[data-theme="light"] .qr-box{background:var(--card);}
+[data-theme="light"] .factor-card{background:#faf5ec;border-color:#d4c8a8;}
+[data-theme="light"] .factor-card:hover{border-color:#904010;}
+[data-theme="light"] .fc-body{background:#faf5ec;}
+[data-theme="light"] .compare-l2 thead tr{background:var(--bg2);}
+[data-theme="light"] .compare-l2 td{color:var(--cream);}
+[data-theme="light"] .fc-lbl{color:#6a5030;}
+[data-theme="light"] .fc-val{color:#3a2a10;}
+[data-theme="light"] .fc-note{background:rgba(144,64,16,.06);border-color:#904010;color:#3a2a10;}
+[data-theme="light"] .soil-card,[data-theme="light"] .vine-step{background:#faf5ec;border-color:#d4c8a8;}
+[data-theme="light"] .soil-desc,[data-theme="light"] .vs-desc{color:#4a3820;}
+[data-theme="light"] .tab-bar2{background:rgba(0,0,0,.04);border-color:var(--border);}
+[data-theme="light"] .ph-body{background:var(--card);}
+[data-theme="light"] .crit{border-color:rgba(212,200,168,.8);}
+[data-theme="light"] .flashcard-wrap .fc-front{background:linear-gradient(135deg,#faf5ec,#f5edd8);border-color:#d4c8a8;}
+[data-theme="light"] .flashcard-wrap .fc-back{background:linear-gradient(135deg,#ecf5ee,#ddf0e4);border-color:#a8d4b4;}
+[data-theme="light"] .fc-question{color:#2a1a08;}
+[data-theme="light"] footer{background:var(--bg2);color:var(--muted);}
+[data-theme="light"] .l2-badge{background:rgba(144,64,16,.12);color:#904010;border-color:rgba(144,64,16,.3);}
+[data-theme="light"] .l2-title{color:#904010;}
+[data-theme="light"] .sec-title{color:var(--gold);}
+
+@media(max-width:600px){
+  header{padding:16px 80px 14px;}
+  .content{padding:16px;}
+  .tbl thead{display:none;}
+  .tbl td{display:block;padding:5px 12px;}
+  .tbl tr{display:block;border:1px solid var(--border);border-radius:8px;margin-bottom:10px;}
+}
 </style>
 </head>
 <body>
+<button class="scroll-top-btn" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<header>
-  <div class="h-top">
+<div class="sticky-top" id="site-top"><header>
+  <div class="h-top" style="justify-content:center;flex-direction:column;align-items:center;text-align:center;gap:10px;">
     <div>
       <div class="h-tag" data-ru="WSET · Полный справочник" data-en="WSET · Complete Study Guide">WSET · Complete Study Guide</div>
       <h1 data-ru="Справочник <span>виноделия</span>" data-en="Wine <span>Study Guide</span>">Wine <span>Study Guide</span></h1>
     </div>
-    <div class="lang-btn">
+    <div class="lang-btn" style="position:absolute;top:16px;right:16px;">
       <button class="lang-opt active" onclick="setLang('en',this)">EN</button>
       <button class="lang-opt" onclick="setLang('ru',this)">RU</button>
     </div>
+    <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Toggle theme">☀️</button>
   </div>
 </header>
 
@@ -387,6 +466,7 @@ footer span{color:var(--gold);}
   <button class="sub-btn" onclick="openPanel('ref-flashcards',this,'ref')"><span data-ru="🃏 Флэш-карточки" data-en="🃏 Flashcards">🃏 Flashcards</span></button>
 </div>
 
+</div><!-- /sticky-top -->
 <div class="content">
 
 <!-- ═══════════════════════════════════════════════
@@ -2677,13 +2757,7 @@ function setLang(lang, btn) {
   });
 }
 
-// Apply English on page load
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('[data-ru]').forEach(el => {
-    const txt = el.getAttribute('data-en');
-    if (txt) el.innerHTML = txt;
-  });
-});
+// Apply English on page load (merged into main DOMContentLoaded below)
 
 function setLevel(level, btn) {
   // Update level buttons
@@ -2938,10 +3012,37 @@ function restartDeck() {
   renderCard();
 }
 
-// Init flashcards when panel opens
+// ── THEME ──
+function toggleTheme() {
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  document.documentElement.setAttribute('data-theme', isLight ? '' : 'light');
+  document.getElementById('theme-toggle').textContent = isLight ? '☀️' : '🌙';
+  localStorage.setItem('wset-theme', isLight ? 'dark' : 'light');
+}
+
+// ── SCROLL TO TOP ──
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('scrollTopBtn');
+  if (!btn) return;
+  if (window.scrollY > 200) btn.classList.add('visible');
+  else btn.classList.remove('visible');
+});
+
+// ── INIT ──
 document.addEventListener('DOMContentLoaded', () => {
-  // delay init so DOM is ready
-  setTimeout(() => { if (DECKS.regions) loadDeck('regions'); }, 100);
+  // Apply English by default
+  document.querySelectorAll('[data-ru]').forEach(el => {
+    const txt = el.getAttribute('data-en');
+    if (txt) el.innerHTML = txt;
+  });
+  // Restore theme
+  if (localStorage.getItem('wset-theme') === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    const btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = '🌙';
+  }
+  // Init flashcards
+  setTimeout(() => { if (typeof loadDeck === 'function') loadDeck('regions'); }, 100);
 });
 </script>
 </html>
